@@ -142,7 +142,7 @@ function Contact() {
         {inMobView &&
         <>
           <div className="flex flex-col pb-[2vh] mt-[5vh] w-screen items-center">
-            <div className="pro flex gap-[1vw] text-[3vw] w-[30vw]">
+            <div className="pro flex gap-[1vw] text-[4vw] w-[40vw]">
               <div className="text-white">Connect With</div>
               <div className="text-purple-500">Me</div>
             </div>
