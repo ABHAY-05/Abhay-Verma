@@ -104,28 +104,28 @@ function Navbar() {
             <div className='mNav fixed pl-[3vw] gap-[2vh] flex flex-col h-screen w-[50vw] right-0 md:hidden lg:hidden bg-black z-20'>
                 <ul className='flex flex-col text-purple-500 gap-[2vh] text-[3vh] mt-[10vh]'> 
                     <div onClick={() => setMenu(false)} className='absolute z-20 top-0 right-0 mt-[3vh] mr-[7vw]'><AiOutlineClose size={25}/></div>
-                    <Link activeClass='active' to='about' spy={true} smooth={true} offset={-80}>
+                    <Link onClick={() => setMenu(false)} activeClass='active' to='about' spy={true} smooth={true} offset={-80}>
                         <li className='aboutm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             About
                         </li>
                     </Link>
-                    <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-80}>
+                    <Link onClick={() => setMenu(false)} activeClass='active' to='skills' spy={true} smooth={true} offset={-80}>
                         <li className='skillsm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             Skills
                         </li>
                     </Link>
-                    <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-75}>
+                    <Link onClick={() => setMenu(false)} activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-75}>
                         <li className='codingm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
-                    <Link activeClass='active' to='project' spy={true} smooth={true} offset={-75}>
+                    <Link onClick={() => setMenu(false)} activeClass='active' to='project' spy={true} smooth={true} offset={-75}>
                         <li className='projectm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             Projects
                         </li>
                     </Link>
                 </ul>
-                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-70}>
+                <Link onClick={() => setMenu(false)} activeClass='active' to='contact' spy={true} smooth={true} offset={-70}>
                     <div className='contactm hover:text-[2.5vh] text-purple-400 mb-3 ml-1 mt-1 w-[130px] flex justify-center hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] text-[2.4vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer'>
                         Contact Me
                     </div>
