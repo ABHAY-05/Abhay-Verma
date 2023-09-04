@@ -95,7 +95,7 @@ function Home() {
                             <div className='text-white overflow-hidden'>I'm a</div>
                             <div className='type text-purple-700 overflow-hidden'><Typewriter /></div>
                         </div>
-                        <div className="desc text-[2vh] mt-[1.5vh] text-white overflow-hidden">{Bio.desc}</div>
+                        <div className="desc text-[1.8vh] mt-[1.5vh] text-white overflow-hidden">{Bio.desc}</div>
                         <div className='flex gap-[2vw] overflow-hidden mt-[1.5vh] pl-[0.5vw]'>
                             <div className='btn h-[10vh] w-[130px] -ml-[0.3vw] mt-[1vh]'>
                                 <a href={resume} target='_blank'>

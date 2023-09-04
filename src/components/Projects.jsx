@@ -38,7 +38,7 @@ function Projects() {
   return (
     <>
         {/* Desktop Section */}
-        <div ref={ref} className='max-lg:hidden max-md:hidden w-screen h-[150vh] overflow-hidden flex flex-col items-center bg-black'>
+        <div ref={ref} className='max-lg:hidden max-md:hidden w-screen h-[155vh] overflow-hidden flex flex-col items-center bg-black'>
             {inView &&
             <>
                 <div className="skill text-[6vh] mt-[3vh] flex justify-center gap-[1vw]">
@@ -65,8 +65,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[2.5vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-blue-400'>Linguistic OCR</div>
-                                        <div className='text-[1vw] text-gray-400'>09/2022 - 12/2022</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-blue-400'>Linguistic OCR</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>09/2022 - 12/2022</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.linguistic.a}..</div>
                                 </div>
@@ -87,8 +87,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh]">
-                                        <div className='text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
-                                        <div className='text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw] -mt-[1vh]">{projects.flipkart.a}..</div>
                                 </div>
@@ -109,8 +109,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[9vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-blue-400'>IRIS</div>
-                                        <div className='text-[1vw] text-gray-400'>10/2021 - 12/2021</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-blue-400'>IRIS</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>10/2021 - 12/2021</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.IRIS.a}..</div>
                                 </div>
@@ -138,8 +138,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[7vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-emerald-500'>MedScan</div>
-                                        <div className='text-[1vw] text-gray-400'>02/2023 - Present</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-emerald-500'>MedScan</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - Present</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.medScan.a}..</div>
                                 </div>
@@ -150,7 +150,7 @@ function Projects() {
         </div>
 
         {/* Tablet Section */}
-        <div ref={tabRef} className='max-md:hidden lg:hidden w-screen h-[137vh] overflow-hidden flex flex-col items-center bg-black'>
+        <div ref={tabRef} className='max-md:hidden lg:hidden w-screen h-[135vh] overflow-hidden flex flex-col items-center bg-black'>
             {inTabView &&
             <>
                 <div className="skill text-[5vh] mt-[3vh] flex justify-center gap-[1vw]">
@@ -177,8 +177,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[9vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-blue-400'>Linguistic OCR</div>
-                                        <div className='text-[1vw] text-gray-400'>09/2022 - 12/2022</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-blue-400'>Linguistic OCR</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>09/2022 - 12/2022</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.linguistic.a}..</div>
                                 </div>
@@ -199,8 +199,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[7vw]">
-                                        <div className='text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
-                                        <div className='text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw] -mt-[1vh]">{projects.flipkart.a}..</div>
                                 </div>
@@ -223,8 +223,8 @@ function Projects() {
                                     </div>
                                 </div>
                                 <div className="ptitle flex items-center gap-[15vw] mt-[2vh]">
-                                    <div className='text-[1.5vw] text-blue-400'>IRIS</div>
-                                    <div className='text-[1vw] text-gray-400'>10/2021 - 12/2021</div>
+                                    <div className='overflow-hidden text-[1.5vw] text-blue-400'>IRIS</div>
+                                    <div className='overflow-hidden text-[1vw] text-gray-400'>10/2021 - 12/2021</div>
                                 </div>
                                 <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.IRIS.a}..</div>
                             </div>
@@ -250,8 +250,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[14vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-emerald-500'>MedScan</div>
-                                        <div className='text-[1vw] text-gray-400'>02/2023 - Present</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-emerald-500'>MedScan</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - Present</div>
                                     </div>
                                     <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.medScan.a}..</div>
                                 </div>
@@ -262,7 +262,7 @@ function Projects() {
         </div>
 
         {/* Mobile Section */}
-        <div ref={mobRef} className='md:hidden w-screen h-[250vh] overflow-hidden flex flex-col items-center bg-black'>
+        <div ref={mobRef} className='md:hidden w-screen h-[207vh] overflow-hidden flex flex-col items-center bg-black'>
             {inMobView &&
             <>
                 <div className="skill text-[4vh] mt-[3vh] flex justify-center gap-[1vw]">
@@ -287,8 +287,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[25vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-blue-400'>Linguistic OCR</div>
-                                        <div className='text-[1vw] text-gray-400'>09/2022 - 12/2022</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-blue-400'>Linguistic OCR</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>09/2022 - 12/2022</div>
                                     </div>
                                     <div className="pdesc text-white mx-[4vw] text-[1.2vw]">{projects.linguistic.a}..</div>
                                 </div>
@@ -309,8 +309,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[23vw]">
-                                        <div className='text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
-                                        <div className='text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                     </div>
                                     <div className="pdesc text-white mx-[4vw] text-[1.2vw]">{projects.flipkart.a}..</div>
                                 </div>
@@ -331,8 +331,8 @@ function Projects() {
                                     </div>
                                 </div>
                                 <div className="ptitle flex items-center gap-[32vw] mt-[2vh]">
-                                    <div className='text-[1.5vw] text-blue-400'>IRIS</div>
-                                    <div className='text-[1vw] text-gray-400'>10/2021 - 12/2021</div>
+                                    <div className='overflow-hidden text-[1.5vw] text-blue-400'>IRIS</div>
+                                    <div className='overflow-hidden text-[1vw] text-gray-400'>10/2021 - 12/2021</div>
                                 </div>
                                 <div className="pdesc text-white mx-[4vw] text-[1vw]">{projects.IRIS.a}..</div>
                             </div>
@@ -360,8 +360,8 @@ function Projects() {
                                         </div>
                                     </div>
                                     <div className="ptitle flex items-center gap-[30vw] mt-[2vh]">
-                                        <div className='text-[1.5vw] text-emerald-500'>MedScan</div>
-                                        <div className='text-[1vw] text-gray-400'>02/2023 - Present</div>
+                                        <div className='overflow-hidden text-[1.5vw] text-emerald-500'>MedScan</div>
+                                        <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - Present</div>
                                     </div>
                                     <div className="pdesc text-white mx-[4vw] text-[1vw]">{projects.medScan.a}..</div>
                                 </div>
