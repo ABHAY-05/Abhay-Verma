@@ -110,17 +110,17 @@ function Navbar() {
                         </li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-80}>
-                        <li className='skillsm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-[70px] p-1 px-1 cursor-pointer'>
+                        <li className='skillsm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             Skills
                         </li>
                     </Link>
                     <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-75}>
-                        <li className='codingm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-[150px] p-1 px-1 cursor-pointer'>
+                        <li className='codingm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
                     <Link activeClass='active' to='project' spy={true} smooth={true} offset={-75}>
-                        <li className='projectm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-[90px] p-1 px-1 cursor-pointer'>
+                        <li className='projectm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer'>
                             Projects
                         </li>
                     </Link>
