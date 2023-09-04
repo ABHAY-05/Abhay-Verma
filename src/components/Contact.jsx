@@ -160,12 +160,14 @@ function Contact() {
             <div className='p-[1vh] w-[70vw]'>
               <textarea onChange={handleUser} value={user.message} className='rounded-lg shadow-sm shadow-purple-500 w-[68vw] h-[35vh] text-white placeholder-purple-300 p-[1vh] bg-black border-[0.1vh] border-purple-500' name="message" id="message" cols="20" rows="10" required placeholder='Write your Message' autoComplete='message' />
             </div>
-            <button className='mbtn w-[13vw] rounded-full border-[0.4vh] shadow-sm shadow-purple-500 hover:shadow-md hover:border-blue-500 hover:shadow-blue-500 hover:translate-x-1 hover:-translate-y-1 duration-500 border-purple-500' type="submit" >
-              <div className="flex hover:text-blue-500 duration-500 p-2 hover:text-[1.9vw] text-[1.8vw] gap-[1vw] text-purple-600 justify-center items-center">
-                <div>Send</div>
-                <MdSend />
-              </div>
-            </button>
+            <div className='flex justify-center'>
+              <button className='mbtn w-[13vw] rounded-full border-[0.4vh] shadow-sm shadow-purple-500 hover:shadow-md hover:border-blue-500 hover:shadow-blue-500 hover:translate-x-1 hover:-translate-y-1 duration-500 border-purple-500' type="submit" >
+                <div className="flex hover:text-blue-500 duration-500 p-2 hover:text-[1.9vw] text-[1.8vw] gap-[1vw] text-purple-600 justify-center items-center">
+                  <div>Send</div>
+                  <MdSend />
+                </div>
+              </button>
+            </div>
           </form>
           <div className="Name flex gap-[1vw] items-center overflow-hidden">
             <div className='text-purple-500 text-4xl mt-[5vh] p-[1vh] duration-500 hover:scale-110'><SiMinutemailer /></div>
