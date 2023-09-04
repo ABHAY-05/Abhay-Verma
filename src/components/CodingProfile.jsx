@@ -115,30 +115,30 @@ function CodingProfile() {
         <div ref={mobRef} className='md:hidden w-screen h-[130vh] overflow-hidden flex flex-col items-center bg-black'>
             {inMobView &&
             <>
-            <div className="skill text-[4vh] mt-[3vh] flex justify-center gap-[1vw]">
+            <div className="skill text-[4vh] pt-[3vh] flex justify-center gap-[1vw]">
                 <div className='text-white'>Coding</div>
                 <div className='text-purple-500'>Profile</div>
             </div>
             <div className="flex flex-col items-center gap-[3vh] w-screen mt-[4vh] pb-[4vh]">
-                <div className="card col1 flex gap-[3vw] justify-center items-center w-[55vw] h-[25vh] border-[0.2vh] rounded-[50px] border-[#E7A41F] shadow-md shadow-[#E7A41F] p-[1vh] filter grayscale hover:grayscale-0">
+                <div className="card col1 flex gap-[3vw] justify-center items-center w-[60vw] h-[25vh] border-[0.2vh] rounded-[50px] border-[#E7A41F] shadow-md shadow-[#E7A41F] p-[1vh] filter grayscale hover:grayscale-0">
                     <img className='h-[15vh] hover:scale-110 duration-500' src={leetcode} alt="" />
                     <a className='w-[14vw] h-[9vh] pt-[1vh]' href={codingLinks.leetcode} target='_blank'>
                         <button className='text-[#E7A41F] w-[13vw] flex justify-center text-[2.5vh] border-[0.2vh] px-[1.5vw] py-[1vh] hover:translate-x-[0.2vw] hover:-translate-y-[0.3vh] duration-500 hover:text-[2.6vh] border-[#E7A41F] shadow-md shadow-[#E7A41F] rounded-full font-serif'>Open</button>
                     </a>
                 </div>
-                <div className="card col2 flex gap-[3vw] justify-center items-center w-[55vw] h-[25vh] border-[0.2vh] rounded-[50px] border-green-700 shadow-md shadow-green-700 p-[1vh] filter grayscale hover:grayscale-0">
+                <div className="card col2 flex gap-[3vw] justify-center items-center w-[60vw] h-[25vh] border-[0.2vh] rounded-[50px] border-green-700 shadow-md shadow-green-700 p-[1vh] filter grayscale hover:grayscale-0">
                     <div className='text-[15vh] hover:scale-110 duration-500 text-green-700'><FaHackerrank /></div>
                     <a className='w-[14vw] h-[9vh] pt-[1vh]' href={codingLinks.hackerRank} target='_blank'>
                         <button className='text-green-700 w-[13vw] flex justify-center text-[2.5vh] border-[0.2vh] px-[1.5vw] py-[1vh] hover:translate-x-[0.2vw] hover:-translate-y-[0.3vh] duration-500 hover:text-[2.6vh] border-green-700 shadow-md shadow-green-700 rounded-full font-serif'>Open</button>
                     </a>
                 </div>
-                <div className="card col1 flex gap-[3vw] justify-center items-center w-[55vw] h-[25vh] border-[0.2vh] rounded-[50px] border-green-700 shadow-md shadow-green-700 p-[1vh] filter grayscale hover:grayscale-0">
+                <div className="card col1 flex gap-[3vw] justify-center items-center w-[60vw] h-[25vh] border-[0.2vh] rounded-[50px] border-green-700 shadow-md shadow-green-700 p-[1vh] filter grayscale hover:grayscale-0">
                     <div className='text-[15vh] hover:scale-110 duration-500 text-green-700'><SiGeeksforgeeks /></div>
                     <a className='w-[14vw] h-[9vh] pt-[1vh]' href={codingLinks.gfg} target='_blank'>
                         <button className='text-green-700 w-[13vw] flex justify-center text-[2.5vh] border-[0.2vh] px-[1.5vw] py-[1vh] hover:translate-x-[0.2vw] hover:-translate-y-[0.3vh] duration-500 hover:text-[2.6vh] border-green-700 shadow-md shadow-green-700 rounded-full font-serif'>Open</button>
                     </a>
                 </div>
-                <div className="card col2 flex gap-[3vw] justify-center items-center w-[55vw] h-[25vh] border-[0.2vh] border-gray-600 shadow-md shadow-gray-500 rounded-[50px] p-[1vh] filter grayscale hover:grayscale-0">
+                <div className="card col2 flex gap-[3vw] justify-center items-center w-[60vw] h-[25vh] border-[0.2vh] border-gray-600 shadow-md shadow-gray-500 rounded-[50px] p-[1vh] filter grayscale hover:grayscale-0">
                     <div className='text-[15vh] hover:scale-110 duration-500 text-white'><FaGithub /></div>
                     <a className='w-[14vw] h-[9vh] pt-[1vh]' href={codingLinks.github} target='_blank'>
                         <button className='text-white w-[13vw] flex justify-center text-[2.5vh] border-[0.2vh] px-[1.5vw] py-[1vh] hover:translate-x-[0.2vw] hover:-translate-y-[0.3vh] duration-500 hover:text-[2.6vh] border-gray-600 shadow-md shadow-gray-500 rounded-full font-serif'>Open</button>

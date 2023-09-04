@@ -78,7 +78,7 @@ function About() {
         {inView && 
         <>
             <div className='md:hidden relative flex flex-col justify-center items-center gap-[2vh] -mt-[10vh]'>
-              <div className='about-icon text-[5vh] text-purple-300 mt-[10vh] h-[18vh] w-[250px] flex justify-center items-center border-[0.5vh] border-purple-300 shadow-lg shadow-purple-500'>
+              <div className='about-icon text-[4.5vh] text-purple-300 mt-[10vh] h-[18vh] w-[250px] flex justify-center items-center border-[0.5vh] border-purple-300 shadow-lg shadow-purple-500'>
                   About me
               </div>
               <div className='flex flex-col gap-[1.5vh] w-[80vw]'>
@@ -90,7 +90,7 @@ function About() {
                   <div>{Bio.description}</div>
                   <div>{Bio.description2}</div>
                 </div>
-                <div className='tag text-[3.2vh] flex justify-center text-purple-500 overflow-hidden'>{`"${Bio.tag}"`}</div>
+                <div className='tag text-[3.1vh] flex justify-center text-purple-500 overflow-hidden'>{`"${Bio.tag}"`}</div>
                 <div className='p-[2vh] -ml-[2vh] h-[15vh] -mt-[2vh] overflow-hidden'>
                   <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-78}>
                     <button className="read-btn text-[2.3vh] text-purple-600 hover:text-purple-400 shadow-md shadow-purple-400 hover:text-[2.5vh] h-[7vh] w-[130px] rounded-full border-[0.3vh] border-purple-700 duration-300 hover:shadow-lg hover:shadow-purple-500 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw]">Read More</button>
