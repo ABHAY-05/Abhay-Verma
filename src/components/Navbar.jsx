@@ -89,7 +89,7 @@ function Navbar() {
             {/* Mobile Section */}
             <div className='md:hidden lg:hidden overflow-hidden'>
                 <Link activeClass='active1' to='home' spy={true} smooth={true} offset={-100}>
-                    <div className='logo absolute font-bold top-0 left-[7vw] text-purple-500 text-[4vh] mt-[1.2vh] cursor-pointer pl-[1vw]'>
+                    <div className='logo absolute font-bold top-0 left-[7vw] text-purple-500 text-[4vh] mt-[1.2vh] cursor-pointer pr-[1vw]'>
                         Abhay
                     </div>
                 </Link>
