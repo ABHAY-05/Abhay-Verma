@@ -23,6 +23,7 @@ function Contact() {
         toast.success('Message Sent Successfully');
         console.log(result.text);
       }, (error) => {
+        toast.error("Something went wrong");
         console.log(error.text);
       });
   };
