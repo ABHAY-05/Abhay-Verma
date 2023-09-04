@@ -91,11 +91,11 @@ function Home() {
                     <div className='biom flex flex-col gap-[0.5vh] w-[90vw] h-[53vh] overflow-hidden'>
                         <div className='intro text-white overflow-hidden'>Hello, My Name is</div>
                         <div className='Name text-white font-semibold text-[6vh] pt-[1vh] pr-[1vw] pb-[1vh] -mt-[2.4vh] overflow-hidden'>{Bio.Name}</div>
-                        <div className='pro flex gap-[1.6vw] text-[3vh] border-b-[0.004vh] border-purple-500 pb-[1vh] -mt-[0.5vh] overflow-hidden'>
+                        <div className='pro flex gap-[1.6vw] text-[2.8vh] border-b-[0.004vh] border-purple-500 pb-[1vh] -mt-[0.5vh] overflow-hidden'>
                             <div className='text-white overflow-hidden'>I'm a</div>
                             <div className='type text-purple-700 overflow-hidden'><Typewriter /></div>
                         </div>
-                        <div className="desc text-[1.8vh] mt-[1.5vh] text-white overflow-hidden">{Bio.desc}</div>
+                        <div className="desc text-[1.8vh] mt-[1vh] text-white overflow-hidden pb-[2vh]">{Bio.desc}</div>
                         <div className='flex gap-[2vw] overflow-hidden mt-[1.5vh] pl-[0.5vw]'>
                             <div className='btn h-[10vh] w-[130px] -ml-[0.3vw] mt-[1vh]'>
                                 <a href={resume} target='_blank'>
