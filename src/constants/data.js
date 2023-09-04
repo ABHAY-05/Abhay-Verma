@@ -44,3 +44,25 @@ export const codingLinks = {
     gfg: 'https://auth.geeksforgeeks.org/user/abhayvermajune5',
     github: 'https://github.com/ABHAY-05'
 }
+
+export const projects = {
+    linguistic: {
+        a: 'Developed a versatile ML model for text extraction, captcha and handwriting recognition,license plate detection from images, and language translation.',
+        b: 'Collaborated in a 5-member team to integrate ML techniques into a responsive web page design.',
+        c: 'Held roles as an ML Developer and Backend Manager, showcasing expertise in both aspects'
+    },
+    flipkart : {
+        a: 'Implemented a full-stack recommendation system providing personalized product recommendations based on user preferences.',
+        b: '•Dynamic interfaces with ReactJS, efficient server-side processing with Express.js.',
+        c: 'Mongoose is used for data modeling, boosting system accuracy and scalability.'
+    },
+    IRIS : {
+        a: 'Created IRIS Virtual Assistant using Python, ML, and Speech Recognition technologies.',
+        b: 'Designed a versatile assistant for tasks like sending emails, providing weather reports, anddelivering news, all via voice commands.'
+    },
+    medScan : {
+        a: 'Developing MedScan: A medical image processing web app using React, Node.js, and MongoDB.',
+        b: 'Implemented TensorFlow.js for real-time medical condition detection, improving healthcare outcomes.',
+        c: 'Collaborated effectively in a diverse team, delivering a user-friendly, secure app with positive user feedback.'
+    }
+}
