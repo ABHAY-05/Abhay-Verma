@@ -276,7 +276,7 @@ function Projects() {
                                 <div className="hover:scale-105 duration-500 flex flex-col items-center gap-[1vh]">
                                     <img className='w-[45vw] h-[17vh] mt-[3vh] rounded-md bg-blue-400' src={linguistic} alt="Linguistic" />
                                     <div className="flex flex-col gap-[0.8vh]">
-                                        <div className="flex gap-[1.7vw] pb-[0.2vh]">
+                                        <div className="flex gap-[1.5vw] pb-[0.2vh]">
                                             <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">Python</div>
                                             <div className="flex justify-center items-center text-orange-500 border-orange-500 shadow-sm shadow-orange-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">HTML</div>
                                             <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">CSS</div>
