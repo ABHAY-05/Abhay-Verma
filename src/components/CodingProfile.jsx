@@ -23,7 +23,13 @@ function CodingProfile() {
     useEffect(() => {
         const cards = document.querySelectorAll('.card');
         cards.forEach(card => {
-            VanillaTilt.init(card);
+            VanillaTilt.init(card, {
+                max: 10,
+                gyroscopeMinAngleX: -10,
+                gyroscopeMaxAngleX: 10,
+                gyroscopeMinAngleY: -10,
+                gyroscopeMaxAngleY: 10,
+            });
         });
     });
     

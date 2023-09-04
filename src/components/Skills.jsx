@@ -21,7 +21,13 @@ function Skills() {
   useEffect(() => {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
-      VanillaTilt.init(card);
+      VanillaTilt.init(card, {
+        max: 20,
+        gyroscopeMinAngleX: -15,
+        gyroscopeMaxAngleX: 15,
+        gyroscopeMinAngleY: -15,
+        gyroscopeMaxAngleY: 15,
+      });
     });
   });
 
