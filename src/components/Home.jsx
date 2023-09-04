@@ -37,7 +37,7 @@ function Home() {
                             <div className='text-white overflow-hidden'>I'm a</div>
                             <div className='type text-purple-500 overflow-hidden'><Typewriter /></div>
                         </div>
-                        <div className="desc overflow-hidden text-white mt-[1vh] h-auto">{Bio.desc}</div>
+                        <div className="desc overflow-hidden text-white mt-[1vh] pb-[1.5vh]">{Bio.desc}</div>
                         <div className='profile-all overflow-hidden text-gray-500 h-[10vh] flex items-center gap-[2vw]'>
                             <a href={github} target="_blank" className='git hover:text-white hover:text-[9vh] duration-500 text-[8vh]'><FaGithub /></a>
                             <a href={linkedin} target="_blank" className='linked hover:text-blue-700 hover:text-[9vh] duration-500 text-[8vh]'><FaLinkedin /></a>
