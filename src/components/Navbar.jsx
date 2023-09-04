@@ -101,7 +101,7 @@ function Navbar() {
         {menu && 
         <>
             <div onClick={() => setMenu(false)} className='h-screen w-screen fixed bg-black opacity-60 z-20' />
-            <div className='mNav fixed pl-[3vw] gap-[2vh] flex flex-col h-screen w-[45vw] right-0 md:hidden lg:hidden bg-black z-20'>
+            <div className='mNav fixed pl-[3vw] gap-[2vh] flex flex-col h-screen w-[50vw] right-0 md:hidden lg:hidden bg-black z-20'>
                 <ul className='flex flex-col text-purple-500 gap-[2vh] text-[3vh] mt-[10vh]'> 
                     <div onClick={() => setMenu(false)} className='absolute z-20 top-0 right-0 mt-[3vh] mr-[7vw]'><AiOutlineClose size={25}/></div>
                     <Link activeClass='active' to='about' spy={true} smooth={true} offset={-80}>
