@@ -5,7 +5,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Skills from './components/Skills';
 import CodingProfile from './components/CodingProfile';
-import Projects from './components/projects';
+import Projects from './components/Projects';
 
 function App() {
 
