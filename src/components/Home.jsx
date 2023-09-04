@@ -34,10 +34,10 @@ function Home() {
                         <div className='intro overflow-hidden text-white text-[2.5vh]'>Hello, My Name is</div>
                         <div className='Name overflow-hidden text-white font-semibold text-[8vh] pr-[1vw] pb-[1vh] -mt-[3vh]'>{Bio.Name}</div>
                         <div className='pro overflow-hidden flex gap-[1vw] text-[5vh] border-b-[0.005vh] border-purple-500 pb-[1vh] -mt-[1.5vh]'>
-                            <div className='text-white'>I'm a</div>
-                            <div className='type text-purple-500'><Typewriter /></div>
+                            <div className='text-white overflow-hidden'>I'm a</div>
+                            <div className='type text-purple-500 overflow-hidden'><Typewriter /></div>
                         </div>
-                        <div className="desc overflow-hidden text-white mt-[1vh]">{Bio.desc}</div>
+                        <div className="desc overflow-hidden text-white mt-[1vh] h-auto">{Bio.desc}</div>
                         <div className='profile-all overflow-hidden text-gray-500 h-[10vh] flex items-center gap-[2vw]'>
                             <a href={github} target="_blank" className='git hover:text-white hover:text-[9vh] duration-500 text-[8vh]'><FaGithub /></a>
                             <a href={linkedin} target="_blank" className='linked hover:text-blue-700 hover:text-[9vh] duration-500 text-[8vh]'><FaLinkedin /></a>
