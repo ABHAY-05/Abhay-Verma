@@ -43,10 +43,8 @@ function Navbar() {
                         </li>
                     </Link>
                 </ul>
-                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-78}>
-                    <div className='contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[10vw] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer'>
-                        Contact Me
-                    </div>
+                <Link activeClass='activeContact' to='contact' spy={true} smooth={true} offset={-78} className='contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[10vw] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer'>
+                    Contact Me
                 </Link>
             </div>
 
@@ -79,10 +77,8 @@ function Navbar() {
                         </li>
                     </Link>
                 </ul>
-                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-75}>
-                    <div className='contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[7vw] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer'>
-                        Contact Me
-                    </div>
+                <Link activeClass='activeContact' to='contact' spy={true} smooth={true} offset={-75} className='contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[7vw] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer'>
+                    Contact Me
                 </Link>
             </div>
 
@@ -125,10 +121,8 @@ function Navbar() {
                         </li>
                     </Link>
                 </ul>
-                <Link onClick={() => setMenu(false)} activeClass='active' to='contact' spy={true} smooth={true} offset={-70}>
-                    <div className='contactm hover:text-[2.5vh] text-purple-400 mb-3 ml-1 mt-1 w-[130px] flex justify-center hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] text-[2.4vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer'>
-                        Contact Me
-                    </div>
+                <Link onClick={() => setMenu(false)} activeClass='activeContact' to='contact' spy={true} smooth={true} offset={-70} className='contactm hover:text-[2.5vh] text-purple-400 mb-3 ml-1 mt-1 w-[130px] flex justify-center hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] text-[2.4vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer'>
+                    Contact Me
                 </Link>
             </div>
         </>}

@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Skills from './components/Skills';
 import CodingProfile from './components/CodingProfile';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
       </section>
       <section id="project">
         <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </>
   )
