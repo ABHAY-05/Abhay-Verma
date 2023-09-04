@@ -316,7 +316,7 @@ function Projects() {
                                 </div>
                         </div>
                     </div>
-                    <div className="col2 flex gap-[3vw] justify-center py-[2vh] w-screen">
+                    <div className="col1 flex gap-[3vw] justify-center py-[2vh] w-screen">
                     <div 
                         className="card overflow-hidden w-[50vw] h-[40vh] border-[0.2vh] rounded-lg border-blue-500 duration-500 filter grayscale hover:grayscale-0 shadow-sm shadow-blue-500 hover:shadow-md hover:shadow-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black cursor-pointer">
                             <div className="hover:scale-105 duration-500 flex flex-col items-center gap-[1vh]">
