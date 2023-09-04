@@ -178,14 +178,14 @@ function Skills() {
       </div>
 
       {/* Mobile Section */}
-      <div ref={mobRef} className="md:hidden w-screen h-[125vh] overflow-hidden flex flex-col items-center bg-black">
+      <div ref={mobRef} className="md:hidden w-screen h-[120vh] overflow-hidden flex flex-col items-center bg-black">
         {inMobView && 
         <>
           <div className="skill text-[3.5vh] flex justify-center gap-[1vw]">
             <div className='text-purple-500'>My</div>
             <div className='text-white'>Skills</div>
           </div>
-          <div className="mt-[4vh] flex flex-col gap-[4vh] w-screen items-center">
+          <div className="mt-[4vh] flex flex-col gap-[2vh] w-screen items-center">
             <div className='col1 flex gap-[7vw] p-[1vh]'>
               <div className="card border-[0.3vh] border-sky-700 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
                 <img className='w-[7vw] h-[16vh] transition-transform transform hover:scale-110 duration-500' src={skills.pyhton} alt="Python" />
