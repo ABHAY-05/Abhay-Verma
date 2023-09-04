@@ -52,6 +52,10 @@
     overflow: hidden;
 }
 
+.mbtn {
+    font-family: 'Bitter', serif;
+}
+
 .profile-all {
     animation: profile-animation 2s ease-in-out;
 }

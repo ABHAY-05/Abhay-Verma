@@ -1,7 +1,6 @@
 export const Bio = {
     Name: 'Abhay Verma',
-    desc: 
-    "As a driven Frontend Developer and Competitive Coder, I excel in Web Development across various programming languages. My expertise extends to Full Stack development, ensuring holistic project delivery. Beyond this, I'm delving into Machine Learning, eager to harness its power for innovative solutions and enhanced user experiences.",
+    desc: "As a driven Frontend Developer and Competitive Coder, I excel in Web Development across various programming languages. My expertise extends to Full Stack development, ensuring holistic project delivery. Beyond this, I'm delving into Machine Learning, eager to harness its power for innovative solutions and enhanced user experiences.",
     description: "I'm currently in the final year of my B.Tech. program in Computer Science and Engineering at Pranveer Singh Institute of Technology, Kanpur. With a deep passion for web development, machine learning, and various programming languages, I'm dedicated to crafting innovative solutions and taking on complex challenges.",
     description2: "Join me on my journey as I combine my academic pursuits with my enthusiasm for web development. Together, we can push the boundaries of what's possible in the ever-evolving tech world.",
     tag: "Let's build the future together."
@@ -16,6 +15,7 @@ export const prof = [
 export const github = "https://github.com/ABHAY-05";
 export const linkedin = "https://www.linkedin.com/in/abhay-verma-b3987a210";
 export const email = "Abhayvermajune5@gmail.com";
+export const phone = "+91 8756782835";
 export const resume = "https://drive.google.com/file/d/1GtiIzvuoaKytZqpfRz1QB_NHB3oxvqJQ/view?usp=drive_link";
 
 export const skills = {
