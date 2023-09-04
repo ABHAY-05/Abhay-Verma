@@ -4,7 +4,7 @@ import VanillaTilt from 'vanilla-tilt';
 
 import '../styles/projects.css'
 import { projects } from '../constants/data';
-import linguistic from '../assets/linguistic.png';
+import linguistic from '../assets/Linguistic.png';
 import flipkart from '../assets/flipkart.png';
 import medScan from '../assets/medScan.png';
 import IRIS from '../assets/IRIS.png';
