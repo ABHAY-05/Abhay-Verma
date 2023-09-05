@@ -25,7 +25,7 @@ const Typewriter = () => {
           setCurrentItemIndex((prevIndex) => (prevIndex + 1) % prof.length);
         }
       }
-    }, 100);
+    }, 150);
 
     return () => {
       clearInterval(typewriterInterval);
