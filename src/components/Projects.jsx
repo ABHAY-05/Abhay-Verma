@@ -457,7 +457,7 @@ function Projects() {
             </div>
             
             {/* Small Devices Section */}
-            <div ref={sRef} className='sm:hidden md:hidden w-screen h-[220vh] overflow-hidden flex flex-col items-center bg-black'>
+            <div ref={sRef} className='sm:hidden md:hidden w-screen h-[200vh] overflow-hidden flex flex-col items-center bg-black'>
                 {inSView &&
                     <>
                         <div className="skill text-[4vh] mt-[3vh] flex justify-center gap-[1vw]">
