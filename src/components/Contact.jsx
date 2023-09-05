@@ -128,7 +128,7 @@ function Contact() {
               <div className="text-purple-500">Me</div>
             </div>
           </div>
-          <form ref={user} onSubmit={handleSubmit} className="col2 ptitle flex gap-[1vh] flex-col mt-[4vh] w-[70vw] overflow-hidden">
+          <form ref={user} onSubmit={handleSubmit} className="col2 ptitle flex gap-[1vh] flex-col mt-[4vh] w-[70vw] ml-[1.2vw] pr-[1.2vw] overflow-hidden">
             <div className="p-[1vh] w-[70vw]">
               <input className='w-[68vw] rounded-lg shadow-sm shadow-purple-500 text-white placeholder-purple-300 p-[1vh] bg-black border-[0.1vh] border-purple-500' type="text" required name="name" id="name" placeholder='Enter Your Name' autoComplete='name' />
             </div>
