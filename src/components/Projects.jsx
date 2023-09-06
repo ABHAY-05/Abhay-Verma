@@ -96,7 +96,7 @@ function Projects() {
                                             </div>
                                         </div>
                                         <div className="ptitle flex flex-col gap-[0.1vh]">
-                                            <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                            <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Product Recommendation System</div>
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                         </div>
                                         <div className="pdesc text-white mx-[1.9vw] text-[1vw] -mt-[1vh]">{projects.flipkart.a}..</div>
@@ -235,7 +235,7 @@ function Projects() {
                                             </div>
                                         </div>
                                         <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[7vw]">
-                                            <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                            <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Product Recommendation System</div>
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                         </div>
                                         <div className="pdesc text-white mx-[1.9vw] text-[1vw] -mt-[1vh]">{projects.flipkart.a}..</div>
@@ -372,7 +372,7 @@ function Projects() {
                                             </div>
                                         </div>
                                         <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[23vw]">
-                                            <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                            <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Product Recommendation System</div>
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1.2vw]">{projects.flipkart.a}..</div>
@@ -509,7 +509,7 @@ function Projects() {
                                             </div>
                                         </div>
                                         <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[19vw]">
-                                            <div className='overflow-hidden text-[2.5vw] text-yellow-400'>Flipkart Recommendation System</div>
+                                            <div className='overflow-hidden text-[2.5vw] text-yellow-400'>Product Recommendation System</div>
                                             <div className='overflow-hidden text-[1.5vw] text-gray-400'>08/2023 - 9/2023</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1.2vw]">{projects.flipkart.a}..</div>

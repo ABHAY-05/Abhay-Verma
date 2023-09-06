@@ -16,7 +16,7 @@ export const github = "https://github.com/ABHAY-05";
 export const linkedin = "https://www.linkedin.com/in/abhay-verma-b3987a210";
 export const email = "Abhayvermajune5@gmail.com";
 export const phone = "+91 8756782835";
-export const resume = "https://drive.google.com/file/d/1GY06YXZY-th9vDUKV8e6P1oxZJZ9waIi/view?usp=drive_link";
+export const resume = "https://drive.google.com/file/d/1rwPPHPPvqXMhgECstDcC6IXWzYljs1zr/view?usp=sharing";
 
 export const skills = {
     pyhton: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -57,8 +57,8 @@ export const projects = {
         a: 'Implemented a full-stack recommendation system providing personalized product recommendations based on user preferences.',
         b: '•Dynamic interfaces with ReactJS, efficient server-side processing with Express.js.',
         c: 'Mongoose is used for data modeling, boosting system accuracy and scalability.',
-        link: 'https://github.com/ABHAY-05/Flipkart-Recommendation-System.git',
-        site: 'https://flipkart-recommendation-system.vercel.app'
+        link: 'https://github.com/ABHAY-05/Product-Recommendation-System.git',
+        site: 'https://myproduct-recommendation-system.vercel.app'
     },
     IRIS : {
         a: 'Created IRIS Virtual Assistant using Python, ML, and Speech Recognition technologies.',
