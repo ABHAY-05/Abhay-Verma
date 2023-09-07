@@ -23,22 +23,22 @@ function Navbar() {
                 </Link>
                 <ul className='list absolute flex text-purple-500 gap-[1vw] left-[35vw] top-0 text-[3.2vh] pt-[2.5vh]'> 
                     <Link activeClass='active' to='about' spy={true} smooth={true} offset={-78}>
-                        <li className='about hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[80px] pl-[7px] cursor-pointer'>
+                        <li className='about hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[90px] pl-[4px] cursor-pointer'>
                             About
                         </li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-78}>
-                        <li className='skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[75px] pl-[7px] cursor-pointer'>
+                        <li className='skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[85px] pl-[4px] cursor-pointer'>
                             Skills
                         </li>
                     </Link>
                     <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-78}>
-                        <li className='coding hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[170px] pl-[6px] cursor-pointer'>
+                        <li className='coding hover:text-[3.2vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[180px] pl-[4px] cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
                     <Link activeClass='active' to='project' spy={true} smooth={true} offset={-78}>
-                        <li className='project hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[100px] pl-[3px] cursor-pointer'>
+                        <li className='project hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[110px] cursor-pointer'>
                             Projects
                         </li>
                     </Link>

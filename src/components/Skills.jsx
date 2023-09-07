@@ -7,19 +7,23 @@ import { skills } from '../constants/data';
 
 function Skills() {
   const [ref, inView] = useInView({
-      threshold: 0.15
+    threshold: 0.15,
+    triggerOnce: true,
   });
 
   const [tabRef, inTabView] = useInView({
-    threshold: 0.15
+    threshold: 0.15,
+    triggerOnce: true,
   });
 
   const [mobRef, inMobView] = useInView({
-    threshold: 0.15
+    threshold: 0.15,
+    triggerOnce: true,
   });
 
   const [sRef, inSView] = useInView({
-    threshold: 0.15
+    threshold: 0.15,
+    triggerOnce: true,
   });
 
   useEffect(() => {

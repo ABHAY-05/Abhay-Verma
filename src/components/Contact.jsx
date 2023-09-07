@@ -10,9 +10,18 @@ import { useInView } from 'react-intersection-observer';
 
 
 function Contact() {
-  const [ref, inView] = useInView();
-  const [tabRef, inTabView] = useInView();
-  const [mobRef, inMobView] = useInView();
+  const [ref, inView] = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const [tabRef, inTabView] = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const [mobRef, inMobView] = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
 
   const user = useRef();
 

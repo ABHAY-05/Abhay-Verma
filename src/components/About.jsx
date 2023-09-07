@@ -8,7 +8,8 @@ import '../styles/About.css';
 
 function About() {
   const [ref, inView] = useInView({
-    threshold: 0.15
+    threshold: 0.15,
+    triggerOnce: true,
   });
 
   useEffect(() => {
