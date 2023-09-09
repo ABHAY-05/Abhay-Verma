@@ -150,9 +150,9 @@ function Contact() {
             <div className='p-[1vh] w-[70vw]'>
               <textarea className='rounded-lg shadow-sm shadow-purple-500 w-[68vw] h-[35vh] text-white placeholder-purple-300 p-[1vh] bg-black border-[0.1vh] border-purple-500' name="message" id="message" cols="20" rows="10" required placeholder='Write your Message' autoComplete='message' />
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-center p-2'>
               <button className='mbtn w-[16vw] rounded-full border-[0.4vh] shadow-sm shadow-purple-500 hover:shadow-md hover:border-blue-500 hover:shadow-blue-500 hover:translate-x-1 hover:-translate-y-1 duration-500 border-purple-500' type="submit" >
-                <div className="flex hover:text-blue-500 duration-500 p-2 hover:text-[1.9vw] text-[2.6vw] gap-[1vw] text-purple-600 justify-center items-center">
+                <div className="flex hover:text-blue-500 duration-500 p-2 hover:text-[2.7vw] text-[2.6vw] gap-[1vw] text-purple-600 justify-center items-center">
                   <div>Send</div>
                   <MdSend />
                 </div>
