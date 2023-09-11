@@ -4,6 +4,8 @@
 
 * {
     overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #c08bf3 black;
 }
 
 *::-webkit-scrollbar {
