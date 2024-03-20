@@ -45,7 +45,7 @@ function Skills() {
       <div ref={ref} className="max-sm:hidden max-lg:hidden max-md:hidden w-screen h-[95vh] overflow-hidden flex flex-col items-center bg-black">
         {inView && 
         <>
-          <div className="skill text-[6vh] mt-[3vh] flex justify-center gap-[1vw] w-[20vw]">
+          <div className="skill text-[3.8vw] mt-[3vh] flex justify-center gap-[1vw] w-[20vw]">
             <div className='text-purple-500'>My</div>
             <div className='text-white'>Skills</div>
           </div>
@@ -118,7 +118,7 @@ function Skills() {
       <div ref={tabRef} className="max-sm:hidden lg:hidden max-md:hidden w-screen h-[133vh] overflow-hidden flex flex-col items-center bg-black">
         {inTabView && 
         <>
-          <div className="skill text-[4.5vh] flex justify-center gap-[1vw] w-[20vw]">
+          <div className="skill text-[3.8vw] flex justify-center gap-[1vw] w-[20vw]">
             <div className='text-purple-500'>My</div>
             <div className='text-white'>Skills</div>
           </div>
@@ -319,7 +319,7 @@ function Skills() {
               <div className="card border-[0.3vh] border-yellow-400 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
                 <img className='w-[13vw] h-[8vh] bg-yellow-300 rounded-full transition-transform transform hover:scale-110 duration-500' src={skills.express} alt="Express.js" />
               </div>
-              <div className="card border-[0.3vh] border-teal-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-teal-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+              <div className="card border-[0.3vh] border-teal-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-teal-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
                 <img className='w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500' src={skills.tailwind} alt="Tailwind CSS" />
               </div>
             </div>

@@ -27,7 +27,7 @@ function About() {
         {inView && 
         <>
             <div className='max-lg:hidden max-md:hidden absolute top-[10vh] flex gap-[8vw] pl-[10vw]'>
-              <div className='about-icon text-[5.2vh] text-purple-300 mt-[10vh] h-[20vh] w-[300px] flex justify-center items-center border-[0.5vh] border-purple-300 shadow-lg shadow-purple-500'>
+              <div className='about-icon text-[5vh] text-purple-300 mt-[10vh] h-[20vh] w-[300px] flex justify-center items-center border-[0.5vh] border-purple-300 shadow-lg shadow-purple-500'>
                   About me
               </div>
               <div className='flex flex-col w-[50vw] gap-[2vh]'>
@@ -53,7 +53,7 @@ function About() {
         {inView && 
         <>
             <div className='lg:hidden max-md:hidden absolute top-[7vh] flex gap-[8vw] pl-[8vw]'>
-              <div className='about-icon text-[5vh] text-purple-300 mt-[10vh] h-[17vh] w-[260px] flex justify-center items-center border-[0.5vh] border-purple-300 shadow-lg shadow-purple-500'>
+              <div className='about-icon text-[4.5vh] text-purple-300 mt-[10vh] h-[17vh] w-[260px] flex justify-center items-center border-[0.5vh] border-purple-300 shadow-lg shadow-purple-500'>
                   About me
               </div>
               <div className='flex flex-col w-[50vw] gap-[2vh]'>

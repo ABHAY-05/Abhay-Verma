@@ -34,7 +34,7 @@ function Home() {
                     <div className='bio absolute flex flex-col top-[15vh] pl-[10vw] w-[60vw] h-[72vh] gap-[2vh] overflow-hidden'>
                         <div className='intro overflow-hidden text-white text-[2.5vh]'>Hello, My Name is</div>
                         <div className='Name overflow-hidden text-white font-semibold text-[8vh] pr-[1vw] pb-[1vh] -mt-[3vh]'>{Bio.Name}</div>
-                        <div className='pro overflow-hidden flex gap-[1vw] text-[5vh] border-b-[0.005vh] border-purple-500 pb-[1vh] -mt-[1.5vh]'>
+                        <div className='pro overflow-hidden flex gap-[1vw] text-[2.8vw] border-b-[0.005vh] border-purple-500 pb-[1vh] -mt-[1.5vh]'>
                             <div className='text-white overflow-hidden'>I'm a</div>
                             <div className='type text-purple-500 overflow-hidden'><Typewriter /></div>
                         </div>
@@ -61,13 +61,13 @@ function Home() {
                 <>
                     <img className='image w-[30vw] h-auto absolute top-0 right-0 mt-[12vh] mr-[7vw]' src={image} alt="Abhay" />
                     <div className='bio absolute flex flex-col top-[12vh] pl-[7vw] w-[60vw] h-[72vh] gap-[2vh] overflow-hidden'>
-                        <div className='intro text-white text-[2.2vh]'>Hello, My Name is</div>
-                        <div className='Name text-white font-semibold text-[7vh] pr-[1vw] pb-[1vh] -mt-[3vh]'>{Bio.Name}</div>
-                        <div className='pro flex gap-[1vw] text-[4vh] border-b-[0.004vh] border-purple-500 pb-[1vh] -mt-[1.5vh]'>
-                            <div className='text-white'>I'm a</div>
+                        <div className='intro text-white text-[2.2vh] overflow-hidden'>Hello, My Name is</div>
+                        <div className='Name text-white font-semibold text-[7vh] pr-[1vw] pb-[1vh] -mt-[3vh] overflow-hidden'>{Bio.Name}</div>
+                        <div className='pro flex gap-[1vw] text-[3vw] border-b-[0.004vh] border-purple-500 pb-[1vh] -mt-[1.5vh]'>
+                            <div className='text-white overflow-hidden'>I'm a</div>
                             <div className='type text-purple-500'><Typewriter /></div>
                         </div>
-                        <div className="desc text-white mt-[1vh] text-[2vh]">{Bio.desc}</div>
+                        <div className="desc text-white mt-[1vh] text-[2vh] overflow-hidden">{Bio.desc}</div>
                         <div className='profile-all overflow-hidden text-gray-500 h-[9vh] flex items-center gap-[2vw]'>
                             <a href={github} target="_blank" className='git hover:text-white hover:text-[8vh] duration-500 text-[7vh]'><FaGithub /></a>
                             <a href={linkedin} target="_blank" className='linked hover:text-blue-700 hover:text-[8vh] duration-500 text-[7vh]'><FaLinkedin /></a>
@@ -92,7 +92,7 @@ function Home() {
                     <div className='biom flex flex-col gap-[0.5vh] w-[90vw] h-[53vh] overflow-hidden'>
                         <div className='intro text-white overflow-hidden'>Hello, My Name is</div>
                         <div className='Name text-white font-semibold text-[6vh] pt-[1vh] pr-[1vw] pb-[1vh] -mt-[2.4vh] overflow-hidden'>{Bio.Name}</div>
-                        <div className='pro flex gap-[1.6vw] text-[2.8vh] border-b-[0.004vh] border-purple-500 pb-[1vh] -mt-[0.5vh] overflow-hidden'>
+                        <div className='pro flex gap-[1.6vw] text-[6vw] border-b-[0.004vh] border-purple-500 pb-[1vh] -mt-[0.5vh] overflow-hidden'>
                             <div className='text-white overflow-hidden'>I'm a</div>
                             <div className='type text-purple-700 overflow-hidden'><Typewriter /></div>
                         </div>

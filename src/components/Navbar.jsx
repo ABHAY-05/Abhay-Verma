@@ -21,19 +21,19 @@ function Navbar() {
                         Abhay
                     </div>
                 </Link>
-                <ul className='list absolute flex text-purple-500 left-[35vw] top-0 text-[3.2vh] pt-[2.5vh]'> 
+                <ul className='list absolute flex text-purple-500 left-[35vw] gap-[1vw] top-0 text-[3.2vh] pt-[2.5vh]'> 
                     <Link activeClass='active' to='about' spy={true} smooth={true} offset={-78}>
                         <li className='about hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[90px] cursor-pointer'>
                             About
                         </li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-78}>
-                        <li className='skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[85px] ml-[5px] cursor-pointer'>
+                        <li className='skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[85px] cursor-pointer'>
                             Skills
                         </li>
                     </Link>
                     <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-78}>
-                        <li className='coding hover:text-[3.2vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[200px] cursor-pointer'>
+                        <li className='coding hover:text-[3.2vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[210px] cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
@@ -55,7 +55,7 @@ function Navbar() {
                         Abhay
                     </div>
                 </Link>
-                <ul className='list absolute flex text-purple-500 gap-[0.6vw] left-[30vw] top-0 text-[3vh] pt-[2.5vh]'> 
+                <ul className='list absolute flex text-purple-500 gap-[1vw] left-[30vw] top-0 text-[3vh] pt-[2.5vh]'> 
                     <Link activeClass='active' to='about' spy={true} smooth={true} offset={-78}>
                         <li className='about hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[75px] cursor-pointer'>
                             About
@@ -67,7 +67,7 @@ function Navbar() {
                         </li>
                     </Link>
                     <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-75}>
-                        <li className='coding hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[150px] cursor-pointer'>
+                        <li className='coding hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[190px] cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
