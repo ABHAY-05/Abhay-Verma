@@ -21,29 +21,29 @@ function Navbar() {
                         Abhay
                     </div>
                 </Link>
-                <ul className='list absolute flex text-purple-500 gap-[1vw] left-[35vw] top-0 text-[3.2vh] pt-[2.5vh]'> 
+                <ul className='list absolute flex text-purple-500 left-[35vw] top-0 text-[3.2vh] pt-[2.5vh]'> 
                     <Link activeClass='active' to='about' spy={true} smooth={true} offset={-78}>
-                        <li className='about hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[90px] pl-[4px] cursor-pointer'>
+                        <li className='about hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[90px] cursor-pointer'>
                             About
                         </li>
                     </Link>
                     <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-78}>
-                        <li className='skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[85px] pl-[4px] cursor-pointer'>
+                        <li className='skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[85px] ml-[5px] cursor-pointer'>
                             Skills
                         </li>
                     </Link>
                     <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-78}>
-                        <li className='coding hover:text-[3.2vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[180px] pl-[4px] cursor-pointer'>
+                        <li className='coding hover:text-[3.2vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[200px] cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
                     <Link activeClass='active' to='project' spy={true} smooth={true} offset={-78}>
-                        <li className='project hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[110px] cursor-pointer'>
+                        <li className='project hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[110px] cursor-pointer'>
                             Projects
                         </li>
                     </Link>
                 </ul>
-                <Link activeClass='activeContact' to='contact' spy={true} smooth={true} offset={-78} className='contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[10vw] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer'>
+                <Link activeClass='activeContact' to='contact' spy={true} smooth={true} offset={-78} className='contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[8.5vw] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer'>
                     Contact Me
                 </Link>
             </div>
@@ -57,22 +57,22 @@ function Navbar() {
                 </Link>
                 <ul className='list absolute flex text-purple-500 gap-[0.6vw] left-[30vw] top-0 text-[3vh] pt-[2.5vh]'> 
                     <Link activeClass='active' to='about' spy={true} smooth={true} offset={-78}>
-                        <li className='about hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[75px] pl-[7px] cursor-pointer'>
+                        <li className='about hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[75px] cursor-pointer'>
                             About
                         </li>
                     </Link>
                         <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-75}>
-                        <li className='skills hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[70px] pl-[7px] cursor-pointer'>
+                        <li className='skills hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[70px] cursor-pointer'>
                             Skills
                         </li>
                     </Link>
                     <Link activeClass='active' to='codingProfile' spy={true} smooth={true} offset={-75}>
-                        <li className='coding hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[150px] pl-[6px] cursor-pointer'>
+                        <li className='coding hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[150px] cursor-pointer'>
                             Coding Profile
                         </li>
                     </Link>
                     <Link activeClass='active' to='project' spy={true} smooth={true} offset={-75}>
-                        <li className='project hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] inline-block w-[90px] pl-[2px] cursor-pointer'>
+                        <li className='project hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[90px] cursor-pointer'>
                             Projects
                         </li>
                     </Link>
