@@ -69,6 +69,7 @@ export const projects = {
         a: 'Developing MedScan: A medical image processing web app using React, FastAPI, and Tensorflow.',
         b: 'Implemented TensorFlow.js for real-time medical condition detection, improving healthcare outcomes.',
         c: 'Collaborated effectively in a diverse team, delivering a user-friendly, secure app with positive user feedback.',
-        link: 'https://github.com/ABHAY-05/MEDSCAN.git'
+        link: 'https://github.com/ABHAY-05/MEDSCAN.git',
+        site: 'https://medscan.vercel.app'
     }
 }

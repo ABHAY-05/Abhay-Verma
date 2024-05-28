@@ -170,11 +170,18 @@ function Projects() {
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.medScan.a}..</div>
-                                        <a className='mt-[5vh]' href={projects.medScan.link} target='_blank'>
-                                            <button className='pbtn text-green-400 border-[0.2vh] rounded-full border-green-400 p-[0.5vh] px-[2vw] shadow-sm shadow-green-400'>
-                                                Code
-                                            </button>
-                                        </a>
+                                        <div className='flex gap-[4vw] mt-[4vh]'>
+                                            <a href={projects.medScan.link} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 p-[0.5vh] px-[2vw] shadow-sm shadow-yellow-400'>
+                                                    Code
+                                                </button>
+                                            </a>
+                                            <a href={projects.medScan.site} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 p-[0.5vh] px-[2vw] shadow-sm shadow-yellow-400'>
+                                                    Demo
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -307,11 +314,18 @@ function Projects() {
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.medScan.a}..</div>
-                                        <a className='mt-[1.8vh]' href={projects.medScan.link} target='_blank'>
-                                            <button className='pbtn text-green-400 border-[0.2vh] rounded-full border-green-400 p-[0.5vh] px-[2.4vw] shadow-sm shadow-green-400'>
-                                                Code
-                                            </button>
-                                        </a>
+                                        <div className='flex gap-[4vw] mt-[1.8vh]'>
+                                            <a href={projects.medScan.link} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 p-[0.5vh] px-[2.4vw] shadow-sm shadow-yellow-400'>
+                                                    Code
+                                                </button>
+                                            </a>
+                                            <a href={projects.medScan.site} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 p-[0.5vh] px-[2.4vw] shadow-sm shadow-yellow-400'>
+                                                    Demo
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -440,11 +454,18 @@ function Projects() {
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1vw]">{projects.medScan.a}..</div>
-                                        <a href={projects.medScan.link} target='_blank'>
-                                            <button className='pbtn text-green-400 border-[0.2vh] rounded-full border-green-400 px-[2.6vw] shadow-sm shadow-green-400'>
-                                                Code
-                                            </button>
-                                        </a>
+                                        <div className='flex gap-[4vw] mt-[0.8vh]'>
+                                            <a href={projects.medScan.link} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 px-[2.6vw] shadow-sm shadow-yellow-400'>
+                                                    Code
+                                                </button>
+                                            </a>
+                                            <a href={projects.medScan.site} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 px-[2.6vw] shadow-sm shadow-yellow-400'>
+                                                    Demo
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -573,11 +594,18 @@ function Projects() {
                                             <div className='overflow-hidden text-[1.5vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1vw]">{projects.medScan.a}..</div>
-                                        <a href={projects.medScan.link} target='_blank'>
-                                            <button className='pbtn text-green-400 border-[0.2vh] rounded-full border-green-400 px-[2.6vw] text-[2vh] shadow-sm shadow-green-400'>
-                                                Code
-                                            </button>
-                                        </a>
+                                        <div className='flex gap-[4vw]'>
+                                            <a href={projects.medScan.link} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 px-[2.6vw] text-[2vh] shadow-sm shadow-yellow-400'>
+                                                    Code
+                                                </button>
+                                            </a>
+                                            <a href={projects.medScan.site} target='_blank'>
+                                                <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 px-[2.6vw] text-[2vh] shadow-sm shadow-yellow-400'>
+                                                    Demo
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
