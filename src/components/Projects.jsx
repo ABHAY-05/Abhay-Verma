@@ -152,24 +152,22 @@ function Projects() {
                                     <div className="hover:scale-105 duration-500 flex flex-col items-center gap-[1vh]">
                                         <img className='w-[20vw] h-[20vh] mt-[3vh] rounded-md bg-blue-400' src={medScan} alt="MedScan" />
                                         <div className="flex flex-col gap-[0.8vh]">
-                                            <div className="flex gap-[0.5vw] pb-[0.2vh]">
+                                            <div className="flex gap-[0.7vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">React</div>
-                                                <div className="flex justify-center items-center text-yellow-500 border-yellow-500 shadow-sm shadow-yellow-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">Express.js</div>
+                                                <div className="flex justify-center items-center text-yellow-500 border-teal-500 shadow-sm shadow-teal-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">FastAPI</div>
                                                 <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">JavaScript</div>
-                                                <div className="flex justify-center items-center text-green-500 border-green-500 shadow-sm shadow-green-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">MongoDB</div>
+                                                <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">Python</div>
                                                 <div className="flex justify-center items-center text-white border-white shadow-sm shadow-white border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">ML</div>
                                             </div>
-                                            <div className="flex gap-[0.5vw] pb-[0.2vh]">
-                                                <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">Python</div>
+                                            <div className="flex gap-[0.7vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">CSS</div>
-                                                <div className="flex justify-center items-center text-lime-500 border-lime-500 shadow-sm shadow-lime-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">NodeJS</div>
                                                 <div className="flex justify-center items-center text-blue-700 border-blue-700 shadow-sm shadow-blue-700 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">Tailwind</div>
                                                 <div className="flex justify-center items-center text-orange-500 border-orange-500 shadow-sm shadow-orange-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">Tensorflow</div>
                                             </div>
                                         </div>
                                         <div className="ptitle flex items-center gap-[7vw] mt-[2vh]">
                                             <div className='overflow-hidden text-[1.5vw] text-emerald-500'>MedScan</div>
-                                            <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - Present</div>
+                                            <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.medScan.a}..</div>
                                         <a className='mt-[5vh]' href={projects.medScan.link} target='_blank'>
@@ -291,24 +289,22 @@ function Projects() {
                                     <div className="hover:scale-105 duration-500 flex flex-col items-center gap-[1vh]">
                                         <img className='w-[27vw] h-[20vh] mt-[3vh] rounded-md bg-blue-400' src={medScan} alt="MedScan" />
                                         <div className="flex flex-col gap-[0.8vh]">
-                                            <div className="flex gap-[1vw] pb-[0.2vh]">
+                                            <div className="flex gap-[1.5vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">React</div>
-                                                <div className="flex justify-center items-center text-yellow-500 border-yellow-500 shadow-sm shadow-yellow-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">Express.js</div>
+                                                <div className="flex justify-center items-center text-yellow-500 border-teal-500 shadow-sm shadow-teal-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.7vw] font-serif">FastAPI</div>
                                                 <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">JavaScript</div>
-                                                <div className="flex justify-center items-center text-green-500 border-green-500 shadow-sm shadow-green-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">MongoDB</div>
+                                                <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">Python</div>
                                                 <div className="flex justify-center items-center text-white border-white shadow-sm shadow-white border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">ML</div>
                                             </div>
-                                            <div className="flex gap-[1vw] pb-[0.2vh]">
-                                                <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">Python</div>
+                                            <div className="flex gap-[1.5vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">CSS</div>
-                                                <div className="flex justify-center items-center text-lime-500 border-lime-500 shadow-sm shadow-lime-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">NodeJS</div>
                                                 <div className="flex justify-center items-center text-blue-700 border-blue-700 shadow-sm shadow-blue-700 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">Tailwind</div>
                                                 <div className="flex justify-center items-center text-orange-500 border-orange-500 shadow-sm shadow-orange-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[0.9vw] font-serif">Tensorflow</div>
                                             </div>
                                         </div>
                                         <div className="ptitle flex items-center gap-[14vw] mt-[2vh]">
                                             <div className='overflow-hidden text-[1.5vw] text-emerald-500'>MedScan</div>
-                                            <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - Present</div>
+                                            <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[1.9vw] text-[1vw]">{projects.medScan.a}..</div>
                                         <a className='mt-[1.8vh]' href={projects.medScan.link} target='_blank'>
@@ -375,7 +371,7 @@ function Projects() {
                                                 <div className="flex justify-center items-center text-lime-500 border-lime-500 shadow-sm shadow-lime-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">NodeJS</div>
                                             </div>
                                         </div>
-                                        <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[23vw]">
+                                        <div className="ptitle flex items-center gap-[16vw] mt-[2vh]">
                                             <div className='overflow-hidden text-[1.5vw] text-yellow-400'>Product Recommendation System</div>
                                             <div className='overflow-hidden text-[1vw] text-gray-400'>08/2023 - 9/2023</div>
                                         </div>
@@ -430,22 +426,18 @@ function Projects() {
                                         <div className="flex flex-col gap-[0.8vh]">
                                             <div className="flex gap-[1vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">React</div>
-                                                <div className="flex justify-center items-center text-yellow-500 border-yellow-500 shadow-sm shadow-yellow-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">Express.js</div>
+                                                <div className="flex justify-center items-center text-yellow-500 border-teal-500 shadow-sm shadow-teal-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">FastAPI</div>
                                                 <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">JavaScript</div>
-                                                <div className="flex justify-center items-center text-green-500 border-green-500 shadow-sm shadow-green-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">MongoDB</div>
                                                 <div className="flex justify-center items-center text-white border-white shadow-sm shadow-white border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">ML</div>
                                                 <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">Python</div>
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">CSS</div>
-                                                <div className="flex justify-center items-center text-lime-500 border-lime-500 shadow-sm shadow-lime-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">NodeJS</div>
-                                            </div>
-                                            <div className="flex gap-[1vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-700 border-blue-700 shadow-sm shadow-blue-700 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">Tailwind</div>
                                                 <div className="flex justify-center items-center text-orange-500 border-orange-500 shadow-sm shadow-orange-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">Tensorflow</div>
                                             </div>
                                         </div>
                                         <div className="ptitle flex items-center gap-[30vw] mt-[2vh]">
                                             <div className='overflow-hidden text-[1.5vw] text-emerald-500'>MedScan</div>
-                                            <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - Present</div>
+                                            <div className='overflow-hidden text-[1vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1vw]">{projects.medScan.a}..</div>
                                         <a href={projects.medScan.link} target='_blank'>
@@ -512,12 +504,12 @@ function Projects() {
                                                 <div className="flex justify-center items-center text-lime-500 border-lime-500 shadow-sm shadow-lime-500 border-[0.2vh] rounded-full px-[0.6vw] py-[0.2vh] text-[1.3vw] font-serif">NodeJS</div>
                                             </div>
                                         </div>
-                                        <div className="ptitle flex flex-col gap-[0.1vh] mt-[1vh] -ml-[19vw]">
+                                        <div className="ptitle flex items-center gap-[10vw] mt-[2vh]">
                                             <div className='overflow-hidden text-[2.5vw] text-yellow-400'>Product Recommendation System</div>
                                             <div className='overflow-hidden text-[1.5vw] text-gray-400'>08/2023 - 9/2023</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1.2vw]">{projects.flipkart.a}..</div>
-                                        <div className='flex gap-[10vw] -mt-[0.5vh]'>
+                                        <div className='flex gap-[10vw]'>
                                             <a href={projects.flipkart.link} target='_blank'>
                                                 <button className='pbtn text-yellow-400 border-[0.2vh] rounded-full border-yellow-400 px-[2.6vw] text-[2vh] shadow-sm shadow-yellow-400'>
                                                     Code
@@ -565,24 +557,20 @@ function Projects() {
                                     <div className="hover:scale-105 duration-500 flex flex-col items-center gap-[1vh]">
                                         <img className='w-[53vw] h-[17vh] mt-[2vh] rounded-md bg-blue-400' src={medScan} alt="MedScan" />
                                         <div className="flex flex-col gap-[0.8vh]">
-                                            <div className="flex gap-[1vw] pb-[0.2vh]">
+                                            <div className="flex gap-[1.2vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">React</div>
-                                                <div className="flex justify-center items-center text-yellow-500 border-yellow-500 shadow-sm shadow-yellow-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">Express.js</div>
+                                                <div className="flex justify-center items-center text-yellow-500 border-teal-500 shadow-sm shadow-teal-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.4vh] text-[1vw] font-serif">FastAPI</div>
                                                 <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">JavaScript</div>
-                                                <div className="flex justify-center items-center text-green-500 border-green-500 shadow-sm shadow-green-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">MongoDB</div>
                                                 <div className="flex justify-center items-center text-white border-white shadow-sm shadow-white border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">ML</div>
                                                 <div className="flex justify-center items-center text-yellow-400 border-yellow-400 shadow-sm shadow-yellow-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">Python</div>
                                                 <div className="flex justify-center items-center text-blue-400 border-blue-400 shadow-sm shadow-blue-400 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">CSS</div>
-                                                <div className="flex justify-center items-center text-lime-500 border-lime-500 shadow-sm shadow-lime-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">NodeJS</div>
-                                            </div>
-                                            <div className="flex gap-[1vw] pb-[0.2vh]">
                                                 <div className="flex justify-center items-center text-blue-700 border-blue-700 shadow-sm shadow-blue-700 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">Tailwind</div>
                                                 <div className="flex justify-center items-center text-orange-500 border-orange-500 shadow-sm shadow-orange-500 border-[0.2vh] rounded-full px-[0.5vw] py-[0.2vh] text-[1.2vw] font-serif">Tensorflow</div>
                                             </div>
                                         </div>
                                         <div className="ptitle flex items-center gap-[30vw] mt-[2vh]">
                                             <div className='overflow-hidden text-[2.5vw] text-emerald-500'>MedScan</div>
-                                            <div className='overflow-hidden text-[1.5vw] text-gray-400'>02/2023 - Present</div>
+                                            <div className='overflow-hidden text-[1.5vw] text-gray-400'>02/2023 - 05/2024</div>
                                         </div>
                                         <div className="pdesc text-white mx-[4vw] text-[1vw]">{projects.medScan.a}..</div>
                                         <a href={projects.medScan.link} target='_blank'>

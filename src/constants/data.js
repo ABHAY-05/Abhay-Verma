@@ -66,9 +66,9 @@ export const projects = {
         link: 'https://github.com/ABHAY-05/IRIS.git'
     },
     medScan : {
-        a: 'Developing MedScan: A medical image processing web app using React, Node.js, and MongoDB.',
+        a: 'Developing MedScan: A medical image processing web app using React, FastAPI, and Tensorflow.',
         b: 'Implemented TensorFlow.js for real-time medical condition detection, improving healthcare outcomes.',
         c: 'Collaborated effectively in a diverse team, delivering a user-friendly, secure app with positive user feedback.',
-        link: ''
+        link: 'https://github.com/ABHAY-05/MEDSCAN.git'
     }
 }
