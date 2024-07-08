@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { prof } from '../constants/data';
+import React, { useState, useEffect } from "react";
+import { prof } from "../constants/data";
 
-const Typewriter = () => {
-  const [currentItemIndex, setCurrentItemIndex] = useState(0);
-  const [displayedItem, setDisplayedItem] = useState('');
-  const [isTyping, setIsTyping] = useState(true);
+const Typewriter: React.FC = () => {
+  const [currentItemIndex, setCurrentItemIndex] = useState<number>(0);
+  const [displayedItem, setDisplayedItem] = useState<string>("");
+  const [isTyping, setIsTyping] = useState<boolean>(true);
 
   useEffect(() => {
     const typewriterInterval = setInterval(() => {
