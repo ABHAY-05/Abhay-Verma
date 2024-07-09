@@ -6,7 +6,7 @@ import "../styles/Navbar.css";
 import { Link } from "react-scroll";
 
 const Navbar: React.FC = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState<boolean>(false);
   useEffect(() => {
     VanillaTilt.init(document.querySelector(".logo") as HTMLElement);
   });
@@ -23,11 +23,11 @@ const Navbar: React.FC = () => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute font-bold top-0 left-[10vw] text-purple-500 text-[5vh] pt-[1.2vh] cursor-pointer">
+            <div className="logo absolute font-bold top-[1.2vh] left-[10vw] text-purple-500 text-[5vh] cursor-pointer">
               Abhay
             </div>
           </Link>
-          <ul className="list absolute flex text-purple-500 left-[35vw] gap-[1vw] top-0 text-[3.2vh] pt-[2.5vh]">
+          <ul className="list absolute flex text-purple-500 left-[32vw] gap-[0.3vw] top-0 text-[25px] pt-[2.5vh]">
             <Link
               activeClass="active"
               to="about"
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="about hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[90px] cursor-pointer">
+              <li className="about hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[100px] cursor-pointer">
                 About
               </li>
             </Link>
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="skills hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[85px] cursor-pointer">
+              <li className="skills hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[85px] cursor-pointer">
                 Skills
               </li>
             </Link>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="coding hover:text-[3.2vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[210px] cursor-pointer">
+              <li className="coding hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[195px] cursor-pointer">
                 Coding Profile
               </li>
             </Link>
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="project hover:text-[3.3vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[110px] cursor-pointer">
+              <li className="project hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[130px] cursor-pointer">
                 Projects
               </li>
             </Link>
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
             spy={true}
             smooth={true}
             offset={-78}
-            className="contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[8.5vw] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer"
+            className="contact hover:text-[20.5px] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[19.5px] absolute right-[8.5vw] top-[1.5vh] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer"
           >
             Contact Me
           </Link>
@@ -94,11 +94,11 @@ const Navbar: React.FC = () => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute font-bold top-0 left-[7vw] text-purple-500 text-[4.5vh] mt-[1.4vh] cursor-pointer">
+            <div className="logo absolute font-bold top-[1.4vh] left-[7vw] text-purple-500 text-[4.5vh] cursor-pointer">
               Abhay
             </div>
           </Link>
-          <ul className="list absolute flex text-purple-500 gap-[1vw] left-[30vw] top-0 text-[3vh] pt-[2.5vh]">
+          <ul className="list absolute flex text-purple-500 left-[25.5vw] gap-[0.3vw] top-0 text-[21px] pt-[2.5vh]">
             <Link
               activeClass="active"
               to="about"
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="about hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[75px] cursor-pointer">
+              <li className="about hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[95px] cursor-pointer">
                 About
               </li>
             </Link>
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-75}
             >
-              <li className="skills hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[70px] cursor-pointer">
+              <li className="skills hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[80px] cursor-pointer">
                 Skills
               </li>
             </Link>
@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-75}
             >
-              <li className="coding hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[190px] cursor-pointer">
+              <li className="coding hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[180px] cursor-pointer">
                 Coding Profile
               </li>
             </Link>
@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-75}
             >
-              <li className="project hover:text-[3.1vh] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[90px] cursor-pointer">
+              <li className="project hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[108px] cursor-pointer">
                 Projects
               </li>
             </Link>
@@ -150,7 +150,7 @@ const Navbar: React.FC = () => {
             spy={true}
             smooth={true}
             offset={-75}
-            className="contact hover:text-[2.6vh] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[2.5vh] absolute right-0 top-0 mt-[1.5vh] mr-[7vw] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer"
+            className="contact hover:text-[18.5px] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[17.5px] absolute right-[5.5vw] top-[1.5vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer"
           >
             Contact Me
           </Link>
@@ -165,7 +165,7 @@ const Navbar: React.FC = () => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute font-bold top-0 left-[7vw] text-purple-500 text-[4vh] mt-[1.2vh] cursor-pointer pr-[1vw]">
+            <div className="logo absolute font-bold top-[1.2vh] left-[7vw] text-purple-500 text-[4vh] cursor-pointer pr-[1vw]">
               Abhay
             </div>
           </Link>
@@ -247,7 +247,7 @@ const Navbar: React.FC = () => {
               spy={true}
               smooth={true}
               offset={-70}
-              className="contactm hover:text-[2.2vh] text-purple-400 mb-3 ml-1 mt-1 w-[135px] flex justify-center hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] text-[2.4vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer"
+              className="contactm hover:text-[2.2vh] text-purple-400 mb-3 ml-1 mt-1 w-[150px] flex justify-center hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] text-[2.4vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer"
             >
               Contact Me
             </Link>

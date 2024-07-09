@@ -48,12 +48,12 @@ export const skills: { [key: string]: string } = {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   reactRedux:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-  vsCode:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-  pyCharm:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg",
-  jupyter:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+  ts:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  next:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  fast:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
   openCV:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
 };
