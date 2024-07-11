@@ -4,18 +4,28 @@ import { CgMenuRight } from "react-icons/cg";
 import VanillaTilt from "vanilla-tilt";
 import "../styles/Navbar.css";
 import { Link } from "react-scroll";
+import DarkMode from "./darkMode";
+import { setDarkMode } from "../dark-mode/reducer";
+import { useDispatch } from "react-redux";
+import type { AppDispatch } from "../store";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [menu, setMenu] = useState<boolean>(false);
+
+  const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+  const dispatch = useAppDispatch();
+
   useEffect(() => {
     VanillaTilt.init(document.querySelector(".logo") as HTMLElement);
   });
 
   return (
     <>
-      <nav className="bg-black fixed h-[10vh] w-screen z-10 shadow-sm shadow-black">
+      <nav
+        className={`${darkMode ? "bg-black shadow-black" : "bg-white shadow-white"} fixed z-10 h-[10vh] w-screen shadow-sm`}
+      >
         {/* Desktop Section */}
-        <div className="max-md:hidden max-lg:hidden">
+        <div className="max-lg:hidden max-md:hidden">
           <Link
             activeClass="active1"
             to="home"
@@ -23,11 +33,11 @@ const Navbar: React.FC = () => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute font-bold top-[1.2vh] left-[10vw] text-purple-500 text-[5vh] cursor-pointer">
+            <div className="logo absolute left-[9.8vw] cursor-pointer p-1 text-[5vh] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
-          <ul className="list absolute flex text-purple-500 left-[32vw] gap-[0.3vw] top-0 text-[25px] pt-[2.5vh]">
+          <ul className="list absolute left-[32vw] top-0 flex gap-[0.3vw] pt-[2.5vh] text-[25px] text-purple-500">
             <Link
               activeClass="active"
               to="about"
@@ -35,7 +45,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="about hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[100px] cursor-pointer">
+              <li className="about flex w-[95px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-amber-400">
                 About
               </li>
             </Link>
@@ -46,7 +56,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="skills hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[85px] cursor-pointer">
+              <li className="skills flex w-[80px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-amber-400">
                 Skills
               </li>
             </Link>
@@ -57,7 +67,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="coding hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[195px] cursor-pointer">
+              <li className="coding flex w-[190px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-amber-400">
                 Coding Profile
               </li>
             </Link>
@@ -68,7 +78,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="project hover:text-[26px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[130px] cursor-pointer">
+              <li className="project flex w-[125px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-amber-400">
                 Projects
               </li>
             </Link>
@@ -79,14 +89,14 @@ const Navbar: React.FC = () => {
             spy={true}
             smooth={true}
             offset={-78}
-            className="contact hover:text-[20.5px] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[19.5px] absolute right-[8.5vw] top-[1.5vh] p-[1.5vh] border-2 rounded-full border-violet-700 cursor-pointer"
+            className="contact absolute right-[8.5vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.5vh] text-[19.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[20.5px] hover:text-amber-400 hover:shadow-md hover:shadow-violet-800"
           >
             Contact Me
           </Link>
         </div>
 
         {/* Tablet Section */}
-        <div className="lg:hidden max-md:hidden">
+        <div className="max-md:hidden lg:hidden">
           <Link
             activeClass="active1"
             to="home"
@@ -94,11 +104,11 @@ const Navbar: React.FC = () => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute font-bold top-[1.4vh] left-[7vw] text-purple-500 text-[4.5vh] cursor-pointer">
+            <div className="logo absolute left-[7vw] top-[1.4vh] cursor-pointer text-[4.5vh] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
-          <ul className="list absolute flex text-purple-500 left-[25.5vw] gap-[0.3vw] top-0 text-[21px] pt-[2.5vh]">
+          <ul className="list absolute left-[25.5vw] top-0 flex gap-[0.3vw] pt-[2.5vh] text-[21px] text-purple-500">
             <Link
               activeClass="active"
               to="about"
@@ -106,7 +116,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-78}
             >
-              <li className="about hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[95px] cursor-pointer">
+              <li className="about flex w-[90px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-amber-400">
                 About
               </li>
             </Link>
@@ -117,7 +127,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-75}
             >
-              <li className="skills hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[80px] cursor-pointer">
+              <li className="skills flex w-[70px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-amber-400">
                 Skills
               </li>
             </Link>
@@ -128,7 +138,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-75}
             >
-              <li className="coding hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[180px] cursor-pointer">
+              <li className="coding flex w-[165px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-amber-400">
                 Coding Profile
               </li>
             </Link>
@@ -139,7 +149,7 @@ const Navbar: React.FC = () => {
               smooth={true}
               offset={-75}
             >
-              <li className="project hover:text-[22px] hover:text-amber-400 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] flex items-center justify-center w-[108px] cursor-pointer">
+              <li className="project flex w-[95px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-amber-400">
                 Projects
               </li>
             </Link>
@@ -150,14 +160,14 @@ const Navbar: React.FC = () => {
             spy={true}
             smooth={true}
             offset={-75}
-            className="contact hover:text-[18.5px] text-purple-400 hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:-translate-y-1 hover:-translate-x-1 duration-[0.4s] text-[17.5px] absolute right-[5.5vw] top-[1.5vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer"
+            className="contact absolute right-[5.6vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.2vh] text-[17.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[18.5px] hover:text-amber-400 hover:shadow-md hover:shadow-violet-800"
           >
             Contact Me
           </Link>
         </div>
 
         {/* Mobile Section */}
-        <div className="md:hidden lg:hidden overflow-hidden">
+        <div className="overflow-hidden md:hidden lg:hidden">
           <Link
             activeClass="active1"
             to="home"
@@ -165,13 +175,13 @@ const Navbar: React.FC = () => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute font-bold top-[1.2vh] left-[7vw] text-purple-500 text-[4vh] cursor-pointer pr-[1vw]">
+            <div className="logo absolute left-[7vw] top-[1.2vh] cursor-pointer pr-[1vw] text-[4vh] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
           <div
             onClick={() => setMenu(true)}
-            className="menu text-violet-600 absolute top-0 right-0 mt-[3vh] mr-[7vw] z-25"
+            className="menu z-25 absolute right-0 top-0 mr-[7vw] mt-[3vh] text-violet-600"
           >
             <CgMenuRight size={25} />
           </div>
@@ -181,13 +191,15 @@ const Navbar: React.FC = () => {
         <>
           <div
             onClick={() => setMenu(false)}
-            className="h-screen w-screen fixed bg-black opacity-60 z-20"
+            className="fixed z-20 h-screen w-screen bg-black opacity-60"
           />
-          <div className="mNav fixed pl-[3vw] gap-[2vh] flex flex-col h-screen w-[50vw] right-0 md:hidden lg:hidden bg-black z-20">
-            <ul className="flex flex-col text-purple-500 gap-[2vh] text-[3vh] mt-[10vh]">
+          <div
+            className={`mNav fixed right-0 flex h-screen w-[50vw] flex-col gap-[2vh] pl-[3vw] md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"} z-20`}
+          >
+            <ul className="mt-[10vh] flex flex-col gap-[2vh] text-[3vh] text-purple-500">
               <div
                 onClick={() => setMenu(false)}
-                className="absolute z-20 top-0 right-0 mt-[3vh] mr-[7vw]"
+                className="absolute right-0 top-0 z-20 mr-[7vw] mt-[3vh]"
               >
                 <AiOutlineClose size={25} />
               </div>
@@ -199,7 +211,7 @@ const Navbar: React.FC = () => {
                 smooth={true}
                 offset={-80}
               >
-                <li className="aboutm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer">
+                <li className="aboutm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-amber-400">
                   About
                 </li>
               </Link>
@@ -211,7 +223,7 @@ const Navbar: React.FC = () => {
                 smooth={true}
                 offset={-80}
               >
-                <li className="skillsm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer">
+                <li className="skillsm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-amber-400">
                   Skills
                 </li>
               </Link>
@@ -223,7 +235,7 @@ const Navbar: React.FC = () => {
                 smooth={true}
                 offset={-75}
               >
-                <li className="codingm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer">
+                <li className="codingm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-amber-400">
                   Coding Profile
                 </li>
               </Link>
@@ -235,7 +247,7 @@ const Navbar: React.FC = () => {
                 smooth={true}
                 offset={-75}
               >
-                <li className="projectm hover:text-[3.1vh] hover:text-amber-400 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] inline-block w-full p-1 px-1 cursor-pointer">
+                <li className="projectm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-amber-400">
                   Projects
                 </li>
               </Link>
@@ -247,10 +259,16 @@ const Navbar: React.FC = () => {
               spy={true}
               smooth={true}
               offset={-70}
-              className="contactm hover:text-[2.2vh] text-purple-400 mb-3 ml-1 mt-1 w-[150px] flex justify-center hover:shadow-lg hover:text-amber-400 hover:shadow-violet-800 hover:translate-y-1 hover:translate-x-1 duration-[0.4s] text-[2.4vh] p-[1.2vh] border-2 rounded-full border-violet-700 cursor-pointer"
+              className="contactm mb-3 ml-1 mt-1 flex w-[150px] cursor-pointer justify-center rounded-full border-2 border-violet-700 p-[1.2vh] text-[2.4vh] text-purple-400 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[2.2vh] hover:text-amber-400 hover:shadow-md hover:shadow-violet-800"
             >
               Contact Me
             </Link>
+            <div
+              onClick={() => dispatch(setDarkMode(!darkMode))}
+              className="contactm mt-[32vh] w-[180px] cursor-pointer overflow-hidden p-[1.2vh]"
+            >
+              <DarkMode darkMode={darkMode} mobile={true} />
+            </div>
           </div>
         </>
       )}

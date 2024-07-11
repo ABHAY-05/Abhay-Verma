@@ -5,7 +5,7 @@ import "../styles/skills.css";
 import VanillaTilt from "vanilla-tilt";
 import { skills } from "../constants/data";
 
-const Skills: React.FC = () => {
+const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [ref, inView] = useInView({
     threshold: 0.15,
     triggerOnce: true,
@@ -44,142 +44,144 @@ const Skills: React.FC = () => {
       {/* Desktop Section */}
       <div
         ref={ref}
-        className="max-sm:hidden max-lg:hidden max-md:hidden w-screen h-[95vh] overflow-hidden flex flex-col items-center bg-black"
+        className={`flex h-[95vh] w-screen flex-col items-center overflow-hidden max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inView && (
           <>
-            <div className="skill text-[3.8vw] mt-[3vh] flex justify-center gap-[1vw] w-[20vw]">
+            <div className="skill mt-[3vh] flex w-[20vw] justify-center gap-[1vw] text-[3.8vw]">
               <div className="text-purple-500">My</div>
-              <div className="text-white">Skills</div>
+              <div className={`${darkMode ? "text-white" : "text-black"}`}>
+                Skills
+              </div>
             </div>
-            <div className="mt-[4vh] flex flex-col gap-[3vh] w-screen items-center">
+            <div className="mt-[4vh] flex w-screen flex-col items-center gap-[3vh]">
               <div className="col1 flex gap-[2vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-sky-700 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[16vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[16vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.python}
                     alt="Python"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-yellow-300 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-300 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[6vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[6vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.js}
                     alt="JavaScript"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.ts}
                     alt="TypeScript"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-lime-500 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-lime-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-lime-500 p-[1vh] shadow-md shadow-lime-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.nodeJS}
                     alt="NodeJS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-600 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-600 p-[1vh] shadow-md shadow-blue-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.cplus}
                     alt="C++"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.html}
                     alt="HTML"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[2vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-blue-500 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-blue-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.css}
                     alt="CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-sky-700 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-600 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-sky-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mysql}
                     alt="MySQL"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-green-600 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-green-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-green-600 p-[1vh] shadow-md shadow-green-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mongo}
                     alt="MongoDB"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-sky-400 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-400 p-[1vh] shadow-md shadow-sky-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.react}
                     alt="React"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-gray-400 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-400 p-[1vh] shadow-md shadow-gray-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.next}
                     alt="Next.JS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-purple-500 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-purple-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-purple-500 p-[1vh] shadow-md shadow-purple-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.reactRedux}
                     alt="Redux"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[2vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-yellow-400 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-400 p-[1vh] shadow-md shadow-yellow-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] bg-yellow-300 rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform rounded-full bg-yellow-300 transition-transform duration-500 hover:scale-110"
                     src={skills.express}
                     alt="Express.js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tailwind}
                     alt="Tailwind CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-teal-700 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-teal-600 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-teal-700 p-[1vh] shadow-md shadow-teal-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.fast}
                     alt="FastApi"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-gray-400 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-400 p-[1vh] shadow-md shadow-gray-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] bg-white rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform rounded-full bg-white transition-transform duration-500 hover:scale-110"
                     src={skills.flask}
                     alt="Flask"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tensorflow}
                     alt="Tensorflow"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-500 w-[10vw] h-[20vh] rounded-[17%] shadow-md p-[1vh] shadow-red-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[20vh] w-[10vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-red-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.openCV}
                     alt="OpenCV"
                   />
@@ -193,146 +195,148 @@ const Skills: React.FC = () => {
       {/* Tablet Section */}
       <div
         ref={tabRef}
-        className="max-sm:hidden lg:hidden max-md:hidden w-screen h-[133vh] overflow-hidden flex flex-col items-center bg-black"
+        className={`flex h-[133vh] w-screen flex-col items-center overflow-hidden max-md:hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inTabView && (
           <>
-            <div className="skill text-[3.8vw] flex justify-center gap-[1vw] w-[20vw]">
+            <div className="skill flex w-[20vw] justify-center gap-[1vw] text-[3.8vw]">
               <div className="text-purple-500">My</div>
-              <div className="text-white">Skills</div>
+              <div className={`${darkMode ? "text-white" : "text-black"}`}>
+                Skills
+              </div>
             </div>
-            <div className="mt-[4vh] flex flex-col gap-[4vh] w-screen items-center">
+            <div className="mt-[4vh] flex w-screen flex-col items-center gap-[4vh]">
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-sky-700 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[16vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[16vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.python}
                     alt="Python"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-yellow-300 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-300 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[6vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[6vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.js}
                     alt="JavaScript"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.ts}
                     alt="TypeScript"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-lime-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-lime-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-lime-500 p-[1vh] shadow-md shadow-lime-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.nodeJS}
                     alt="NodeJS"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-blue-600 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-600 p-[1vh] shadow-md shadow-blue-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.cplus}
                     alt="C++"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.html}
                     alt="HTML"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-blue-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.css}
                     alt="CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-sky-700 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-600 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-sky-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mysql}
                     alt="MySQL"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-green-600 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-green-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-green-600 p-[1vh] shadow-md shadow-green-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mongo}
                     alt="MongoDB"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-sky-400 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-400 p-[1vh] shadow-md shadow-sky-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.react}
                     alt="React"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-gray-400 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-400 p-[1vh] shadow-md shadow-gray-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.next}
                     alt="Next.Js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-purple-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-purple-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-purple-500 p-[1vh] shadow-md shadow-purple-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.reactRedux}
                     alt="Redux"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-yellow-400 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-400 p-[1vh] shadow-md shadow-yellow-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[9vw] h-[14vh] bg-yellow-300 rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[9vw] transform rounded-full bg-yellow-300 transition-transform duration-500 hover:scale-110"
                     src={skills.express}
                     alt="Express.js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tailwind}
                     alt="Tailwind CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-teal-700 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-teal-600 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-teal-700 p-[1vh] shadow-md shadow-teal-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.fast}
                     alt="FastApi"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-gray-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-500 p-[1vh] shadow-md shadow-gray-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[9vw] h-[14vh] bg-white rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[9vw] transform rounded-full bg-white transition-transform duration-500 hover:scale-110"
                     src={skills.flask}
                     alt="Flask"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-orange-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tensorflow}
                     alt="Tensorflow"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-500 w-[12vw] h-[18vh] rounded-[17%] shadow-md p-[1vh] shadow-red-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[18vh] w-[12vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-red-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.openCV}
                     alt="OpenCV"
                   />
@@ -346,148 +350,150 @@ const Skills: React.FC = () => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className="max-sm:hidden md:hidden w-screen h-[120vh] overflow-hidden flex flex-col items-center bg-black"
+        className={`flex h-[120vh] w-screen flex-col items-center overflow-hidden max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
-            <div className="skill text-[3.5vh] flex justify-center gap-[1vw]">
+            <div className="skill flex justify-center gap-[1vw] text-[3.5vh]">
               <div className="text-purple-500">My</div>
-              <div className="text-white">Skills</div>
+              <div className={`${darkMode ? "text-white" : "text-black"}`}>
+                Skills
+              </div>
             </div>
-            <div className="mt-[4vh] flex flex-col gap-[2vh] w-screen items-center">
+            <div className="mt-[4vh] flex w-screen flex-col items-center gap-[2vh]">
               <div className="col1 flex gap-[7vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-sky-700 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[16vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[16vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.python}
                     alt="Python"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-yellow-300 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-300 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[6vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[6vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.js}
                     alt="JavaScript"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.ts}
                     alt="TypeScript"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[7vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-lime-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-lime-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-lime-500 p-[1vh] shadow-md shadow-lime-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.nodeJS}
                     alt="NodeJS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-600 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-600 p-[1vh] shadow-md shadow-blue-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.cplus}
                     alt="C++"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.html}
                     alt="HTML"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[7vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-blue-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-blue-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.css}
                     alt="CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-sky-700 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-600 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-sky-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mysql}
                     alt="MySQL"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-green-600 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-green-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-green-600 p-[1vh] shadow-md shadow-green-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mongo}
                     alt="MongoDB"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[7vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-sky-400 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-400 p-[1vh] shadow-md shadow-sky-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.react}
                     alt="React"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-gray-400 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-400 p-[1vh] shadow-md shadow-gray-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.next}
                     alt="Next.js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-purple-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-purple-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-purple-500 p-[1vh] shadow-md shadow-purple-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.reactRedux}
                     alt="Redux"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[7vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-yellow-400 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-400 p-[1vh] shadow-md shadow-yellow-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[9vw] h-[10vh] bg-yellow-300 rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[10vh] w-[9vw] transform rounded-full bg-yellow-300 transition-transform duration-500 hover:scale-110"
                     src={skills.express}
                     alt="Express.js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[14vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tailwind}
                     alt="Tailwind CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-teal-700 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-teal-600 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-teal-700 p-[1vh] shadow-md shadow-teal-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.fast}
                     alt="FastApi"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[7vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-gray-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-500 p-[1vh] shadow-md shadow-gray-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[9vw] h-[10vh] bg-white rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[10vh] w-[9vw] transform rounded-full bg-white transition-transform duration-500 hover:scale-110"
                     src={skills.flask}
                     alt="Flask"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tensorflow}
                     alt="Tensorflow"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-500 w-[18vw] h-[13vh] rounded-[17%] shadow-md p-[1vh] shadow-red-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-red-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[7vw] h-[12vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.openCV}
                     alt="OpenCV"
                   />
@@ -501,148 +507,150 @@ const Skills: React.FC = () => {
       {/* Small Devices Section */}
       <div
         ref={sRef}
-        className="sm:hidden w-screen h-[105vh] overflow-hidden flex flex-col items-center bg-black"
+        className={`flex h-[105vh] w-screen flex-col items-center overflow-hidden sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inSView && (
           <>
-            <div className="skill text-[3.5vh] flex justify-center gap-[1vw]">
+            <div className="skill flex justify-center gap-[1vw] text-[3.5vh]">
               <div className="text-purple-500">My</div>
-              <div className="text-white">Skills</div>
+              <div className={`${darkMode ? "text-white" : "text-black"}`}>
+                Skills
+              </div>
             </div>
-            <div className="mt-[4vh] flex flex-col gap-[1vh] w-screen items-center">
+            <div className="mt-[4vh] flex w-screen flex-col items-center gap-[1vh]">
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-sky-700 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.python}
                     alt="Python"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-yellow-300 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-300 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[12vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[12vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.js}
                     alt="JavaScript"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.ts}
                     alt="TypeScript"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-lime-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-lime-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-lime-500 p-[1vh] shadow-md shadow-lime-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.nodeJS}
                     alt="NodeJS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-600 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-600 p-[1vh] shadow-md shadow-blue-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.cplus}
                     alt="C++"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.html}
                     alt="HTML"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-blue-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-blue-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.css}
                     alt="CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-sky-700 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-600 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-sky-600 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mysql}
                     alt="MySQL"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-green-600 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-green-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-green-600 p-[1vh] shadow-md shadow-green-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.mongo}
                     alt="MongoDB"
                   />
                 </div>
               </div>
               <div className="col2 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-sky-400 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-sky-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-400 p-[1vh] shadow-md shadow-sky-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.react}
                     alt="React"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-gray-400 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-400 p-[1vh] shadow-md shadow-gray-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.next}
                     alt="Next.js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-purple-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-purple-400 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-purple-500 p-[1vh] shadow-md shadow-purple-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[12vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[12vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.reactRedux}
                     alt="Redux"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-yellow-400 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-yellow-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-400 p-[1vh] shadow-md shadow-yellow-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[8vh] bg-yellow-300 rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[8vh] w-[13vw] transform rounded-full bg-yellow-300 transition-transform duration-500 hover:scale-110"
                     src={skills.express}
                     alt="Express.js"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-400 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-blue-300 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-400 p-[1vh] shadow-md shadow-blue-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[25vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tailwind}
                     alt="Tailwind CSS"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-teal-700 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-teal-300 overflow-hidden flex justify-center items-center  filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-teal-700 p-[1vh] shadow-md shadow-teal-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.fast}
                     alt="FastApi"
                   />
                 </div>
               </div>
               <div className="col1 flex gap-[5vw] p-[1vh]">
-                <div className="card border-[0.3vh] border-gray-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-gray-500 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-500 p-[1vh] shadow-md shadow-gray-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[8vh] bg-white rounded-full transition-transform transform hover:scale-110 duration-500"
+                    className="h-[8vh] w-[13vw] transform rounded-full bg-white transition-transform duration-500 hover:scale-110"
                     src={skills.flask}
                     alt="Flask"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-orange-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-orange-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-orange-500 p-[1vh] shadow-md shadow-orange-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.tensorflow}
                     alt="Tensorflow"
                   />
                 </div>
-                <div className="card border-[0.3vh] border-blue-500 w-[22vw] h-[12vh] rounded-[17%] shadow-md p-[1vh] shadow-red-400 overflow-hidden flex justify-center items-center filter grayscale hover:grayscale-0 duration-300">
+                <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-red-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
-                    className="w-[13vw] h-[23vh] transition-transform transform hover:scale-110 duration-500"
+                    className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
                     src={skills.openCV}
                     alt="OpenCV"
                   />
