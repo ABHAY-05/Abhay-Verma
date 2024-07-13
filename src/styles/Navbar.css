@@ -147,14 +147,14 @@
 
 .active {
   transform: translateY(-3px) translateX(-3px);
-  color: rgb(251, 191, 36);
+  color: #14b8a6;
   font-size: 26px;
   transition-duration: 400ms;
 }
 
 .activeContact {
   transform: translateY(3px) translateX(3px);
-  color: rgb(251, 191, 36) !important;
+  color: #14b8a6 !important;
   font-size: 20px !important;
   transition-duration: 400ms;
   box-shadow: 2px 2px 6px #8a2be2;

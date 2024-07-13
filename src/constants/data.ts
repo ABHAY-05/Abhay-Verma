@@ -2,9 +2,9 @@ export const Bio: { [key: string]: string } = {
   Name: "Abhay Verma",
   desc: "As a driven Frontend Developer and Competitive Coder, I excel in Web Development across various programming languages. My expertise extends to Full Stack development, ensuring holistic project delivery. Beyond this, I'm delving into Machine Learning, eager to harness its power for innovative solutions and enhanced user experiences.",
   description:
-    "I'm currently in the final year of my B.Tech. program in Computer Science and Engineering at Pranveer Singh Institute of Technology, Kanpur. With a deep passion for web development, machine learning, and various programming languages, I'm dedicated to crafting innovative solutions and taking on complex challenges.",
+    "I have completed my B.Tech. program in Computer Science and Engineering at Pranveer Singh Institute of Technology, Kanpur. With a deep passion for web development, machine learning, and various programming languages, I'm dedicated to crafting innovative solutions and taking on complex challenges.",
   description2:
-    "Join me on my journey as I combine my academic pursuits with my enthusiasm for web development. Together, we can push the boundaries of what's possible in the ever-evolving tech world.",
+    "Join me on my journey as I combine my academic achievements with my enthusiasm for web development. Together, we can push the boundaries of what's possible in the ever-evolving tech world.",
   tag: "Let's build the future together.",
 };
 
@@ -20,7 +20,7 @@ export const linkedin: string =
 export const email: string = "Abhayvermajune5@gmail.com";
 export const phone: string = "+91 8756782835";
 export const resume: string =
-  "https://drive.google.com/file/d/1MobsXZhSkKu8PTs2XDIphNotjwxBLoLT/view?usp=drive_link";
+  "https://drive.google.com/file/d/1h8dZnFKObfwfGmXwSxMHEPA7lUmJ5EQ4/view?usp=sharing";
 
 export const skills: { [key: string]: string } = {
   python:
