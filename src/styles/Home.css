@@ -2,23 +2,23 @@
 
 .Name {
   font-family: "Charm", cursive;
-  animation: bio-animation 1.4s ease-in-out;
+  animation: bio-animation 0.7s ease-in-out;
 }
 
 .intro {
   font-family: "Big Shoulders Display", cursive;
-  animation: bio-animation 1s ease-in-out;
+  animation: bio-animation 0.5s ease-in-out;
 }
 
 .pro {
   font-family: "Graduate", serif;
   box-shadow: 0px 1.1px 1px -0.5px #8a2be2;
-  animation: bio-animation 1.6s ease-in-out;
+  animation: bio-animation 0.8s ease-in-out;
 }
 
 .desc {
   font-family: "Fauna One", serif;
-  animation: bio-animation 2s ease-in-out;
+  animation: bio-animation 1s ease-in-out;
 }
 
 .type {
@@ -27,7 +27,7 @@
 
 .image {
   animation:
-    image-animation 2s ease-in-out,
+    image-animation 1s ease-in-out,
     blob-animation 10s infinite linear;
   box-shadow:
     0vw 0vh 0vw 0.2vw #8a2be2,
@@ -37,24 +37,24 @@
 }
 
 .bio {
-  animation: bio-animation 2s ease-in-out;
+  animation: bio-animation 1s ease-in-out;
 }
 
 .git {
-  animation: profile-animation 1.8s ease-in-out;
+  animation: profile-animation 0.9s ease-in-out;
 }
 
 .linked {
-  animation: profile-animation 1.4s ease-in-out;
+  animation: profile-animation 0.7s ease-in-out;
 }
 
 .email {
-  animation: profile-animation 1s ease-in-out;
+  animation: profile-animation 0.5s ease-in-out;
 }
 
 .btn {
   font-family: "Bitter", serif;
-  animation: btn-animation 2s ease-in-out;
+  animation: btn-animation 1s ease-in-out;
   overflow: hidden;
 }
 
@@ -63,12 +63,12 @@
 }
 
 .profile-all {
-  animation: profile-animation 2s ease-in-out;
+  animation: profile-animation 1s ease-in-out;
 }
 
 .imagem {
   animation:
-    image-mobile 2s ease-in-out,
+    image-mobile 1s ease-in-out,
     blob-animation 10s infinite linear;
   box-shadow:
     0vw 0vh 0vw 0.2vw #8a2be2,
@@ -78,27 +78,27 @@
 }
 
 .biom {
-  animation: bio-mobile 2s ease-in-out;
+  animation: bio-mobile 1s ease-in-out;
 }
 
 .bio {
-  animation: bio-animation 2s ease-in-out;
+  animation: bio-animation 1s ease-in-out;
 }
 
 .gitm {
-  animation: profile-mobile 1s ease-in-out;
+  animation: profile-mobile 0.5s ease-in-out;
 }
 
 .linkedm {
-  animation: profile-mobile 1.4s ease-in-out;
+  animation: profile-mobile 0.7s ease-in-out;
 }
 
 .emailm {
-  animation: profile-mobile 1.8s ease-in-out;
+  animation: profile-mobile 0.9s ease-in-out;
 }
 
 .profile-allm {
-  animation: profile-mobile 2s ease-in-out;
+  animation: profile-mobile 1s ease-in-out;
 }
 
 @keyframes blob-animation {
