@@ -20,7 +20,7 @@ export const linkedin: string =
 export const email: string = "Abhayvermajune5@gmail.com";
 export const phone: string = "+91 8756782835";
 export const resume: string =
-  "https://drive.google.com/file/d/1h8dZnFKObfwfGmXwSxMHEPA7lUmJ5EQ4/view?usp=sharing";
+  "https://drive.google.com/file/d/1fwzDc2b6rboE9n8Gze2z4dKm3GO2e4rJ/view?usp=sharing";
 
 export const skills: { [key: string]: string } = {
   python:
