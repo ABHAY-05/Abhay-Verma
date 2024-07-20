@@ -29,13 +29,3 @@
 .inp {
   outline-color: #7e22ce;
 }
-
-.inp:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px black inset !important;
-  -webkit-text-fill-color: white !important;
-}
-
-.inp:-moz-autofill {
-  -moz-text-fill-color: white !important;
-  background-color: black !important;
-}
