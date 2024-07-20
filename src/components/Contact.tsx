@@ -1,4 +1,4 @@
-import { useRef, FormEvent } from "react";
+import { useRef, FormEvent, useEffect } from "react";
 import { SiMinutemailer } from "react-icons/si";
 import { FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdSend } from "react-icons/md";
@@ -23,6 +23,14 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   });
 
   const user = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  }, [darkMode]);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();

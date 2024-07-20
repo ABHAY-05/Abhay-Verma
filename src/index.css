@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
+
 * {
   overflow-x: hidden;
   scrollbar-width: thin;
@@ -28,4 +38,27 @@
 
 .inp {
   outline-color: #7e22ce;
+}
+
+.inp:-webkit-autofill,
+.inp:-webkit-autofill:hover,
+.inp:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text-color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg-color) inset;
+  box-shadow: 0 0 0px 1000px var(--bg-color) inset;
+}
+
+.inp:-moz-autofill {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.inp:-ms-autofill {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.inp:autofill {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
 }
