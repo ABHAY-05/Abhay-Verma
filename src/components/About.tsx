@@ -68,7 +68,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         {inView && (
           <>
             <div className="absolute top-[7vh] flex gap-[8vw] pl-[8vw] max-md:hidden lg:hidden">
-              <div className="about-icon mt-[10vh] flex h-[17vh] w-[260px] items-center justify-center border-[0.5vh] border-purple-300 text-[4.5vh] text-purple-300 shadow-lg shadow-purple-500">
+              <div className="about-icon mt-[10vh] flex h-[17vh] w-[260px] items-center justify-center border-[0.5vh] border-purple-300 text-[4.4vh] text-purple-300 shadow-lg shadow-purple-500">
                 About me
               </div>
               <div className="flex w-[50vw] flex-col gap-[2vh]">
@@ -93,7 +93,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     smooth={true}
                     offset={-78}
                   >
-                    <button className="read-btn h-[7.8vh] w-[150px] rounded-full border-[0.3vh] border-purple-700 text-[2.5vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.7vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                    <button className="read-btn h-[7.8vh] w-[150px] overflow-hidden rounded-full border-[0.3vh] border-purple-700 text-[2.5vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.7vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                       Read More
                     </button>
                   </Link>
@@ -107,7 +107,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         {inView && (
           <>
             <div className="relative -mt-[10vh] flex flex-col items-center justify-center gap-[2vh] md:hidden">
-              <div className="about-icon mt-[10vh] flex h-[18vh] w-[250px] items-center justify-center border-[0.5vh] border-purple-300 text-[4.5vh] text-purple-300 shadow-lg shadow-purple-500">
+              <div className="about-icon mt-[10vh] flex h-[18vh] w-[250px] items-center justify-center border-[0.5vh] border-purple-300 text-[4.4vh] text-purple-300 shadow-lg shadow-purple-500">
                 About me
               </div>
               <div className="flex w-[80vw] flex-col gap-[1.5vh]">
@@ -132,7 +132,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     smooth={true}
                     offset={-78}
                   >
-                    <button className="read-btn h-[7vh] w-[130px] rounded-full border-[0.3vh] border-purple-700 text-[2.3vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.5vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                    <button className="read-btn h-[7vh] w-[130px] overflow-hidden rounded-full border-[0.3vh] border-purple-700 text-[2.3vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.5vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                       Read More
                     </button>
                   </Link>
