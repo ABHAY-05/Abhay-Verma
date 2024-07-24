@@ -7,13 +7,13 @@ const DarkMode: React.FC<{ darkMode: boolean; mobile?: true }> = ({
   return (
     <>
       <div
-        className="contact fixed right-[3vw] top-[1.8vh] z-10 flex cursor-pointer items-center justify-center rounded-full border-2 border-violet-700 p-[0.8%] text-2xl text-purple-400 duration-[0.4s] hover:shadow-md hover:shadow-violet-800 max-lg:hidden max-md:hidden"
+        className="contact fixed right-[3vw] top-[1.8vh] z-10 flex cursor-pointer items-center justify-center rounded-full border-2 border-violet-700 p-[0.8%] text-2xl text-purple-400 duration-[0.4s] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800 max-lg:hidden max-md:hidden"
         title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       >
         {darkMode ? <FaSun /> : <FaMoon />}
       </div>
       <div
-        className="contact fixed right-[0.5vw] top-[1.9vh] z-10 flex cursor-pointer items-center justify-center rounded-full border-2 border-violet-700 p-[0.8%] text-2xl text-purple-400 duration-[0.4s] hover:shadow-md hover:shadow-violet-800 max-md:hidden lg:hidden"
+        className="contact fixed right-[0.5vw] top-[1.9vh] z-10 flex cursor-pointer items-center justify-center rounded-full border-2 border-violet-700 p-[0.8%] text-2xl text-purple-400 duration-[0.4s] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800 max-md:hidden lg:hidden"
         title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       >
         {darkMode ? <FaSun /> : <FaMoon />}
