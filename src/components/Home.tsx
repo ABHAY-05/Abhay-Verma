@@ -109,7 +109,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             />
             <div className="bio absolute top-[12vh] flex h-[72vh] w-[60vw] flex-col gap-[2vh] overflow-hidden pl-[7vw]">
               <div
-                className={`intro ${darkMode ? "text-white" : "text-black"}e overflow-hidden text-[2.2vh]`}
+                className={`intro ${darkMode ? "text-white" : "text-black"} overflow-hidden text-[2.2vh]`}
               >
                 Hello, My Name is
               </div>

@@ -33,11 +33,11 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute left-[9.8vw] cursor-pointer p-1 text-[5vh] font-bold text-purple-500">
+            <div className="logo absolute left-[9.8vw] cursor-pointer p-1 text-[2.2rem] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
-          <ul className="list absolute left-[32vw] top-0 flex gap-[0.3vw] pt-[2.5vh] text-[25px] text-purple-500">
+          <ul className="list absolute left-[32vw] top-0 flex gap-[0.3vw] pt-[2.5vh] text-[1.562rem] text-purple-500">
             <Link
               activeClass="active"
               to="about"
@@ -45,7 +45,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-78}
             >
-              <li className="about flex w-[95px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-teal-500">
+              <li className="about flex w-[95px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.63rem] hover:text-teal-500">
                 About
               </li>
             </Link>
@@ -56,7 +56,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-78}
             >
-              <li className="skills flex w-[80px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-teal-500">
+              <li className="skills flex w-[80px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.63rem] hover:text-teal-500">
                 Skills
               </li>
             </Link>
@@ -67,7 +67,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-78}
             >
-              <li className="coding flex w-[190px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-teal-500">
+              <li className="coding flex w-[190px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.63rem] hover:text-teal-500">
                 Coding Profile
               </li>
             </Link>
@@ -78,7 +78,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-78}
             >
-              <li className="project flex w-[125px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[26px] hover:text-teal-500">
+              <li className="project flex w-[125px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.63rem] hover:text-teal-500">
                 Projects
               </li>
             </Link>
@@ -89,7 +89,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             spy={true}
             smooth={true}
             offset={-78}
-            className="contact absolute right-[8.5vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.5vh] text-[19.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[20.5px] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
+            className="contact absolute right-[8.5vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.5vh] text-[19.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.285rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
           >
             Contact Me
           </Link>
@@ -104,11 +104,11 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute left-[7vw] top-[1.4vh] cursor-pointer text-[4.5vh] font-bold text-purple-500">
+            <div className="logo absolute left-[7vw] top-[1.4vh] cursor-pointer text-[1.85rem] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
-          <ul className="list absolute left-[25.5vw] top-0 flex gap-[0.3vw] pt-[2.5vh] text-[21px] text-purple-500">
+          <ul className="list absolute left-[25.5vw] top-0 flex gap-[0.3vw] pt-[2.5vh] text-[1.32rem] text-purple-500">
             <Link
               activeClass="active"
               to="about"
@@ -116,7 +116,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-78}
             >
-              <li className="about flex w-[90px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-teal-500">
+              <li className="about flex w-[90px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.38rem] hover:text-teal-500">
                 About
               </li>
             </Link>
@@ -127,7 +127,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-75}
             >
-              <li className="skills flex w-[70px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-teal-500">
+              <li className="skills flex w-[70px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.38rem] hover:text-teal-500">
                 Skills
               </li>
             </Link>
@@ -138,7 +138,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-75}
             >
-              <li className="coding flex w-[165px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-teal-500">
+              <li className="coding flex w-[165px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.38rem] hover:text-teal-500">
                 Coding Profile
               </li>
             </Link>
@@ -149,7 +149,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               smooth={true}
               offset={-75}
             >
-              <li className="project flex w-[95px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[22px] hover:text-teal-500">
+              <li className="project flex w-[95px] cursor-pointer items-center justify-center duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.38rem] hover:text-teal-500">
                 Projects
               </li>
             </Link>
@@ -160,7 +160,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             spy={true}
             smooth={true}
             offset={-75}
-            className="contact absolute right-[5.6vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.2vh] text-[17.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[18.5px] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
+            className="contact absolute right-[5.6vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.2vh] text-[17.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.157rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
           >
             Contact Me
           </Link>
@@ -175,7 +175,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute left-[7vw] top-[1.2vh] cursor-pointer pr-[1vw] text-[4vh] font-bold text-purple-500">
+            <div className="logo absolute left-[7vw] top-[1.2vh] cursor-pointer pr-[1vw] text-[1.75rem] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
@@ -196,7 +196,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           <div
             className={`mNav fixed right-0 flex h-screen w-[50vw] flex-col gap-[2vh] pl-[3vw] md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"} z-20`}
           >
-            <ul className="mt-[10vh] flex flex-col gap-[2vh] text-[3vh] text-purple-500">
+            <ul className="mt-[10vh] flex flex-col gap-[2vh] text-[1.3rem] text-purple-500">
               <div
                 onClick={() => setMenu(false)}
                 className="absolute right-0 top-0 z-20 mr-[7vw] mt-[3vh]"
@@ -211,7 +211,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 smooth={true}
                 offset={-80}
               >
-                <li className="aboutm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-teal-500">
+                <li className="aboutm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[1.37rem] hover:text-teal-500">
                   About
                 </li>
               </Link>
@@ -223,7 +223,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 smooth={true}
                 offset={-80}
               >
-                <li className="skillsm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-teal-500">
+                <li className="skillsm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[1.37rem] hover:text-teal-500">
                   Skills
                 </li>
               </Link>
@@ -235,7 +235,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 smooth={true}
                 offset={-75}
               >
-                <li className="codingm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-teal-500">
+                <li className="codingm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[1.37rem] hover:text-teal-500">
                   Coding Profile
                 </li>
               </Link>
@@ -247,7 +247,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 smooth={true}
                 offset={-75}
               >
-                <li className="projectm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[3.1vh] hover:text-teal-500">
+                <li className="projectm inline-block w-full cursor-pointer p-1 px-1 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[1.37rem] hover:text-teal-500">
                   Projects
                 </li>
               </Link>
@@ -259,7 +259,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               spy={true}
               smooth={true}
               offset={-70}
-              className="contactm mb-3 ml-1 mt-1 flex w-[150px] cursor-pointer justify-center rounded-full border-2 border-violet-700 p-[1.2vh] text-[2.4vh] text-purple-400 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[2.2vh] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
+              className="contactm mb-3 ml-1 mt-1 flex w-[150px] cursor-pointer justify-center rounded-full border-2 border-violet-700 p-[1.2vh] text-[1.3rem] text-purple-400 duration-[0.4s] hover:translate-x-1 hover:translate-y-1 hover:text-[1.37rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
             >
               Contact Me
             </Link>

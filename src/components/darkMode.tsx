@@ -20,7 +20,7 @@ const DarkMode: React.FC<{ darkMode: boolean; mobile?: true }> = ({
       </div>
       {mobile && (
         <div
-          className="flex items-center justify-center gap-2 rounded-full border-2 border-violet-700 py-[3%] text-[1rem] text-purple-400 duration-[0.4s] hover:shadow-md hover:shadow-violet-800 md:hidden lg:hidden"
+          className="flex items-center justify-center gap-2 rounded-full border-2 border-violet-700 py-[3%] text-[1.1rem] text-purple-400 duration-[0.4s] hover:text-[1.17rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800 md:hidden lg:hidden"
           title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
         >
           <div className="text-[1rem]">{darkMode ? <FaSun /> : <FaMoon />}</div>
