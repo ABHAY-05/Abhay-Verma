@@ -199,7 +199,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inTabView && (
           <>
-            <div className="skill flex w-[20vw] justify-center gap-[1vw] text-[3.8vw]">
+            <div className="skill mt-[3vh] flex w-[20vw] justify-center gap-[1vw] text-[3.8vw]">
               <div className="text-purple-500">My</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Skills
@@ -354,7 +354,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inMobView && (
           <>
-            <div className="skill flex justify-center gap-[1vw] text-[3.5vh]">
+            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[4.2vw]">
               <div className="text-purple-500">My</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Skills
@@ -511,7 +511,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inSView && (
           <>
-            <div className="skill flex justify-center gap-[1vw] text-[3.5vh]">
+            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[5vw]">
               <div className="text-purple-500">My</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Skills

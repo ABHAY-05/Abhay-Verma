@@ -89,7 +89,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             spy={true}
             smooth={true}
             offset={-78}
-            className="contact absolute right-[8.5vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.5vh] text-[19.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.285rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
+            className="contact absolute right-[8.5vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.5vh] text-[1.22rem] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.285rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
           >
             Contact Me
           </Link>
@@ -160,7 +160,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             spy={true}
             smooth={true}
             offset={-75}
-            className="contact absolute right-[5.6vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.2vh] text-[17.5px] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.157rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
+            className="contact absolute right-[5.6vw] top-[1.5vh] cursor-pointer rounded-full border-2 border-violet-700 p-[1.2vh] text-[1.095rem] text-purple-400 duration-[0.4s] hover:-translate-x-1 hover:-translate-y-1 hover:text-[1.157rem] hover:text-teal-500 hover:shadow-md hover:shadow-violet-800"
           >
             Contact Me
           </Link>
