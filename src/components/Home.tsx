@@ -41,12 +41,12 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             />
             <div className="bio absolute top-[15vh] flex h-[72vh] w-[60vw] flex-col gap-[2vh] overflow-hidden pl-[10vw]">
               <div
-                className={`intro overflow-hidden ${darkThemeText} text-[2.5vh]`}
+                className={`intro overflow-hidden ${darkThemeText} text-[1.22rem]`}
               >
                 Hello, My Name is
               </div>
               <div
-                className={`Name overflow-hidden ${darkThemeText} -mt-[3vh] pb-[1vh] pr-[1vw] text-[8vh] font-semibold`}
+                className={`Name overflow-hidden ${darkThemeText} -mt-[3vh] pb-[1vh] pr-[1vw] text-[3.9rem] font-semibold`}
               >
                 {Bio.Name}
               </div>
@@ -57,7 +57,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 </div>
               </div>
               <div
-                className={`desc overflow-hidden ${darkThemeText} mt-[1vh] pb-[1.5vh]`}
+                className={`desc overflow-hidden ${darkThemeText} mt-[1vh] text-pretty pb-[1.5vh]`}
               >
                 {Bio.desc}
               </div>
@@ -65,28 +65,28 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 <a
                   href={github}
                   target="_blank"
-                  className={`git ${darkMode ? "hover:text-white" : "hover:text-black"} text-[8vh] duration-500 hover:text-[9vh]`}
+                  className={`git ${darkMode ? "hover:text-white" : "hover:text-black"} text-[3.9rem] duration-500 hover:text-[4.4rem]`}
                 >
                   <FaGithub />
                 </a>
                 <a
                   href={linkedin}
                   target="_blank"
-                  className="linked text-[8vh] duration-500 hover:text-[9vh] hover:text-blue-700"
+                  className="linked text-[3.9rem] duration-500 hover:text-[4.4rem] hover:text-blue-700"
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href={`mailto:${email}`}
                   target="_blank"
-                  className="email text-[10vh] duration-500 hover:text-[11vh] hover:text-teal-500"
+                  className="email text-[4.9rem] duration-500 hover:text-[5.4rem] hover:text-teal-500"
                 >
                   <MdEmail />
                 </a>
               </div>
               <div className="btn -ml-[1vw] mt-[1.5vh] h-[11.5vh] w-[192px]">
                 <a href={resume} target="_blank">
-                  <button className="h-[7.8vh] w-[160px] rounded-full border-[0.3vh] border-purple-700 text-[2.5vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.7vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                  <button className="h-[7.5vh] w-[160px] rounded-full border-[0.3vh] border-purple-700 text-[1.22rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.4rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                     Résumé
                   </button>
                 </a>
@@ -109,12 +109,12 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             />
             <div className="bio absolute top-[12vh] flex h-[72vh] w-[60vw] flex-col gap-[2vh] overflow-hidden pl-[7vw]">
               <div
-                className={`intro ${darkMode ? "text-white" : "text-black"} overflow-hidden text-[2.2vh]`}
+                className={`intro ${darkMode ? "text-white" : "text-black"} overflow-hidden text-[1.25rem]`}
               >
                 Hello, My Name is
               </div>
               <div
-                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[3vh] overflow-hidden pb-[1vh] pr-[1vw] text-[7vh] font-semibold`}
+                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[3vh] overflow-hidden pb-[1vh] pr-[1vw] text-[4rem] font-semibold`}
               >
                 {Bio.Name}
               </div>
@@ -129,7 +129,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 </div>
               </div>
               <div
-                className={`desc ${darkMode ? "text-white" : "text-black"} mt-[1vh] overflow-hidden text-[2vh]`}
+                className={`desc ${darkMode ? "text-white" : "text-black"} mt-[1vh] overflow-hidden text-pretty`}
               >
                 {Bio.desc}
               </div>
@@ -137,28 +137,28 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 <a
                   href={github}
                   target="_blank"
-                  className={`git ${darkMode ? "hover:text-white" : "hover:text-black"} text-[7vh] duration-500 hover:text-[8vh]`}
+                  className={`git ${darkMode ? "hover:text-white" : "hover:text-black"} text-[4rem] duration-500 hover:text-[4.5rem]`}
                 >
                   <FaGithub />
                 </a>
                 <a
                   href={linkedin}
                   target="_blank"
-                  className="linked text-[7vh] duration-500 hover:text-[8vh] hover:text-blue-700"
+                  className="linked text-[4rem] duration-500 hover:text-[4.5rem] hover:text-blue-700"
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href={`mailto:${email}`}
                   target="_blank"
-                  className="email text-[9vh] duration-500 hover:text-[10vh] hover:text-teal-500"
+                  className="email text-[5rem] duration-500 hover:text-[5.5rem] hover:text-teal-500"
                 >
                   <MdEmail />
                 </a>
               </div>
               <div className="btn -ml-[0.3vw] mt-[2vh] h-[11.5vh] w-[155px]">
                 <a href={resume} target="_blank">
-                  <button className="h-[7.8vh] w-[145px] rounded-full border-[0.3vh] border-purple-700 text-[2.5vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.7vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                  <button className="h-[7.5vh] w-[145px] rounded-full border-[0.3vh] border-purple-700 text-[1.4rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.6rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                     Résumé
                   </button>
                 </a>
@@ -179,14 +179,14 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               src={image}
               alt="Abhay"
             />
-            <div className="biom flex h-[53vh] w-[90vw] flex-col gap-[0.5vh] overflow-hidden">
+            <div className="biom flex h-[60vh] w-[90vw] flex-col gap-[0.5vh] overflow-hidden">
               <div
                 className={`intro ${darkMode ? "text-white" : "text-black"} overflow-hidden`}
               >
                 Hello, My Name is
               </div>
               <div
-                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[2.4vh] overflow-hidden pb-[1vh] pr-[1vw] pt-[1vh] text-[6vh] font-semibold`}
+                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[2.4vh] overflow-hidden text-nowrap pb-[1vh] pr-[1vw] pt-[1vh] text-[3.5rem] font-semibold`}
               >
                 {Bio.Name}
               </div>
@@ -201,14 +201,14 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 </div>
               </div>
               <div
-                className={`desc mt-[1vh] text-[1.8vh] ${darkMode ? "text-white" : "text-black"} overflow-hidden pb-[2vh]`}
+                className={`desc mt-[1vh] ${darkMode ? "text-white" : "text-black"} overflow-hidden text-pretty pb-[2vh]`}
               >
                 {Bio.desc}
               </div>
               <div className="mt-[1.5vh] flex gap-[2vw] overflow-hidden pl-[0.5vw]">
                 <div className="btn -ml-[0.3vw] mt-[1vh] h-[10vh] w-[130px]">
                   <a href={resume} target="_blank">
-                    <button className="h-[6vh] w-[120px] rounded-full border-[0.3vh] border-purple-700 text-[2.5vh] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[2.7vh] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                    <button className="h-[6vh] w-[120px] rounded-full border-[0.3vh] border-purple-700 text-[1.35rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.5rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                       Résumé
                     </button>
                   </a>
@@ -217,21 +217,21 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <a
                     href={github}
                     target="_blank"
-                    className={`gitm ${darkMode ? "hover:text-white" : "hover:text-black"} text-[6vh] duration-500 hover:text-[7vh]`}
+                    className={`gitm ${darkMode ? "hover:text-white" : "hover:text-black"} text-[3.5rem] duration-500 hover:text-[3.8rem]`}
                   >
                     <FaGithub />
                   </a>
                   <a
                     href={linkedin}
                     target="_blank"
-                    className="linkedm text-[6vh] duration-500 hover:text-[7vh] hover:text-blue-700"
+                    className="linkedm text-[3.5rem] duration-500 hover:text-[3.8rem] hover:text-blue-700"
                   >
                     <FaLinkedin />
                   </a>
                   <a
                     href={`mailto:${email}`}
                     target="_blank"
-                    className="emailm text-[8vh] duration-500 hover:text-[9vh] hover:text-teal-500"
+                    className="emailm text-[4.5rem] duration-500 hover:text-[4.8rem] hover:text-teal-500"
                   >
                     <MdEmail />
                   </a>
