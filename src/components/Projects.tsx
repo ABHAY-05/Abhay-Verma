@@ -253,7 +253,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 >
                   <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
                     <img
-                      className="mt-[3vh] h-[17vh] w-[53vw] rounded-md"
+                      className="mt-[3vh] h-[15vh] w-[53vw] rounded-md"
                       src={project.img as string}
                       alt={project.title as string}
                     />
