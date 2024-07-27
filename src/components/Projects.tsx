@@ -52,7 +52,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inView && (
           <>
-            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[6vh]">
+            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[3rem]">
               <div className="text-purple-500">Recent</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Projects
@@ -296,7 +296,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inTabView && (
           <>
-            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[5vh]">
+            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[2.5rem]">
               <div className="text-purple-500">Recent</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Projects
@@ -536,7 +536,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inMobView && (
           <>
-            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[4vh]">
+            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[2rem]">
               <div className="text-purple-500">Recent</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Projects
@@ -772,7 +772,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inSView && (
           <>
-            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[4vh]">
+            <div className="skill mt-[3vh] flex justify-center gap-[1vw] text-[2rem]">
               <div className="text-purple-500">Recent</div>
               <div className={`${darkMode ? "text-white" : "text-black"}`}>
                 Projects

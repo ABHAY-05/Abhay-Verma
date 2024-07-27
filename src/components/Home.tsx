@@ -124,7 +124,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 >
                   I'm a
                 </div>
-                <div className="type text-purple-500">
+                <div className="type overflow-hidden text-purple-500">
                   <Typewriter />
                 </div>
               </div>

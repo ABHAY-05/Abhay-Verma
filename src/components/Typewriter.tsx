@@ -34,7 +34,7 @@ const Typewriter: React.FC = () => {
 
   return (
     <div>
-      <h1>{displayedItem}</h1>
+      <h1 className="overflow-hidden">{displayedItem}</h1>
     </div>
   );
 };
