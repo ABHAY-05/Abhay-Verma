@@ -295,7 +295,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         )}
       </div>
 
-      {/* Small DEvices Section */}
+      {/* Small Devices Section */}
       <div
         ref={sRef}
         className={`flex h-[130vh] w-screen flex-col items-center overflow-hidden sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
