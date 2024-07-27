@@ -1,3 +1,9 @@
+import * as tStack from "./tStack";
+import linguistic from "../assets/Linguistic.png";
+import product from "../assets/product.png";
+import medScan from "../assets/medScan.png";
+import IRIS from "../assets/IRIS.png";
+
 export const Bio: { [key: string]: string } = {
   Name: "Abhay Verma",
   desc: "As a driven Frontend Developer and Competitive Coder, I excel in Web Development across various programming languages. My expertise extends to Full Stack development, ensuring holistic project delivery. Beyond this, I'm delving into Machine Learning, eager to harness its power for innovative solutions and enhanced user experiences.",
@@ -62,30 +68,89 @@ export const codingLinks: { [key: string]: string } = {
   github: "https://github.com/ABHAY-05",
 };
 
-export const projects: { [key: string]: { [key: string]: string } } = {
-  linguistic: {
+type Projects = { [key: string]: string | JSX.Element[] }[];
+
+export const projects: Projects = [
+  {
+    title: "Linguistic OCR",
+    date: "09/2022 - 12/2022",
+    techStack: [
+      tStack.python,
+      tStack.html,
+      tStack.css,
+      tStack.bootstrap,
+      tStack.javaScript,
+      tStack.tensorflow,
+      tStack.flask,
+    ],
+    img: linguistic as string,
+    style:
+      "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+    tstyle: "text-blue-400",
     a: "Developed a versatile ML model for text extraction, captcha and handwriting recognition, license plate detection from images, and language translation.",
     b: "Collaborated in a 5-member team to integrate ML techniques into a responsive web page design.",
     c: "Held roles as an ML Developer and Backend Manager, showcasing expertise in both aspects",
     link: "https://github.com/ABHAY-05/Linguistic-OCR.git",
   },
-  flipkart: {
+  {
+    title: "Product Recommendation System",
+    date: "08/2023 - 9/2023",
+    techStack: [
+      tStack.react,
+      tStack.express,
+      tStack.javaScript,
+      tStack.mongoDB,
+      tStack.nodeJS,
+    ],
+    img: product as string,
+    style:
+      "border-yellow-500 bg-gradient-to-br from-yellow-950 via-gray-950 to-black shadow-sm shadow-yellow-500 grayscale filter duration-500 hover:shadow-md hover:shadow-yellow-500 hover:grayscale-0",
+    tstyle: "text-yellow-400",
     a: "Implemented a full-stack recommendation system providing personalized product recommendations based on user preferences.",
     b: "Dynamic interfaces with ReactJS, efficient server-side processing with Express.js.",
     c: "Mongoose is used for data modeling, boosting system accuracy and scalability.",
     link: "https://github.com/ABHAY-05/Product-Recommendation-System.git",
     site: "https://myproduct-recommendation-system.vercel.app",
   },
-  IRIS: {
+  {
+    title: "IRIS",
+    date: "10/2021 - 12/2021",
+    techStack: [
+      tStack.python,
+      tStack.chatBot,
+      tStack.ml,
+      tStack.speechRecognition,
+      tStack.textToSpeech,
+    ],
+    img: IRIS as string,
+    style:
+      "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+    tstyle: "text-emerald-500",
     a: "Created IRIS Virtual Assistant using Python, ML, and Speech Recognition technologies.",
     b: "Designed a versatile assistant for tasks like sending emails, providing weather reports, and delivering news, all via voice commands.",
     link: "https://github.com/ABHAY-05/IRIS.git",
   },
-  medScan: {
-    a: "Developing MedScan: A medical image processing web app using React, FastAPI, and Tensorflow.",
+  {
+    title: "MedScan",
+    date: "02/2023 - 05/2024",
+    techStack: [
+      tStack.react,
+      tStack.python,
+      tStack.fastAPI,
+      tStack.javaScript,
+      tStack.css,
+      tStack.tailwind,
+      tStack.ml,
+      tStack.tensorflow,
+    ],
+    img: medScan as string,
+    style:
+      "border-emerald-400 bg-gradient-to-br from-emerald-400 via-gray-950 to-black shadow-sm shadow-emerald-400 grayscale filter duration-500 hover:shadow-md hover:shadow-emerald-400 hover:grayscale-0",
+    tstyle: "text-blue-500",
+    a: "Developed MedScan: A medical image processing web app using React, FastAPI, and Tensorflow.",
     b: "Implemented TensorFlow.js for real-time medical condition detection, improving healthcare outcomes.",
     c: "Collaborated effectively in a diverse team, delivering a user-friendly, secure app with positive user feedback.",
     link: "https://github.com/ABHAY-05/MEDSCAN.git",
     site: "https://medscan.vercel.app",
   },
-};
+];

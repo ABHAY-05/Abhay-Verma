@@ -15,7 +15,7 @@
 * {
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: #c08bf3 black;
+  scrollbar-color: #c08bf3 var(--bg-color);
 }
 
 *::-webkit-scrollbar {
@@ -33,7 +33,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: black;
+  background: var(--bg-color);
 }
 
 .inp {
