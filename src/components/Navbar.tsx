@@ -265,7 +265,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             </Link>
             <div
               onClick={() => dispatch(setDarkMode(!darkMode))}
-              className="contactm mt-[28vh] w-[160px] cursor-pointer overflow-hidden p-[1.2vh]"
+              className="contactm mt-[35vh] w-[160px] cursor-pointer overflow-hidden p-[1.2vh]"
             >
               <DarkMode darkMode={darkMode} mobile={true} />
             </div>
