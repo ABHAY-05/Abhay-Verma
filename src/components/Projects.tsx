@@ -74,7 +74,10 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
                         {Array.isArray(project.techStack) &&
                           project.techStack.map((tStack, idx) => (
-                            <div key={idx} className="h-[26px] text-nowrap">
+                            <div
+                              key={idx}
+                              className="h-[26px] text-nowrap text-[0.7vw]"
+                            >
                               {tStack}
                             </div>
                           ))}
@@ -116,7 +119,10 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
                         {Array.isArray(project.techStack) &&
                           project.techStack.map((tStack, idx) => (
-                            <div key={idx} className="h-[26px] text-nowrap">
+                            <div
+                              key={idx}
+                              className="h-[26px] text-nowrap text-[0.7vw]"
+                            >
                               {tStack}
                             </div>
                           ))}
@@ -176,10 +182,13 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         src={project.img as string}
                         alt={project.title as string}
                       />
-                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
+                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-md:grid-cols-[repeat(auto-fill,minmax(6vw,1fr))]">
                         {Array.isArray(project.techStack) &&
                           project.techStack.map((tStack, idx) => (
-                            <div key={idx} className="h-[26px] text-nowrap">
+                            <div
+                              key={idx}
+                              className="h-[26px] text-nowrap text-[0.8vw]"
+                            >
                               {tStack}
                             </div>
                           ))}
@@ -218,10 +227,13 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         src={project.img as string}
                         alt={project.title as string}
                       />
-                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
+                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-md:grid-cols-[repeat(auto-fill,minmax(6vw,1fr))]">
                         {Array.isArray(project.techStack) &&
                           project.techStack.map((tStack, idx) => (
-                            <div key={idx} className="h-[26px] text-nowrap">
+                            <div
+                              key={idx}
+                              className="h-[26px] text-nowrap text-[0.8vw]"
+                            >
                               {tStack}
                             </div>
                           ))}
@@ -260,10 +272,13 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         src={project.img as string}
                         alt={project.title as string}
                       />
-                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
+                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-md:grid-cols-[repeat(auto-fill,minmax(6vw,1fr))]">
                         {Array.isArray(project.techStack) &&
                           project.techStack.map((tStack, idx) => (
-                            <div key={idx} className="h-[26px] text-nowrap">
+                            <div
+                              key={idx}
+                              className="h-[26px] text-nowrap text-[0.8vw]"
+                            >
                               {tStack}
                             </div>
                           ))}
@@ -322,10 +337,13 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       src={project.img as string}
                       alt={project.title as string}
                     />
-                    <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
+                    <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(7vw,1fr))] gap-x-[4px] gap-y-[2px] max-sm:grid-cols-[repeat(auto-fill,minmax(9vw,1fr))]">
                       {Array.isArray(project.techStack) &&
                         project.techStack.map((tStack, idx) => (
-                          <div key={idx} className="h-[26px] text-nowrap">
+                          <div
+                            key={idx}
+                            className="h-[26px] text-nowrap text-[1vw] max-sm:text-[1.2vw]"
+                          >
                             {tStack}
                           </div>
                         ))}
@@ -384,14 +402,17 @@ const Modal: React.FC<{
             >
               <div className="flex flex-col items-center gap-[1vh]">
                 <img
-                  className="mt-[3vh] h-[30vh] w-[35vw] rounded-md max-lg:h-[33vh] max-lg:w-[45vw] max-md:w-[60vw] max-sm:h-[30vh] max-sm:w-[70vw]"
+                  className="mt-[3vh] h-[30vh] w-[35vw] rounded-md max-lg:h-[33vh] max-lg:w-[45vw] max-md:w-[60vw] max-sm:h-[20vh] max-sm:w-[70vw]"
                   src={selected.img as string}
                   alt={selected.title as string}
                 />
-                <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-lg:w-[90%] max-md:w-[92%] max-sm:w-[93%]">
+                <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-lg:w-[90%] max-lg:grid-cols-[repeat(auto-fill,minmax(6vw,1fr))] max-md:w-[92%] max-md:grid-cols-[repeat(auto-fill,minmax(7vw,1fr))] max-sm:w-[93%] max-sm:grid-cols-[repeat(auto-fill,minmax(10vw,1fr))]">
                   {Array.isArray(selected.techStack) &&
                     selected.techStack.map((tStack, idx) => (
-                      <div key={idx} className="h-[26px] text-nowrap">
+                      <div
+                        key={idx}
+                        className="h-[26px] text-nowrap text-[0.7vw] max-lg:text-[0.8vw] max-md:text-[1vw] max-sm:text-[1.5vw]"
+                      >
                         {tStack}
                       </div>
                     ))}
