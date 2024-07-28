@@ -35,7 +35,7 @@ export const tensorflow = (
 );
 
 export const flask = (
-  <div className="flex items-center justify-center rounded-full border-[0.2vh] border-white px-[0.5vw] py-[0.4vh] font-serif text-white shadow-sm shadow-white">
+  <div className="flex items-center justify-center rounded-full border-[0.2vh] border-white px-[0.5vw] py-[0.4vh] font-serif text-white mix-blend-difference shadow-sm shadow-white">
     Flask
   </div>
 );

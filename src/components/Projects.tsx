@@ -406,12 +406,12 @@ const Modal: React.FC<{
                   src={selected.img as string}
                   alt={selected.title as string}
                 />
-                <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-lg:w-[90%] max-lg:grid-cols-[repeat(auto-fill,minmax(6vw,1fr))] max-md:w-[92%] max-md:grid-cols-[repeat(auto-fill,minmax(7vw,1fr))] max-sm:w-[93%] max-sm:grid-cols-[repeat(auto-fill,minmax(10vw,1fr))]">
+                <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-lg:w-[90%] max-lg:grid-cols-[repeat(auto-fill,minmax(6vw,1fr))] max-md:w-[92%] max-md:grid-cols-[repeat(auto-fill,minmax(7vw,1fr))] max-sm:w-[93%] max-sm:grid-cols-[repeat(auto-fill,minmax(11vw,1fr))]">
                   {Array.isArray(selected.techStack) &&
                     selected.techStack.map((tStack, idx) => (
                       <div
                         key={idx}
-                        className="h-[26px] text-nowrap text-[0.7vw] max-lg:text-[0.8vw] max-md:text-[1vw] max-sm:text-[1.5vw]"
+                        className="h-[26px] text-nowrap text-[0.7vw] max-lg:text-[0.8vw] max-md:text-[1vw] max-sm:text-[1.4vw]"
                       >
                         {tStack}
                       </div>
