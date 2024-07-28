@@ -1,11 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import VanillaTilt from "vanilla-tilt";
+import { motion } from "framer-motion";
 
 import "../styles/projects.css";
 import { projects } from "../constants/data";
 
+type Project = { [key: string]: string | JSX.Element[] };
+
 const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+  const [selected, setSelected] = useState<Project | null>(null);
+
   const [ref, inView] = useInView({
     threshold: 0.15,
     triggerOnce: true,
@@ -54,8 +59,10 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             <div className="mt-[4vh] flex w-screen flex-col justify-center gap-[3vh]">
               <div className="col1 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(0, 3).map((project, idx) => (
-                  <div
+                  <motion.div
+                    layoutId={`card-${project.title as string}`}
                     key={idx}
+                    onClick={() => setSelected(project)}
                     className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
@@ -74,7 +81,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       </div>
                       <div className="ptitle flex w-full flex-col items-center">
                         <div
-                          className={`w-[83%] overflow-hidden text-[1.5vw] max-lg:text-[1.8vw] ${project.tstyle} text-nowrap`}
+                          className={`w-[83%] overflow-hidden text-[1.5vw] ${project.tstyle} text-nowrap`}
                         >
                           {project.title}
                         </div>
@@ -89,13 +96,15 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         <li>{project.b}</li>
                       </ul>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
               <div className="col2 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(3).map((project, idx) => (
-                  <div
+                  <motion.div
+                    layoutId={`card-${project.title as string}`}
                     key={idx}
+                    onClick={() => setSelected(project)}
                     className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] ${darkMode ? project.style : project.lstyle}`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
@@ -123,13 +132,13 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         </div>
                       </div>
                       <ul
-                        className={`pdesc mx-[2vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"} max-lg:mx-[2.5vw]`}
+                        className={`pdesc mx-[2vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"}`}
                       >
                         <li>{project.a}</li>
                         <li>{project.b}</li>
                       </ul>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -155,8 +164,10 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             <div className="mt-[4vh] flex w-screen flex-col justify-center gap-[3vh]">
               <div className="col1 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(0, 2).map((project, idx) => (
-                  <div
+                  <motion.div
+                    layoutId={`card-${project.title as string}`}
                     key={idx}
+                    onClick={() => setSelected(project)}
                     className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
@@ -190,13 +201,15 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         <li>{project.b}</li>
                       </ul>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
               <div className="col2 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(2).map((project, idx) => (
-                  <div
+                  <motion.div
+                    layoutId={`card-${project.title as string}`}
                     key={idx}
+                    onClick={() => setSelected(project)}
                     className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle}`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
@@ -230,7 +243,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         <li>{project.b}</li>
                       </ul>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -255,8 +268,10 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             </div>
             <div className="mt-[4vh] flex w-screen flex-col items-center justify-center gap-[3vh]">
               {projects.map((project, idx) => (
-                <div
+                <motion.div
+                  layoutId={`card-${project.title as string}`}
                   key={idx}
+                  onClick={() => setSelected(project)}
                   className={`card ${idx % 2 ? "col1" : "col2"} mb-[1vh] mt-[1vh] h-auto w-[60vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                 >
                   <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
@@ -290,14 +305,93 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       <li>{project.b}</li>
                     </ul>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </>
         )}
       </div>
+      <Modal
+        selected={selected}
+        setSelected={setSelected}
+        darkMode={darkMode}
+      />
     </>
   );
 };
 
 export default Projects;
+
+const Modal: React.FC<{
+  selected: Project | null;
+  setSelected: React.Dispatch<React.SetStateAction<Project | null>>;
+  darkMode: boolean;
+}> = ({ selected, setSelected, darkMode }) => {
+  return (
+    <>
+      {selected && (
+        <>
+          <div
+            onClick={() => setSelected(null)}
+            className="fixed inset-0 z-40 flex h-screen w-screen cursor-pointer items-center justify-center overflow-hidden bg-black/50"
+          >
+            <motion.div
+              onClick={(e) => e.stopPropagation()}
+              layoutId={`card-${selected.title}`}
+              className={`card h-[95vh] w-[40vw] overflow-hidden rounded-lg border-[0.2vh] max-lg:w-[50vw] max-md:w-[65vw] max-sm:w-[75vw] ${darkMode ? selected.style : selected.lstyle} pb-[5vh]`}
+            >
+              <div className="flex flex-col items-center gap-[1vh]">
+                <img
+                  className="mt-[3vh] h-[30vh] w-[35vw] rounded-md max-lg:h-[33vh] max-lg:w-[45vw] max-md:w-[60vw] max-sm:h-[30vh] max-sm:w-[70vw]"
+                  src={selected.img as string}
+                  alt={selected.title as string}
+                />
+                <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px] max-lg:w-[90%] max-md:w-[92%] max-sm:w-[93%]">
+                  {Array.isArray(selected.techStack) &&
+                    selected.techStack.map((tStack, idx) => (
+                      <div key={idx} className="h-[26px] text-nowrap">
+                        {tStack}
+                      </div>
+                    ))}
+                </div>
+                <div className="ptitle flex w-full flex-col items-center">
+                  <div
+                    className={`w-[83%] overflow-hidden text-[2vw] max-lg:w-[88%] max-lg:text-[2.5vw] max-md:text-[3vw] ${selected.tstyle} text-nowrap max-md:w-[90%] max-sm:w-[92%] max-sm:text-[4vw]`}
+                  >
+                    {selected.title}
+                  </div>
+                  <div className="w-[83%] overflow-hidden text-[1vw] text-gray-400 max-lg:w-[88%] max-lg:text-[1.5vw] max-md:w-[90%] max-md:text-[2vw] max-sm:w-[92%] max-sm:text-[3vw]">
+                    {selected.date}
+                  </div>
+                </div>
+                <ul
+                  className={`pdesc mx-[3.5vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] max-lg:mx-[3vw] max-lg:text-[1.3vw] max-md:text-[1.9vw] max-sm:text-[2.2vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"}`}
+                >
+                  <li>{selected.a}</li>
+                  <li>{selected.b}</li>
+                  {selected.c && <li>{selected.c}</li>}
+                </ul>
+                <div className="mt-[10vh] flex items-center justify-center gap-[10vw]">
+                  <a
+                    href={selected.link as string}
+                    className={`${selected.bstyle} mx-[1vw] mb-[1vh] rounded-full px-[3vw] py-[1vh] max-md:px-[4vw] max-sm:px-[5vw]`}
+                  >
+                    Code
+                  </a>
+                  {selected.site && (
+                    <a
+                      href={selected.site as string}
+                      className={`${selected.bstyle} mx-[1vw] mb-[1vh] rounded-full px-[3vw] py-[1vh] max-md:px-[4vw] max-sm:px-[5vw]`}
+                    >
+                      Demo
+                    </a>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </>
+      )}
+    </>
+  );
+};

@@ -3,6 +3,7 @@ import linguistic from "../assets/Linguistic.png";
 import product from "../assets/product.png";
 import medScan from "../assets/medScan.png";
 import IRIS from "../assets/IRIS.png";
+import todo from "../assets/todo.png";
 
 export const Bio: { [key: string]: string } = {
   Name: "Abhay Verma",
@@ -89,6 +90,8 @@ export const projects: Projects = [
     lstyle:
       "border-blue-500 bg-gradient-to-br from-blue-300 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     tstyle: "text-blue-400",
+    bstyle:
+      "text-blue-400 shadow-sm shadow-blue-500 hover:shadow-md hover:shadow-blue-500 duration-500 border-2 border-blue-500",
     a: "Developed a versatile ML model for text extraction, captcha and handwriting recognition, license plate detection from images, and language translation.",
     b: "Collaborated in a 5-member team to integrate ML techniques into a responsive web page design.",
     c: "Held roles as an ML Developer and Backend Manager, showcasing expertise in both aspects",
@@ -109,8 +112,10 @@ export const projects: Projects = [
     style:
       "border-yellow-500 bg-gradient-to-br from-yellow-950 via-gray-950 to-black shadow-sm shadow-yellow-500 grayscale filter duration-500 hover:shadow-md hover:shadow-yellow-500 hover:grayscale-0",
     lstyle:
-      "border-blue-500 bg-gradient-to-br from-yellow-200 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+      "border-yellow-500 bg-gradient-to-br from-yellow-200 via-gray-100 to-white shadow-sm shadow-yellow-500 grayscale filter duration-500 hover:shadow-md hover:shadow-yellow-500 hover:grayscale-0",
     tstyle: "text-yellow-400",
+    bstyle:
+      "text-yellow-400 shadow-sm shadow-yellow-500 hover:shadow-md hover:shadow-yellow-500 duration-500 border-2 border-yellow-500",
     a: "Implemented a full-stack recommendation system providing personalized product recommendations based on user preferences.",
     b: "Dynamic interfaces with ReactJS, efficient server-side processing with Express.js.",
     c: "Mongoose is used for data modeling, boosting system accuracy and scalability.",
@@ -131,8 +136,10 @@ export const projects: Projects = [
     style:
       "border-emerald-400 bg-gradient-to-br from-emerald-400 via-gray-950 to-black shadow-sm shadow-emerald-400 grayscale filter duration-500 hover:shadow-md hover:shadow-emerald-400 hover:grayscale-0",
     lstyle:
-      "border-blue-500 bg-gradient-to-br from-emerald-300 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+      "border-emerald-500 bg-gradient-to-br from-emerald-300 via-gray-100 to-white shadow-sm shadow-emerald-500 grayscale filter duration-500 hover:shadow-md hover:shadow-emerald-500 hover:grayscale-0",
     tstyle: "text-emerald-500",
+    bstyle:
+      "text-emerald-400 shadow-sm shadow-emerald-500 hover:shadow-md hover:shadow-emerald-500 duration-500 border-2 border-emerald-500",
     a: "Created IRIS Virtual Assistant using Python, ML, and Speech Recognition technologies.",
     b: "Designed a versatile assistant for tasks like sending emails, providing weather reports, delivering news, etc, all via voice commands.",
     link: "https://github.com/ABHAY-05/IRIS.git",
@@ -156,10 +163,37 @@ export const projects: Projects = [
     lstyle:
       "border-blue-500 bg-gradient-to-br from-blue-300 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     tstyle: "text-blue-500",
+    bstyle:
+      "text-blue-400 shadow-sm shadow-blue-500 hover:shadow-md hover:shadow-blue-500 duration-500 border-2 border-blue-500",
     a: "Developed MedScan: A medical image processing web app using React, FastAPI, and Tensorflow.",
     b: "Implemented TensorFlow.js for real-time medical condition detection, improving healthcare outcomes.",
     c: "Collaborated effectively in a diverse team, delivering a user-friendly, secure app with positive user feedback.",
     link: "https://github.com/ABHAY-05/MEDSCAN.git",
     site: "https://medscan.vercel.app",
+  },
+  {
+    title: "Todo App",
+    date: "07/2024 - 07/2024",
+    techStack: [
+      tStack.nextJS,
+      tStack.react,
+      tStack.redux,
+      tStack.javaScript,
+      tStack.css,
+      tStack.tailwind,
+    ],
+    img: todo as string,
+    style:
+      "border-violet-500 bg-gradient-to-br from-violet-950 via-gray-950 to-black shadow-sm shadow-violet-500 grayscale filter duration-500 hover:shadow-md hover:shadow-violet-500 hover:grayscale-0",
+    lstyle:
+      "border-violet-500 bg-gradient-to-br from-violet-300 via-gray-100 to-white shadow-sm shadow-violet-500 grayscale filter duration-500 hover:shadow-md hover:shadow-violet-500 hover:grayscale-0",
+    tstyle: "text-violet-500",
+    bstyle:
+      "text-violet-400 shadow-sm shadow-violet-500 hover:shadow-md hover:shadow-violet-500 duration-500 border-2 border-blue-500",
+    a: "Developed a Todo List application with Next.js, React, Redux, and Tailwind CSS, featuring user authentication, task management, and password recovery.",
+    b: "Implemented secure user authentication processes and comprehensive task management features, enhancing user productivity and data security.",
+    c: "Ensured responsive design and efficient state management, delivering a consistent user experience across devices.",
+    link: "https://github.com/ABHAY-05/todo-app.git",
+    site: "https://todo-app-orcin-two.vercel.app/",
   },
 ];

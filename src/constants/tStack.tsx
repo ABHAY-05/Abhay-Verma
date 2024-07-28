@@ -78,7 +78,7 @@ export const ml = (
 
 export const speechRecognition = (
   <div className="flex items-center justify-center rounded-full border-[0.2vh] border-green-500 px-[0.5vw] py-[0.4vh] font-serif text-[0.7vw] text-green-500 shadow-sm shadow-green-500">
-    Speech Recognition
+    Speech Recogn.
   </div>
 );
 
@@ -103,5 +103,11 @@ export const tailwind = (
 export const redux = (
   <div className="flex items-center justify-center rounded-full border-[0.2vh] border-purple-700 px-[0.5vw] py-[0.4vh] font-serif text-[0.7vw] text-purple-700 shadow-sm shadow-purple-700">
     Redux
+  </div>
+);
+
+export const nextJS = (
+  <div className="flex items-center justify-center rounded-full border-[0.2vh] border-teal-500 px-[0.5vw] py-[0.4vh] font-serif text-[0.7vw] text-teal-500 shadow-sm shadow-teal-500">
+    Next.js
   </div>
 );
