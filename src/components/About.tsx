@@ -23,16 +23,16 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     <>
       <div
         ref={ref}
-        className={`relative h-[90vh] w-screen overflow-hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`relative min-h-[90vh] w-screen overflow-hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {/* Desktop Section */}
         {inView && (
           <>
             <div className="absolute top-[10vh] flex gap-[8vw] pl-[10vw] max-lg:hidden max-md:hidden">
-              <div className="about-icon mt-[10vh] flex h-[20vh] w-[300px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.5rem] text-purple-300 shadow-lg shadow-purple-500">
+              <div className="about-icon mt-[10vh] flex h-[170px] w-[300px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.5rem] text-purple-300 shadow-lg shadow-purple-500">
                 About me
               </div>
-              <div className="flex w-[50vw] flex-col gap-[2vh]">
+              <div className="flex h-auto w-[50vw] flex-col gap-[2vh]">
                 <div className="aboutme flex gap-[1vw] border-b-[0.2vh] border-purple-500 pb-[1vh] text-[3.4rem]">
                   <div className={`${darkMode ? "text-white" : "text-black"}`}>
                     About
@@ -46,7 +46,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <div>{Bio.description2}</div>
                 </div>
                 <div className="tag flex w-[50vw] justify-center overflow-hidden pt-[2vh] text-[1.95rem] text-purple-500">{`"${Bio.tag}"`}</div>
-                <div className="-ml-[2vh] h-[15vh] overflow-hidden p-[2vh]">
+                <div className="-ml-[2vh] h-auto overflow-hidden p-[2vh]">
                   <Link
                     activeClass="active"
                     to="skills"
@@ -68,10 +68,10 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         {inView && (
           <>
             <div className="absolute top-[7vh] flex gap-[8vw] pl-[8vw] max-md:hidden lg:hidden">
-              <div className="about-icon mt-[10vh] flex h-[17vh] w-[260px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.3rem] text-purple-300 shadow-lg shadow-purple-500">
+              <div className="about-icon mt-[10vh] flex h-[150px] w-[260px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.3rem] text-purple-300 shadow-lg shadow-purple-500">
                 About me
               </div>
-              <div className="flex w-[50vw] flex-col gap-[2vh]">
+              <div className="flex h-auto w-[50vw] flex-col gap-[2vh]">
                 <div className="aboutme flex gap-[1vw] border-b-[0.2vh] border-purple-500 pb-[1vh] text-[3.4rem]">
                   <div className={`${darkMode ? "text-white" : "text-black"}`}>
                     About
@@ -85,7 +85,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <div>{Bio.description2}</div>
                 </div>
                 <div className="tag flex w-[50vw] justify-center overflow-hidden pt-[2vh] text-[2.1rem] text-purple-500">{`"${Bio.tag}"`}</div>
-                <div className="-ml-[2vh] h-[15vh] overflow-hidden p-[2vh]">
+                <div className="-ml-[2vh] h-auto overflow-hidden p-[2vh]">
                   <Link
                     activeClass="active"
                     to="skills"
@@ -106,11 +106,11 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         {/* Mobile Section */}
         {inView && (
           <>
-            <div className="relative -mt-[3vh] flex flex-col items-center justify-center gap-[2vh] md:hidden">
-              <div className="about-icon mt-[10vh] flex h-[18vh] w-[250px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.25rem] text-purple-300 shadow-lg shadow-purple-500">
+            <div className="relative -mt-[3vh] flex flex-col items-center justify-center gap-[5vh] md:hidden">
+              <div className="about-icon mt-[10vh] flex h-[150px] w-[250px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.25rem] text-purple-300 shadow-lg shadow-purple-500">
                 About me
               </div>
-              <div className="flex w-[80vw] flex-col gap-[1.5vh]">
+              <div className="flex h-auto w-[80vw] flex-col gap-[1.5vh]">
                 <div className="aboutme flex gap-[1vw] border-b-[0.2vh] border-purple-500 pb-[1vh] text-[2.8rem]">
                   <div className={`${darkMode ? "text-white" : "text-black"}`}>
                     About
@@ -124,7 +124,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <div>{Bio.description2}</div>
                 </div>
                 <div className="tag flex justify-center overflow-hidden text-[1.72rem] text-purple-500">{`"${Bio.tag}"`}</div>
-                <div className="-ml-[2vh] -mt-[2vh] h-[15vh] overflow-hidden p-[2vh]">
+                <div className="-ml-[2vh] -mt-[2vh] h-auto overflow-hidden p-[2vh]">
                   <Link
                     activeClass="active"
                     to="skills"
