@@ -86,6 +86,8 @@ export const projects: Projects = [
     img: linguistic as string,
     style:
       "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+    lstyle:
+      "border-blue-500 bg-gradient-to-br from-blue-300 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     tstyle: "text-blue-400",
     a: "Developed a versatile ML model for text extraction, captcha and handwriting recognition, license plate detection from images, and language translation.",
     b: "Collaborated in a 5-member team to integrate ML techniques into a responsive web page design.",
@@ -97,6 +99,7 @@ export const projects: Projects = [
     date: "08/2023 - 9/2023",
     techStack: [
       tStack.react,
+      tStack.redux,
       tStack.express,
       tStack.javaScript,
       tStack.mongoDB,
@@ -105,6 +108,8 @@ export const projects: Projects = [
     img: product as string,
     style:
       "border-yellow-500 bg-gradient-to-br from-yellow-950 via-gray-950 to-black shadow-sm shadow-yellow-500 grayscale filter duration-500 hover:shadow-md hover:shadow-yellow-500 hover:grayscale-0",
+    lstyle:
+      "border-blue-500 bg-gradient-to-br from-yellow-200 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     tstyle: "text-yellow-400",
     a: "Implemented a full-stack recommendation system providing personalized product recommendations based on user preferences.",
     b: "Dynamic interfaces with ReactJS, efficient server-side processing with Express.js.",
@@ -124,10 +129,12 @@ export const projects: Projects = [
     ],
     img: IRIS as string,
     style:
-      "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+      "border-emerald-400 bg-gradient-to-br from-emerald-400 via-gray-950 to-black shadow-sm shadow-emerald-400 grayscale filter duration-500 hover:shadow-md hover:shadow-emerald-400 hover:grayscale-0",
+    lstyle:
+      "border-blue-500 bg-gradient-to-br from-emerald-300 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     tstyle: "text-emerald-500",
     a: "Created IRIS Virtual Assistant using Python, ML, and Speech Recognition technologies.",
-    b: "Designed a versatile assistant for tasks like sending emails, providing weather reports, and delivering news, all via voice commands.",
+    b: "Designed a versatile assistant for tasks like sending emails, providing weather reports, delivering news, etc, all via voice commands.",
     link: "https://github.com/ABHAY-05/IRIS.git",
   },
   {
@@ -145,7 +152,9 @@ export const projects: Projects = [
     ],
     img: medScan as string,
     style:
-      "border-emerald-400 bg-gradient-to-br from-emerald-400 via-gray-950 to-black shadow-sm shadow-emerald-400 grayscale filter duration-500 hover:shadow-md hover:shadow-emerald-400 hover:grayscale-0",
+      "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
+    lstyle:
+      "border-blue-500 bg-gradient-to-br from-blue-300 via-gray-100 to-white shadow-sm shadow-blue-500 grayscale filter duration-500 hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     tstyle: "text-blue-500",
     a: "Developed MedScan: A medical image processing web app using React, FastAPI, and Tensorflow.",
     b: "Implemented TensorFlow.js for real-time medical condition detection, improving healthcare outcomes.",

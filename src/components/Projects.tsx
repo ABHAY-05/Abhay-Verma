@@ -39,7 +39,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Desktop Section */}
       <div
         ref={ref}
-        className={`flex h-[170vh] w-screen flex-col items-center overflow-hidden max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex h-auto w-screen flex-col items-center overflow-hidden max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inView && (
           <>
@@ -56,7 +56,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 {projects.slice(0, 3).map((project, idx) => (
                   <div
                     key={idx}
-                    className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${project.style} pb-[5vh]`}
+                    className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
                       <img
@@ -82,7 +82,9 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           {project.date}
                         </div>
                       </div>
-                      <ul className="pdesc mx-[1.9vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] text-white marker:text-white">
+                      <ul
+                        className={`pdesc mx-[1.9vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"}`}
+                      >
                         <li>{project.a}</li>
                         <li>{project.b}</li>
                       </ul>
@@ -94,7 +96,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 {projects.slice(3).map((project, idx) => (
                   <div
                     key={idx}
-                    className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] ${project.style}`}
+                    className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] ${darkMode ? project.style : project.lstyle}`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
                       <img
@@ -120,7 +122,9 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           {project.date}
                         </div>
                       </div>
-                      <ul className="pdesc mx-[2vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] text-white marker:text-white max-lg:mx-[2.5vw]">
+                      <ul
+                        className={`pdesc mx-[2vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"} max-lg:mx-[2.5vw]`}
+                      >
                         <li>{project.a}</li>
                         <li>{project.b}</li>
                       </ul>
@@ -136,7 +140,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Tablet Section */}
       <div
         ref={tabRef}
-        className={`flex h-[140vh] w-screen flex-col items-center overflow-hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex h-auto w-screen flex-col items-center overflow-hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inTabView && (
           <>
@@ -153,7 +157,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 {projects.slice(0, 2).map((project, idx) => (
                   <div
                     key={idx}
-                    className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] max-md:w-[45vw] ${project.style} pb-[5vh]`}
+                    className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
                       <img
@@ -171,7 +175,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       </div>
                       <div className="ptitle flex w-full flex-col items-center">
                         <div
-                          className={`w-[83%] overflow-hidden text-[1.8vw] ${project.tstyle} text-nowrap max-md:text-[2vw]`}
+                          className={`w-[83%] overflow-hidden text-[2vw] ${project.tstyle} text-nowrap max-md:text-[2.5vw]`}
                         >
                           {project.title}
                         </div>
@@ -179,7 +183,9 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           {project.date}
                         </div>
                       </div>
-                      <ul className="pdesc mx-[2.7vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] text-white marker:text-white max-md:mx-[3.5vw]">
+                      <ul
+                        className={`pdesc mx-[2.7vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1.3vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"} max-md:mx-[3.5vw] max-md:text-[1.5vw]`}
+                      >
                         <li>{project.a}</li>
                         <li>{project.b}</li>
                       </ul>
@@ -191,7 +197,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 {projects.slice(2).map((project, idx) => (
                   <div
                     key={idx}
-                    className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] max-md:w-[45vw] ${project.style}`}
+                    className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle}`}
                   >
                     <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
                       <img
@@ -209,7 +215,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                       </div>
                       <div className="ptitle flex w-full flex-col items-center">
                         <div
-                          className={`w-[83%] overflow-hidden text-[1.8vw] ${project.tstyle} text-nowrap max-md:text-[2vw]`}
+                          className={`w-[83%] overflow-hidden text-[2vw] ${project.tstyle} text-nowrap max-md:text-[2.5vw]`}
                         >
                           {project.title}
                         </div>
@@ -217,7 +223,9 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           {project.date}
                         </div>
                       </div>
-                      <ul className="pdesc mx-[2.8vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] text-white marker:text-white max-md:mx-[3.5vw]">
+                      <ul
+                        className={`pdesc mx-[2.8vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1.3vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"} max-md:mx-[3.5vw] max-md:text-[1.5vw]`}
+                      >
                         <li>{project.a}</li>
                         <li>{project.b}</li>
                       </ul>
@@ -233,7 +241,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex h-[200vh] w-screen flex-col items-center overflow-hidden sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex h-auto w-screen flex-col items-center overflow-hidden sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
@@ -249,7 +257,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               {projects.map((project, idx) => (
                 <div
                   key={idx}
-                  className={`card ${idx % 2 ? "col1" : "col2"} mb-[1vh] mt-[1vh] h-auto w-[60vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${project.style} pb-[5vh]`}
+                  className={`card ${idx % 2 ? "col1" : "col2"} mb-[1vh] mt-[1vh] h-auto w-[60vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                 >
                   <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
                     <img
@@ -267,15 +275,17 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     </div>
                     <div className="ptitle flex w-full flex-col items-center">
                       <div
-                        className={`w-[83%] overflow-hidden text-[3vw] ${project.tstyle} text-nowrap`}
+                        className={`w-[83%] overflow-hidden text-[3.5vw] ${project.tstyle} text-nowrap`}
                       >
                         {project.title}
                       </div>
-                      <div className="w-[83%] overflow-hidden text-[2vw] text-gray-400">
+                      <div className="w-[83%] overflow-hidden text-[2.2vw] text-gray-400">
                         {project.date}
                       </div>
                     </div>
-                    <ul className="pdesc mx-[5vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1vw] text-white marker:text-white">
+                    <ul
+                      className={`pdesc mx-[5vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[2vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"}`}
+                    >
                       <li>{project.a}</li>
                       <li>{project.b}</li>
                     </ul>

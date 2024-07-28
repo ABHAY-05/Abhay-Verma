@@ -99,3 +99,9 @@ export const tailwind = (
     Tailwind
   </div>
 );
+
+export const redux = (
+  <div className="flex items-center justify-center rounded-full border-[0.2vh] border-purple-700 px-[0.5vw] py-[0.4vh] font-serif text-[0.7vw] text-purple-700 shadow-sm shadow-purple-700">
+    Redux
+  </div>
+);
