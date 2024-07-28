@@ -416,6 +416,7 @@ const Modal: React.FC<{
                 <div className="mt-[10vh] flex items-center justify-center gap-[10vw]">
                   <a
                     href={selected.link as string}
+                    target="_blank"
                     className={`${selected.bstyle} mx-[1vw] mb-[1vh] rounded-full px-[3vw] py-[1vh] max-md:px-[4vw] max-sm:px-[5vw]`}
                   >
                     Code
@@ -423,6 +424,7 @@ const Modal: React.FC<{
                   {selected.site && (
                     <a
                       href={selected.site as string}
+                      target="_blank"
                       className={`${selected.bstyle} mx-[1vw] mb-[1vh] rounded-full px-[3vw] py-[1vh] max-md:px-[4vw] max-sm:px-[5vw]`}
                     >
                       Demo
