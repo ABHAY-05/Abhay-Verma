@@ -15,9 +15,13 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const useAppDispatch = useDispatch.withTypes<AppDispatch>();
   const dispatch = useAppDispatch();
 
+  const options = {
+    gyroscope: false,
+  };
+
   useEffect(() => {
-    VanillaTilt.init(document.querySelector(".logo") as HTMLElement);
-  });
+    VanillaTilt.init(document.querySelector(".logo") as HTMLElement, options);
+  }, [options]);
 
   return (
     <>

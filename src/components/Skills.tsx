@@ -26,17 +26,19 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     triggerOnce: true,
   });
 
+  const options = {
+    max: 15,
+    gyroscope: false,
+  };
+
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      VanillaTilt.init(card as HTMLElement, {
-        max: 20,
-        gyroscopeMinAngleX: -15,
-        gyroscopeMaxAngleX: 15,
-        gyroscopeMinAngleY: -15,
-        gyroscopeMaxAngleY: 15,
-      });
-    });
+    cards.forEach(
+      (card) => {
+        VanillaTilt.init(card as HTMLElement, options);
+      },
+      [options],
+    );
   });
 
   return (

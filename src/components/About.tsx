@@ -12,12 +12,18 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     triggerOnce: true,
   });
 
+  const options = {
+    glare: true,
+    "max-glare": 0.2,
+    gyroscope: false,
+  };
+
   useEffect(() => {
-    VanillaTilt.init(document.querySelector(".about-icon") as HTMLElement, {
-      glare: true,
-      "max-glare": 0.2,
-    });
-  });
+    VanillaTilt.init(
+      document.querySelector(".about-icon") as HTMLElement,
+      options,
+    );
+  }, [options]);
 
   return (
     <>

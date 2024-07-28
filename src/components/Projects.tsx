@@ -26,18 +26,17 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     triggerOnce: true,
   });
 
+  const options = {
+    max: 5,
+    gyroscope: false,
+  };
+
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
-      VanillaTilt.init(card as HTMLElement, {
-        max: 5,
-        gyroscopeMinAngleX: -5,
-        gyroscopeMaxAngleX: 5,
-        gyroscopeMinAngleY: -5,
-        gyroscopeMaxAngleY: 5,
-      });
+      VanillaTilt.init(card as HTMLElement, options);
     });
-  });
+  }, [options]);
 
   return (
     <>

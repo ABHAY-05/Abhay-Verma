@@ -29,18 +29,17 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     triggerOnce: true,
   });
 
+  const options = {
+    max: 10,
+    gyroscope: false,
+  };
+
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
-      VanillaTilt.init(card as HTMLElement, {
-        max: 10,
-        gyroscopeMinAngleX: -10,
-        gyroscopeMaxAngleX: 10,
-        gyroscopeMinAngleY: -10,
-        gyroscopeMaxAngleY: 10,
-      });
+      VanillaTilt.init(card as HTMLElement, options);
     });
-  });
+  }, [options]);
 
   return (
     <>

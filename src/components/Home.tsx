@@ -10,14 +10,16 @@ import Typewriter from "./Typewriter";
 import { useInView } from "react-intersection-observer";
 
 const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+  const options = {
+    speed: 400,
+    max: 15,
+    gyroscope: false,
+  };
+
   useEffect(() => {
-    VanillaTilt.init(document.querySelector(".image") as HTMLElement, {
-      speed: 400,
-    });
-    VanillaTilt.init(document.querySelector(".imagem") as HTMLElement, {
-      speed: 400,
-    });
-  });
+    VanillaTilt.init(document.querySelector(".image") as HTMLElement, options);
+    VanillaTilt.init(document.querySelector(".imagem") as HTMLElement, options);
+  }, [options]);
 
   const [ref, inView] = useInView({
     threshold: 0.15,
