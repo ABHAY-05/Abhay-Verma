@@ -73,6 +73,7 @@ type Projects = { [key: string]: string | JSX.Element[] }[];
 
 export const projects: Projects = [
   {
+    id: "1",
     title: "Linguistic OCR",
     date: "09/2022 - 12/2022",
     techStack: [
@@ -98,6 +99,7 @@ export const projects: Projects = [
     link: "https://github.com/ABHAY-05/Linguistic-OCR.git",
   },
   {
+    id: "2",
     title: "Product Recommendation System",
     date: "08/2023 - 9/2023",
     techStack: [
@@ -123,6 +125,7 @@ export const projects: Projects = [
     site: "https://myproduct-recommendation-system.vercel.app",
   },
   {
+    id: "3",
     title: "IRIS",
     date: "10/2021 - 12/2021",
     techStack: [
@@ -145,6 +148,7 @@ export const projects: Projects = [
     link: "https://github.com/ABHAY-05/IRIS.git",
   },
   {
+    id: "4",
     title: "MedScan",
     date: "02/2023 - 05/2024",
     techStack: [
@@ -172,6 +176,7 @@ export const projects: Projects = [
     site: "https://medscan.vercel.app",
   },
   {
+    id: "5",
     title: "Todo App",
     date: "07/2024 - 07/2024",
     techStack: [

@@ -60,7 +60,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <div className="col1 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(0, 3).map((project, idx) => (
                   <motion.div
-                    layoutId={`card-${project.title as string}`}
+                    layoutId={`card-${project.id as string}`}
                     key={idx}
                     onClick={() => setSelected(project)}
                     className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
@@ -105,7 +105,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <div className="col2 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(3).map((project, idx) => (
                   <motion.div
-                    layoutId={`card-${project.title as string}`}
+                    layoutId={`card-${project.id as string}`}
                     key={idx}
                     onClick={() => setSelected(project)}
                     className={`card h-auto w-[23vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] ${darkMode ? project.style : project.lstyle}`}
@@ -171,7 +171,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <div className="col1 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(0, 2).map((project, idx) => (
                   <motion.div
-                    layoutId={`card-${project.title as string}`}
+                    layoutId={`card-${project.id as string}`}
                     key={idx}
                     onClick={() => setSelected(project)}
                     className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
@@ -216,7 +216,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <div className="col2 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(2, 4).map((project, idx) => (
                   <motion.div
-                    layoutId={`card-${project.title as string}`}
+                    layoutId={`card-${project.id as string}`}
                     key={idx}
                     onClick={() => setSelected(project)}
                     className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle}`}
@@ -261,7 +261,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               <div className="col1 flex w-screen justify-center gap-[3vw] py-[2vh]">
                 {projects.slice(4).map((project, idx) => (
                   <motion.div
-                    layoutId={`card-${project.title as string}`}
+                    layoutId={`card-${project.id as string}`}
                     key={idx}
                     onClick={() => setSelected(project)}
                     className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle}`}
@@ -326,7 +326,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             <div className="mt-[4vh] flex w-screen flex-col items-center justify-center gap-[3vh]">
               {projects.map((project, idx) => (
                 <motion.div
-                  layoutId={`card-${project.title as string}`}
+                  layoutId={`card-${project.id as string}`}
                   key={idx}
                   onClick={() => setSelected(project)}
                   className={`card ${idx % 2 ? "col1" : "col2"} mb-[1vh] mt-[1vh] h-auto w-[60vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
@@ -397,8 +397,8 @@ const Modal: React.FC<{
           >
             <motion.div
               onClick={(e) => e.stopPropagation()}
-              layoutId={`card-${selected.title}`}
-              className={`h-auto w-[40vw] overflow-hidden rounded-lg border-[0.2vh] max-lg:w-[50vw] max-md:w-[65vw] max-sm:w-[75vw] ${darkMode ? selected.style : selected.lstyle} cursor-default pb-[5vh] filter-none`}
+              layoutId={`card-${selected.id}`}
+              className={`h-auto w-[40vw] overflow-hidden rounded-lg border-[0.2vh] max-lg:w-[50vw] max-md:w-[65vw] max-sm:w-[75vw] ${darkMode ? selected.style : selected.lstyle} cursor-default pb-[5vh] filter-none duration-0`}
             >
               <div className="flex flex-col items-center gap-[1vh]">
                 <img
