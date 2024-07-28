@@ -189,7 +189,7 @@ export const projects: Projects = [
       "border-violet-500 bg-gradient-to-br from-violet-300 via-gray-100 to-white shadow-sm shadow-violet-500 grayscale filter duration-500 hover:shadow-md hover:shadow-violet-500 hover:grayscale-0",
     tstyle: "text-violet-500",
     bstyle:
-      "text-violet-400 shadow-sm shadow-violet-500 hover:shadow-md hover:shadow-violet-500 duration-500 border-2 border-blue-500",
+      "text-violet-400 shadow-sm shadow-violet-500 hover:shadow-md hover:shadow-violet-500 duration-500 border-2 border-violet-500",
     a: "Developed a Todo List application with Next.js, React, Redux, and Tailwind CSS, featuring user authentication, task management, and password recovery.",
     b: "Implemented secure user authentication processes and comprehensive task management features, enhancing user productivity and data security.",
     c: "Ensured responsive design and efficient state management, delivering a consistent user experience across devices.",
