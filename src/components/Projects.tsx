@@ -380,7 +380,7 @@ const Modal: React.FC<{
             <motion.div
               onClick={(e) => e.stopPropagation()}
               layoutId={`card-${selected.title}`}
-              className={`card h-[95vh] w-[40vw] overflow-hidden rounded-lg border-[0.2vh] max-lg:w-[50vw] max-md:w-[65vw] max-sm:w-[75vw] ${darkMode ? selected.style : selected.lstyle} pb-[5vh]`}
+              className={`h-auto w-[40vw] overflow-hidden rounded-lg border-[0.2vh] max-lg:w-[50vw] max-md:w-[65vw] max-sm:w-[75vw] ${darkMode ? selected.style : selected.lstyle} cursor-default pb-[5vh] filter-none`}
             >
               <div className="flex flex-col items-center gap-[1vh]">
                 <img
