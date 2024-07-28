@@ -205,7 +205,49 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 ))}
               </div>
               <div className="col2 flex w-screen justify-center gap-[3vw] py-[2vh]">
-                {projects.slice(2).map((project, idx) => (
+                {projects.slice(2, 4).map((project, idx) => (
+                  <motion.div
+                    layoutId={`card-${project.title as string}`}
+                    key={idx}
+                    onClick={() => setSelected(project)}
+                    className={`card h-auto w-[35vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] pb-[5vh] max-md:w-[45vw] ${darkMode ? project.style : project.lstyle}`}
+                  >
+                    <div className="flex flex-col items-center gap-[1vh] duration-500 hover:scale-105">
+                      <img
+                        className="mt-[3vh] h-[20vh] w-[32vw] rounded-md max-md:w-[40vw]"
+                        src={project.img as string}
+                        alt={project.title as string}
+                      />
+                      <div className="grid w-[85%] grid-cols-[repeat(auto-fill,minmax(5vw,1fr))] gap-x-[4px] gap-y-[2px]">
+                        {Array.isArray(project.techStack) &&
+                          project.techStack.map((tStack, idx) => (
+                            <div key={idx} className="h-[26px] text-nowrap">
+                              {tStack}
+                            </div>
+                          ))}
+                      </div>
+                      <div className="ptitle flex w-full flex-col items-center">
+                        <div
+                          className={`w-[83%] overflow-hidden text-[2vw] ${project.tstyle} text-nowrap max-md:text-[2.5vw]`}
+                        >
+                          {project.title}
+                        </div>
+                        <div className="w-[83%] overflow-hidden text-[1.4vw] text-gray-400 max-md:text-[1.6vw]">
+                          {project.date}
+                        </div>
+                      </div>
+                      <ul
+                        className={`pdesc mx-[2.8vw] flex list-inside list-disc flex-col gap-1 text-pretty text-[1.3vw] ${darkMode ? "text-white marker:text-white" : "text-black marker:text-black"} max-md:mx-[3.5vw] max-md:text-[1.5vw]`}
+                      >
+                        <li>{project.a}</li>
+                        <li>{project.b}</li>
+                      </ul>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              <div className="col1 flex w-screen justify-center gap-[3vw] py-[2vh]">
+                {projects.slice(4).map((project, idx) => (
                   <motion.div
                     layoutId={`card-${project.title as string}`}
                     key={idx}
