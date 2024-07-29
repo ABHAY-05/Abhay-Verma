@@ -108,7 +108,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             smooth={true}
             offset={-100}
           >
-            <div className="logo absolute left-[7vw] top-[1.4vh] cursor-pointer text-[1.85rem] font-bold text-purple-500">
+            <div className="logo absolute left-[7vw] top-[1.4vh] cursor-pointer p-1 text-[1.85rem] font-bold text-purple-500">
               Abhay
             </div>
           </Link>
