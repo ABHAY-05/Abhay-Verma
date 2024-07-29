@@ -32,7 +32,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     <div ref={ref} className={`${darkMode ? "bg-black" : "bg-white"}`}>
       {/* Desktop Section */}
       <div
-        className={`relative m-0 mt-[8vh] min-h-[90vh] w-screen overflow-hidden max-lg:hidden max-md:hidden`}
+        className={`relative m-0 mt-[max(8vh,75px)] min-h-[max(90vh,700px)] w-screen overflow-hidden max-lg:hidden max-md:hidden`}
       >
         {inView && (
           <>
@@ -63,7 +63,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               >
                 {Bio.desc}
               </div>
-              <div className="profile-all flex h-[10vh] items-center gap-[2vw] overflow-hidden text-gray-500">
+              <div className="profile-all flex h-auto items-center gap-[2vw] overflow-hidden text-gray-500">
                 <a
                   href={github}
                   target="_blank"
@@ -86,9 +86,9 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <MdEmail />
                 </a>
               </div>
-              <div className="btn -ml-[1vw] mt-[1.5vh] h-[11.5vh] w-[192px]">
+              <div className="btn mt-[1.5vh] h-auto w-[192px] pb-5">
                 <a href={resume} target="_blank">
-                  <button className="h-[7.5vh] w-[160px] rounded-full border-[0.3vh] border-purple-700 text-[1.22rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.4rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                  <button className="h-auto w-[160px] rounded-full border-[0.3vh] border-purple-700 py-3 text-[1.22rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.4rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                     Résumé
                   </button>
                 </a>
@@ -100,7 +100,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
       {/* Tablet Section */}
       <div
-        className={`relative m-0 mt-[8vh] min-h-[90vh] w-screen overflow-hidden max-md:hidden lg:hidden`}
+        className={`relative m-0 mt-[max(8vh,75px)] h-[max(90vh,700px)] w-screen overflow-hidden max-md:hidden lg:hidden`}
       >
         {inView && (
           <>
@@ -135,7 +135,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               >
                 {Bio.desc}
               </div>
-              <div className="profile-all flex h-[9vh] items-center gap-[2vw] overflow-hidden text-gray-500">
+              <div className="profile-all flex h-auto items-center gap-[2vw] overflow-hidden text-gray-500">
                 <a
                   href={github}
                   target="_blank"
@@ -158,9 +158,9 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <MdEmail />
                 </a>
               </div>
-              <div className="btn -ml-[0.3vw] mt-[2vh] h-[11.5vh] w-[155px]">
+              <div className="btn -ml-[0.3vw] mt-[2vh] h-auto w-[155px] pb-5">
                 <a href={resume} target="_blank">
-                  <button className="h-[7.5vh] w-[145px] rounded-full border-[0.3vh] border-purple-700 text-[1.4rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.6rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                  <button className="h-auto w-[145px] rounded-full border-[0.3vh] border-purple-700 py-[.6rem] text-[1.4rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.6rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                     Résumé
                   </button>
                 </a>
@@ -172,7 +172,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
       {/* Mobile Section */}
       <div
-        className={`md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"} relative m-0 mt-[10vh] flex min-h-[90vh] w-screen flex-col items-center gap-[3vh] overflow-hidden`}
+        className={`md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"} relative m-0 mt-[max(10vh,75px)] flex h-[max(90vh,700px)] w-screen flex-col items-center gap-[3vh] overflow-hidden`}
       >
         {inView && (
           <>
@@ -207,15 +207,15 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               >
                 {Bio.desc}
               </div>
-              <div className="mt-[1.5vh] flex gap-[2vw] overflow-hidden pl-[0.5vw]">
-                <div className="btn -ml-[0.3vw] mt-[1vh] h-[10vh] w-[130px]">
+              <div className="mt-[1.5vh] flex items-center gap-[2vw] overflow-hidden pl-[0.5vw]">
+                <div className="btn -ml-[0.3vw] mt-6 h-auto w-[130px] pb-7">
                   <a href={resume} target="_blank">
-                    <button className="h-[6vh] w-[120px] rounded-full border-[0.3vh] border-purple-700 text-[1.35rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.5rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
+                    <button className="h-auto w-[120px] rounded-full border-[0.3vh] border-purple-700 py-[.32rem] text-[1.35rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.5rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                       Résumé
                     </button>
                   </a>
                 </div>
-                <div className="profile-allm flex h-[8vh] items-center gap-[2vw] overflow-hidden text-gray-500">
+                <div className="profile-allm flex h-auto items-center gap-[2vw] overflow-hidden text-gray-500">
                   <a
                     href={github}
                     target="_blank"

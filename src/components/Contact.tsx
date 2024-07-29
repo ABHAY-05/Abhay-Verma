@@ -93,7 +93,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   {phone}
                 </div>
               </div>
-              <div className="profile-all ml-[0.5vw] mt-[2vh] flex h-[10vh] items-center gap-[2vw] overflow-hidden text-gray-500">
+              <div className="profile-all ml-[0.5vw] mt-[2vh] flex h-auto items-center gap-[2vw] overflow-hidden text-gray-500">
                 <a
                   href={github}
                   target="_blank"
@@ -215,7 +215,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   {phone}
                 </div>
               </div>
-              <div className="profile-all ml-[0.5vw] mt-[2vh] flex h-[10vh] items-center gap-[2vw] overflow-hidden text-gray-500">
+              <div className="profile-all ml-[0.5vw] mt-[2vh] flex h-auto items-center gap-[2vw] overflow-hidden text-gray-500">
                 <a
                   href={github}
                   target="_blank"
@@ -400,7 +400,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 {phone}
               </div>
             </div>
-            <div className="profile-all ml-[0.5vw] mt-[2vh] flex h-[10vh] w-full items-center justify-center gap-[2vw] overflow-hidden text-gray-500">
+            <div className="profile-all ml-[0.5vw] mt-[2vh] flex h-auto w-full items-center justify-center gap-[2vw] overflow-hidden text-gray-500">
               <a
                 href={github}
                 target="_blank"
