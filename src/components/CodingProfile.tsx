@@ -65,7 +65,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     alt=""
                   />
                   <a
-                    className="h-[10vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[10vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.leetcode}
                     target="_blank"
                   >
@@ -79,7 +79,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <FaHackerrank />
                   </div>
                   <a
-                    className="h-[10vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[10vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.hackerRank}
                     target="_blank"
                   >
@@ -95,7 +95,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <SiGeeksforgeeks />
                   </div>
                   <a
-                    className="h-[10vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[10vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.gfg}
                     target="_blank"
                   >
@@ -111,7 +111,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <FaGithub />
                   </div>
                   <a
-                    className="h-[10vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[10vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.github}
                     target="_blank"
                   >
@@ -150,7 +150,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     alt=""
                   />
                   <a
-                    className="h-[9vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[9vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.leetcode}
                     target="_blank"
                   >
@@ -164,7 +164,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <FaHackerrank />
                   </div>
                   <a
-                    className="h-[9vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[9vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.hackerRank}
                     target="_blank"
                   >
@@ -180,7 +180,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <SiGeeksforgeeks />
                   </div>
                   <a
-                    className="h-[9vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[9vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.gfg}
                     target="_blank"
                   >
@@ -196,7 +196,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                     <FaGithub />
                   </div>
                   <a
-                    className="h-[9vh] w-[8vw] pt-[1vh]"
+                    className="min-h-[9vh] w-[8vw] pt-[1vh]"
                     href={codingLinks.github}
                     target="_blank"
                   >
@@ -234,7 +234,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   alt=""
                 />
                 <a
-                  className="h-[9vh] w-[14vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[14vw] pt-[1vh]"
                   href={codingLinks.leetcode}
                   target="_blank"
                 >
@@ -248,7 +248,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <FaHackerrank />
                 </div>
                 <a
-                  className="h-[9vh] w-[14vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[14vw] pt-[1vh]"
                   href={codingLinks.hackerRank}
                   target="_blank"
                 >
@@ -262,7 +262,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <SiGeeksforgeeks />
                 </div>
                 <a
-                  className="h-[9vh] w-[14vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[14vw] pt-[1vh]"
                   href={codingLinks.gfg}
                   target="_blank"
                 >
@@ -278,7 +278,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <FaGithub />
                 </div>
                 <a
-                  className="h-[9vh] w-[14vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[14vw] pt-[1vh]"
                   href={codingLinks.github}
                   target="_blank"
                 >
@@ -315,7 +315,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   alt=""
                 />
                 <a
-                  className="h-[9vh] w-[18vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[18vw] pt-[1vh]"
                   href={codingLinks.leetcode}
                   target="_blank"
                 >
@@ -329,7 +329,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <FaHackerrank />
                 </div>
                 <a
-                  className="h-[9vh] w-[18vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[18vw] pt-[1vh]"
                   href={codingLinks.hackerRank}
                   target="_blank"
                 >
@@ -343,7 +343,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <SiGeeksforgeeks />
                 </div>
                 <a
-                  className="h-[9vh] w-[18vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[18vw] pt-[1vh]"
                   href={codingLinks.gfg}
                   target="_blank"
                 >
@@ -359,7 +359,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <FaGithub />
                 </div>
                 <a
-                  className="h-[9vh] w-[18vw] pt-[1vh]"
+                  className="min-h-[9vh] w-[18vw] pt-[1vh]"
                   href={codingLinks.github}
                   target="_blank"
                 >

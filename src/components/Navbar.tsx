@@ -26,7 +26,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
     <>
       <nav
-        className={`${darkMode ? "bg-black shadow-black" : "bg-white shadow-white"} fixed z-10 h-[75px] w-screen shadow-sm`}
+        className={`${darkMode ? "bg-black shadow-black" : "bg-white shadow-white"} fixed z-10 h-[max(75px,10vh)] w-screen shadow-sm`}
       >
         {/* Desktop Section */}
         <div className="max-lg:hidden max-md:hidden">

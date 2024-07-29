@@ -76,7 +76,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           project.techStack.map((tStack, idx) => (
                             <div
                               key={idx}
-                              className="h-[26px] text-nowrap text-[0.7vw]"
+                              className="h-auto text-nowrap pb-1 text-[0.7vw]"
                             >
                               {tStack}
                             </div>
@@ -122,7 +122,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           project.techStack.map((tStack, idx) => (
                             <div
                               key={idx}
-                              className="h-[26px] text-nowrap text-[0.7vw]"
+                              className="h-auto text-nowrap pb-1 text-[0.7vw]"
                             >
                               {tStack}
                             </div>
@@ -189,7 +189,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           project.techStack.map((tStack, idx) => (
                             <div
                               key={idx}
-                              className="h-[26px] text-nowrap text-[0.8vw]"
+                              className="h-auto text-nowrap pb-1 text-[0.8vw]"
                             >
                               {tStack}
                             </div>
@@ -235,7 +235,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           project.techStack.map((tStack, idx) => (
                             <div
                               key={idx}
-                              className="h-[26px] text-nowrap text-[0.8vw]"
+                              className="h-auto text-nowrap pb-1 text-[0.8vw]"
                             >
                               {tStack}
                             </div>
@@ -281,7 +281,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                           project.techStack.map((tStack, idx) => (
                             <div
                               key={idx}
-                              className="h-[26px] text-nowrap text-[0.8vw]"
+                              className="h-auto text-nowrap pb-1 text-[0.8vw]"
                             >
                               {tStack}
                             </div>
@@ -347,7 +347,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                         project.techStack.map((tStack, idx) => (
                           <div
                             key={idx}
-                            className="h-[26px] text-nowrap text-[1vw] max-sm:text-[1.2vw]"
+                            className="h-auto text-nowrap pb-1 text-[1vw] max-sm:text-[1.2vw]"
                           >
                             {tStack}
                           </div>
@@ -418,7 +418,7 @@ const Modal: React.FC<{
                     selected.techStack.map((tStack, idx) => (
                       <div
                         key={idx}
-                        className="h-[26px] text-nowrap text-[0.7vw] max-lg:text-[0.8vw] max-md:text-[1vw] max-sm:text-[1.4vw]"
+                        className="h-auto text-nowrap pb-[6px] text-[0.7vw] max-lg:text-[0.8vw] max-md:text-[1vw] max-sm:text-[1.4vw]"
                       >
                         {tStack}
                       </div>
