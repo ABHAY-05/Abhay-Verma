@@ -60,7 +60,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Desktop Section */}
       <div
         ref={ref}
-        className={`flex h-auto w-screen gap-[10vw] pb-[10vh] pt-[5vh] max-lg:hidden max-md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[690px] w-screen gap-[10vw] pb-[10vh] pt-[5vh] max-lg:hidden max-md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inView && (
           <>
@@ -182,7 +182,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Tablet Section */}
       <div
         ref={tabRef}
-        className={`flex h-auto w-screen gap-[7vw] pb-[10vh] pt-[5vh] max-md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[685px] w-screen gap-[7vw] pb-[10vh] pt-[5vh] max-md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inTabView && (
           <>
@@ -304,7 +304,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex h-auto w-screen flex-col items-center pb-[10vh] pt-[5vh] md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[1061px] w-screen flex-col items-center pb-[10vh] pt-[5vh] md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
@@ -430,7 +430,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       <Toaster position="top-center" reverseOrder={false} />
 
       <div
-        className={`ptitle flex h-auto items-center justify-center gap-[1vw] bg-gradient-to-r py-[2vh] sm:text-lg md:text-xl lg:text-2xl ${darkMode ? "bg-black from-purple-950 via-gray-900 to-black" : "bg-white from-purple-700 via-gray-400 to-white"} border-t-[0.1px] border-t-purple-400 shadow-md shadow-purple-500`}
+        className={`ptitle flex min-h-[80px] items-center justify-center gap-[1vw] bg-gradient-to-r py-[2vh] sm:text-lg md:text-xl lg:text-2xl ${darkMode ? "bg-black from-purple-950 via-gray-900 to-black" : "bg-white from-purple-700 via-gray-400 to-white"} border-t-[0.1px] border-t-purple-400 shadow-md shadow-purple-500`}
       >
         <div
           className={`${darkMode ? "text-gray-400" : "text-gray-600"} overflow-hidden py-1`}

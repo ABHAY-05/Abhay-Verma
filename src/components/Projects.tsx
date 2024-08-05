@@ -43,7 +43,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Desktop Section */}
       <div
         ref={ref}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[1200px] w-screen flex-col items-center overflow-hidden max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inView && (
           <>
@@ -156,7 +156,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Tablet Section */}
       <div
         ref={tabRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[1540px] w-screen flex-col items-center overflow-hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inTabView && (
           <>
@@ -315,7 +315,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[2075px] w-screen flex-col items-center overflow-hidden sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>

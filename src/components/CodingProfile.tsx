@@ -46,7 +46,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Desktop Section */}
       <div
         ref={ref}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[5vh] max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[755px] w-screen flex-col items-center overflow-hidden pb-[5vh] max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inView && (
           <>
@@ -131,7 +131,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Tablet Section */}
       <div
         ref={tabRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden max-md:hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[666px] w-screen flex-col items-center overflow-hidden max-md:hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inTabView && (
           <>
@@ -216,7 +216,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[2vh] max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[1001px] w-screen flex-col items-center overflow-hidden pb-[2vh] max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
@@ -297,7 +297,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Small Devices Section */}
       <div
         ref={sRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[2vh] sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[996px] w-screen flex-col items-center overflow-hidden pb-[2vh] sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inSView && (
           <>

@@ -46,7 +46,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Desktop Section */}
       <div
         ref={ref}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[5vh] max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[732px] w-screen flex-col items-center overflow-hidden pb-[5vh] max-lg:hidden max-md:hidden max-sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inView && (
           <>
@@ -197,7 +197,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Tablet Section */}
       <div
         ref={tabRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[5vh] max-md:hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[1055px] w-screen flex-col items-center overflow-hidden pb-[5vh] max-md:hidden max-sm:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inTabView && (
           <>
@@ -352,7 +352,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[5vh] max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[924px] w-screen flex-col items-center overflow-hidden pb-[5vh] max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
@@ -509,7 +509,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Small Devices Section */}
       <div
         ref={sRef}
-        className={`flex h-auto w-screen flex-col items-center overflow-hidden pb-[5vh] sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex min-h-[833px] w-screen flex-col items-center overflow-hidden pb-[5vh] sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inSView && (
           <>
