@@ -1,13 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { CgMenuRight } from "react-icons/cg";
-import VanillaTilt from "vanilla-tilt";
-import "../styles/Navbar.css";
-import { Link } from "react-scroll";
-import DarkMode from "./darkMode";
-import { setDarkMode } from "../dark-mode/reducer";
 import { useDispatch } from "react-redux";
+import { Link } from "react-scroll";
+import { setDarkMode } from "../dark-mode/reducer";
+
 import type { AppDispatch } from "../store";
+import "../styles/Navbar.css";
+import DarkMode from "./darkMode";
+import Tilt from "./Tilt";
 
 const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [menu, setMenu] = useState<boolean>(false);
@@ -18,10 +19,6 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const options = {
     gyroscope: false,
   };
-
-  useEffect(() => {
-    VanillaTilt.init(document.querySelector(".logo") as HTMLElement, options);
-  }, [options]);
 
   return (
     <>
@@ -276,6 +273,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           </div>
         </>
       )}
+      <Tilt cls="logo" options={options} />
     </>
   );
 };

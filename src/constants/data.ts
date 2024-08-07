@@ -1,9 +1,9 @@
-import * as tStack from "./tStack";
-import linguistic from "../assets/Linguistic.png";
-import product from "../assets/product.png";
-import medScan from "../assets/medScan.png";
 import IRIS from "../assets/IRIS.png";
+import linguistic from "../assets/Linguistic.png";
+import medScan from "../assets/medScan.png";
+import product from "../assets/product.png";
 import todo from "../assets/todo.png";
+import * as tStack from "./tStack";
 
 export const Bio: { [key: string]: string } = {
   Name: "Abhay Verma",

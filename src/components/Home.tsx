@@ -1,13 +1,12 @@
-import { useEffect } from "react";
-import image from "../assets/Abhay.png";
-import VanillaTilt from "vanilla-tilt";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useInView } from "react-intersection-observer";
 
+import image from "../assets/Abhay.png";
 import { Bio, email, github, linkedin, resume } from "../constants/data";
 import "../styles/Home.css";
+import Tilt from "./Tilt";
 import Typewriter from "./Typewriter";
-import { useInView } from "react-intersection-observer";
 
 const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const options = {
@@ -15,11 +14,6 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     max: 15,
     gyroscope: false,
   };
-
-  useEffect(() => {
-    VanillaTilt.init(document.querySelector(".image") as HTMLElement, options);
-    VanillaTilt.init(document.querySelector(".imagem") as HTMLElement, options);
-  }, [options]);
 
   const [ref, inView] = useInView({
     threshold: 0.15,
@@ -243,6 +237,8 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           </>
         )}
       </div>
+      <Tilt cls="image" options={options} />
+      <Tilt cls="imagem" options={options} />
     </div>
   );
 };

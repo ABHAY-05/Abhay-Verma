@@ -1,12 +1,12 @@
-import { useRef, FormEvent, useEffect } from "react";
-import { SiMinutemailer } from "react-icons/si";
-import { FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail, MdSend } from "react-icons/md";
-import toast, { Toaster } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
+import { FormEvent, useEffect, useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail, MdSend } from "react-icons/md";
+import { SiMinutemailer } from "react-icons/si";
+import { useInView } from "react-intersection-observer";
 
 import { email, github, linkedin, phone } from "../constants/data";
-import { useInView } from "react-intersection-observer";
 
 const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [ref, inView] = useInView({

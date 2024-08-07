@@ -1,9 +1,8 @@
-import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-import "../styles/skills.css";
-import VanillaTilt from "vanilla-tilt";
 import { skills } from "../constants/data";
+import "../styles/skills.css";
+import MultiTilt from "./MultiTilt";
 
 const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [ref, inView] = useInView({
@@ -30,16 +29,6 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     max: 15,
     gyroscope: false,
   };
-
-  useEffect(() => {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach(
-      (card) => {
-        VanillaTilt.init(card as HTMLElement, options);
-      },
-      [options],
-    );
-  });
 
   return (
     <>
@@ -662,6 +651,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           </>
         )}
       </div>
+      <MultiTilt cls="card" options={options} />
     </>
   );
 };

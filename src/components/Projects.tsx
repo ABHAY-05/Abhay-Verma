@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
-import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
-import "../styles/projects.css";
 import { projects } from "../constants/data";
+import "../styles/projects.css";
+import MultiTilt from "./MultiTilt";
 
 type Project = { [key: string]: string | JSX.Element[] };
 
@@ -30,13 +30,6 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     max: 5,
     gyroscope: false,
   };
-
-  useEffect(() => {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      VanillaTilt.init(card as HTMLElement, options);
-    });
-  }, [options]);
 
   return (
     <>
@@ -382,6 +375,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         setSelected={setSelected}
         darkMode={darkMode}
       />
+      <MultiTilt cls="card" options={options} />
     </>
   );
 };

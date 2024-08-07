@@ -1,12 +1,11 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import VanillaTilt from "vanilla-tilt";
-import { FaHackerrank, FaGithub } from "react-icons/fa";
+import { FaGithub, FaHackerrank } from "react-icons/fa";
 import { SiGeeksforgeeks } from "react-icons/si";
+import { useInView } from "react-intersection-observer";
 
 import leetcode from "../assets/leetcode.svg";
 import leetcodeDark from "../assets/leetcodeDark.svg";
 import { codingLinks } from "../constants/data.ts";
+import MultiTilt from "./MultiTilt.tsx";
 
 const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [ref, inView] = useInView({
@@ -33,13 +32,6 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     max: 10,
     gyroscope: false,
   };
-
-  useEffect(() => {
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      VanillaTilt.init(card as HTMLElement, options);
-    });
-  }, [options]);
 
   return (
     <>
@@ -374,6 +366,7 @@ const CodingProfile: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           </>
         )}
       </div>
+      <MultiTilt cls="card" options={options} />
     </>
   );
 };

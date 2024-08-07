@@ -1,10 +1,9 @@
-import { useEffect } from "react";
-import VanillaTilt from "vanilla-tilt";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-scroll";
 
 import { Bio } from "../constants/data.ts";
 import "../styles/About.css";
+import Tilt from "./Tilt.tsx";
 
 const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [ref, inView] = useInView({
@@ -17,13 +16,6 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     "max-glare": 0.2,
     gyroscope: false,
   };
-
-  useEffect(() => {
-    VanillaTilt.init(
-      document.querySelector(".about-icon") as HTMLElement,
-      options,
-    );
-  }, [options]);
 
   return (
     <>
@@ -148,6 +140,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           </>
         )}
       </div>
+      <Tilt cls="about-icon" options={options} />
     </>
   );
 };
