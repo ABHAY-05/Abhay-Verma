@@ -8,6 +8,11 @@ const MultiTilt: React.FC<{
     max?: number;
     "max-glare"?: number;
     gyroscope?: boolean;
+    scale?: number;
+    perspective?: number;
+    reverse?: boolean;
+    glare?: boolean;
+    easing?: string;
   };
 }> = ({ cls, options }) => {
   useEffect(() => {
@@ -15,6 +20,13 @@ const MultiTilt: React.FC<{
     cards.forEach((card) => {
       VanillaTilt.init(card as HTMLElement, options);
     });
+    return () => {
+      cards.forEach((card) => {
+        (
+          card as HTMLElement & { vanillaTilt?: { destroy: () => void } }
+        ).vanillaTilt?.destroy();
+      });
+    };
   }, [options, cls]);
   return null;
 };

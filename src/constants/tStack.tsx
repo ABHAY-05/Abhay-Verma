@@ -111,3 +111,15 @@ export const nextJS = (
     Next.js
   </div>
 );
+
+export const typeScript = (
+  <div className="flex items-center justify-center rounded-full border-[0.2vh] border-blue-500 px-[0.5vw] py-[0.4vh] font-serif text-blue-500 shadow-sm shadow-blue-500">
+    TypeScript
+  </div>
+);
+
+export const framerMotion = (
+  <div className="flex items-center justify-center rounded-full border-[0.2vh] border-pink-500 px-[0.5vw] py-[0.4vh] font-serif text-pink-500 shadow-sm shadow-pink-500">
+    Framer Motion
+  </div>
+);

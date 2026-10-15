@@ -1,0 +1,369 @@
+{
+  "communities": {
+    "0": [
+      "ref_react_redux",
+      "ref_redux_persist",
+      "ref_reduxjs_toolkit",
+      "src_app_layout",
+      "src_app_layout_bitter",
+      "src_app_layout_metadata",
+      "src_app_layout_moirai",
+      "src_app_layout_rootlayout",
+      "src_app_providers",
+      "src_app_providers_providers",
+      "src_dark_mode_reducer",
+      "src_dark_mode_reducer_darkmode",
+      "src_dark_mode_reducer_darkmodeslice",
+      "src_dark_mode_reducer_initialstate",
+      "src_dark_mode_reducer_selectisdarkmode",
+      "src_index",
+      "src_store",
+      "src_store_appdispatch",
+      "src_store_authpersistconfig",
+      "src_store_createnoopstorage",
+      "src_store_persistedreducer",
+      "src_store_persistor",
+      "src_store_rootstate",
+      "src_store_store"
+    ],
+    "1": [
+      "ref_emailjs_browser",
+      "ref_react_hot_toast",
+      "src_assets_abhay",
+      "src_assets_apbuyer",
+      "src_assets_iris",
+      "src_assets_linguistic",
+      "src_assets_medscan",
+      "src_assets_product",
+      "src_assets_todo",
+      "src_components_contact",
+      "src_components_home",
+      "src_components_typewriter",
+      "src_components_typewriter_typewriter",
+      "src_constants_data",
+      "src_constants_data_bio",
+      "src_constants_data_email",
+      "src_constants_data_github",
+      "src_constants_data_linkedin",
+      "src_constants_data_phone",
+      "src_constants_data_prof",
+      "src_constants_data_resume",
+      "src_constants_data_skills",
+      "src_styles_home"
+    ],
+    "2": [
+      "src_constants_tstack",
+      "src_constants_tstack_bootstrap",
+      "src_constants_tstack_chatbot",
+      "src_constants_tstack_css",
+      "src_constants_tstack_express",
+      "src_constants_tstack_fastapi",
+      "src_constants_tstack_flask",
+      "src_constants_tstack_framermotion",
+      "src_constants_tstack_html",
+      "src_constants_tstack_javascript",
+      "src_constants_tstack_ml",
+      "src_constants_tstack_mongodb",
+      "src_constants_tstack_nextjs",
+      "src_constants_tstack_nodejs",
+      "src_constants_tstack_python",
+      "src_constants_tstack_react",
+      "src_constants_tstack_redux",
+      "src_constants_tstack_speechrecognition",
+      "src_constants_tstack_tailwind",
+      "src_constants_tstack_tensorflow",
+      "src_constants_tstack_texttospeech",
+      "src_constants_tstack_typescript"
+    ],
+    "3": [
+      "ref_react_intersection_observer",
+      "src_app_page",
+      "src_app_page_page",
+      "src_assets_leetcode",
+      "src_assets_leetcodedark",
+      "src_components_codingprofile",
+      "src_components_codingprofile_codingprofile",
+      "src_components_contact_contact",
+      "src_components_home_home",
+      "src_components_multitilt",
+      "src_components_multitilt_multitilt",
+      "src_components_projects",
+      "src_components_projects_modal",
+      "src_components_projects_project",
+      "src_components_projects_projects",
+      "src_components_skills",
+      "src_components_skills_skills",
+      "src_constants_data_codinglinks",
+      "src_constants_data_projects",
+      "src_styles_projects",
+      "src_styles_skills"
+    ],
+    "4": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "5": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version",
+      "ref_aos",
+      "ref_autoprefixer",
+      "ref_eslint_plugin_react_hooks",
+      "ref_postcss",
+      "ref_prettier",
+      "ref_prettier_plugin_tailwindcss",
+      "ref_types_react_scroll",
+      "ref_typescript_eslint_eslint_plugin",
+      "ref_typescript_eslint_parser"
+    ],
+    "6": [
+      "ref_react_icons",
+      "ref_react_scroll",
+      "ref_vanilla_tilt",
+      "src_components_about",
+      "src_components_about_about",
+      "src_components_about_link",
+      "src_components_darkmode",
+      "src_components_darkmode_darkmode",
+      "src_components_navbar",
+      "src_components_navbar_link",
+      "src_components_navbar_nav_items",
+      "src_components_navbar_navbar",
+      "src_components_navbar_tilt_options",
+      "src_components_tilt",
+      "src_components_tilt_tilt",
+      "src_dark_mode_reducer_setdarkmode",
+      "src_styles_about",
+      "src_styles_navbar"
+    ],
+    "7": [
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_postcss",
+      "package_devdependencies_prettier",
+      "package_devdependencies_prettier_plugin_tailwindcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_types_react_scroll",
+      "package_devdependencies_typescript",
+      "package_devdependencies_typescript_eslint_eslint_plugin",
+      "package_devdependencies_typescript_eslint_parser"
+    ],
+    "8": [
+      "package_dependencies",
+      "package_dependencies_aos",
+      "package_dependencies_emailjs_browser",
+      "package_dependencies_framer_motion",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_hot_toast",
+      "package_dependencies_react_icons",
+      "package_dependencies_react_intersection_observer",
+      "package_dependencies_react_redux",
+      "package_dependencies_react_scroll",
+      "package_dependencies_redux_persist",
+      "package_dependencies_reduxjs_toolkit",
+      "package_dependencies_vanilla_tilt"
+    ],
+    "9": [
+      "src_types_declaration_d",
+      "src_types_declaration_d_png",
+      "src_types_declaration_d_svg"
+    ],
+    "10": [
+      "public_abhay",
+      "src_assets_abhay_png"
+    ],
+    "11": [
+      "eslintrc"
+    ],
+    "12": [
+      "next_config"
+    ],
+    "13": [
+      "postcss_config"
+    ],
+    "14": [
+      "src_assets_iris_png"
+    ],
+    "15": [
+      "src_assets_linguistic_png"
+    ],
+    "16": [
+      "src_assets_medscan_png"
+    ],
+    "17": [
+      "src_assets_product_png"
+    ],
+    "18": [
+      "src_assets_todo_png"
+    ],
+    "19": [
+      "tailwind_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10869565217391304,
+    "1": 0.13043478260869565,
+    "2": 0.09090909090909091,
+    "3": 0.19047619047619047,
+    "4": 0.10526315789473684,
+    "5": 0.1111111111111111,
+    "6": 0.17647058823529413,
+    "7": 0.125,
+    "8": 0.13333333333333333,
+    "9": 0.6666666666666666,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "src_app_page_page",
+      "label": "Page()",
+      "degree": 8
+    },
+    {
+      "id": "src_components_multitilt_multitilt",
+      "label": "MultiTilt()",
+      "degree": 7
+    },
+    {
+      "id": "src_components_tilt_tilt",
+      "label": "Tilt()",
+      "degree": 7
+    },
+    {
+      "id": "ref_react_intersection_observer",
+      "label": "react-intersection-observer",
+      "degree": 7
+    },
+    {
+      "id": "src_components_navbar_navbar",
+      "label": "Navbar()",
+      "degree": 6
+    },
+    {
+      "id": "ref_react_icons",
+      "label": "react-icons",
+      "degree": 6
+    },
+    {
+      "id": "src_components_about_about",
+      "label": "About()",
+      "degree": 5
+    },
+    {
+      "id": "src_components_home_home",
+      "label": "Home()",
+      "degree": 5
+    },
+    {
+      "id": "src_components_projects_projects",
+      "label": "Projects()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Profile Photo of Abhay",
+      "target": "Abhay SVG Logo",
+      "source_files": [
+        "src/assets/Abhay.png",
+        "public/Abhay.svg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "Home()",
+      "target": "Typewriter()",
+      "source_files": [
+        "src/components/Home.tsx",
+        "src/components/Typewriter.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `Typewriter()` unexpectedly reaches hub `Home()`"
+    },
+    {
+      "source": "Page()",
+      "target": "About()",
+      "source_files": [
+        "src/app/page.tsx",
+        "src/components/About.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Page()",
+      "target": "Navbar()",
+      "source_files": [
+        "src/app/page.tsx",
+        "src/components/Navbar.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "Home()",
+      "target": "Tilt()",
+      "source_files": [
+        "src/components/Home.tsx",
+        "src/components/Tilt.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 import image from "../assets/Abhay.png";
@@ -30,10 +31,11 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inView && (
           <>
-            <img
-              className="image absolute right-[10vw] top-[12vh] h-auto w-[27vw]"
+            <Image
+              className="image absolute top-[12vh] right-[10vw] h-auto w-[27vw]"
               src={image}
               alt="Abhay"
+              priority
             />
             <div className="bio absolute top-[15vh] flex h-auto w-[60vw] flex-col gap-[2vh] overflow-hidden pl-[10vw]">
               <div
@@ -42,7 +44,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 Hello, My Name is
               </div>
               <div
-                className={`Name overflow-hidden ${darkThemeText} -mt-[3vh] pb-[1vh] pr-[1vw] text-[3.9rem] font-semibold`}
+                className={`Name overflow-hidden ${darkThemeText} -mt-[3vh] pr-[1vw] pb-[1vh] text-[3.9rem] font-semibold`}
               >
                 {Bio.Name}
               </div>
@@ -53,7 +55,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 </div>
               </div>
               <div
-                className={`desc overflow-hidden ${darkThemeText} mt-[1vh] text-pretty pb-[1.5vh]`}
+                className={`desc overflow-hidden ${darkThemeText} mt-[1vh] pb-[1.5vh] text-pretty`}
               >
                 {Bio.desc}
               </div>
@@ -98,10 +100,11 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       >
         {inView && (
           <>
-            <img
-              className="image absolute right-0 top-0 mr-[7vw] mt-[12vh] h-auto w-[30vw]"
+            <Image
+              className="image absolute top-0 right-0 mt-[12vh] mr-[7vw] h-auto w-[30vw]"
               src={image}
               alt="Abhay"
+              priority
             />
             <div className="bio absolute top-[12vh] flex h-auto w-[60vw] flex-col gap-[2vh] overflow-hidden pl-[7vw]">
               <div
@@ -110,7 +113,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 Hello, My Name is
               </div>
               <div
-                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[3vh] overflow-hidden pb-[1vh] pr-[1vw] text-[4rem] font-semibold`}
+                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[3vh] overflow-hidden pr-[1vw] pb-[1vh] text-[4rem] font-semibold`}
               >
                 {Bio.Name}
               </div>
@@ -152,7 +155,7 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <MdEmail />
                 </a>
               </div>
-              <div className="btn -ml-[0.3vw] mt-[2vh] h-auto w-[155px] pb-5">
+              <div className="btn mt-[2vh] -ml-[0.3vw] h-auto w-[155px] pb-5">
                 <a href={resume} target="_blank">
                   <button className="h-auto w-[145px] rounded-full border-[0.3vh] border-purple-700 py-[.6rem] text-[1.4rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.6rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                     Résumé
@@ -166,27 +169,28 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
 
       {/* Mobile Section */}
       <div
-        className={`md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"} relative m-0 mt-[max(10vh,75px)] flex h-[max(90vh,700px)] w-screen flex-col items-center gap-[3vh] overflow-hidden`}
+        className={`md:hidden lg:hidden ${darkMode ? "bg-black" : "bg-white"} relative m-0 flex min-h-[100dvh] w-screen flex-col items-center gap-4 overflow-hidden px-5 pt-[84px] pb-10`}
       >
         {inView && (
           <>
-            <img
-              className="imagem mt-[1vh] h-auto w-[40vw]"
+            <Image
+              className="imagem h-auto w-[42vw] max-w-[180px]"
               src={image}
               alt="Abhay"
+              priority
             />
-            <div className="biom flex h-auto w-[90vw] flex-col gap-[0.5vh] overflow-hidden">
+            <div className="biom flex h-auto w-[90vw] flex-col gap-1 overflow-hidden">
               <div
-                className={`intro ${darkMode ? "text-white" : "text-black"} overflow-hidden`}
+                className={`intro ${darkMode ? "text-white" : "text-black"} overflow-hidden text-[0.95rem] leading-none`}
               >
                 Hello, My Name is
               </div>
               <div
-                className={`Name ${darkMode ? "text-white" : "text-black"} -mt-[2.4vh] overflow-hidden text-nowrap pb-[1vh] pr-[1vw] pt-[1vh] text-[3.5rem] font-semibold`}
+                className={`Name ${darkMode ? "text-white" : "text-black"} overflow-hidden pt-1 pr-[1vw] pb-[1vh] text-[clamp(2rem,8vw,2.8rem)] leading-none font-semibold text-nowrap`}
               >
                 {Bio.Name}
               </div>
-              <div className="pro -mt-[0.5vh] flex gap-[1.6vw] overflow-hidden border-b-[0.004vh] border-purple-500 pb-[1vh] text-[6vw]">
+              <div className="pro -mt-[0.5vh] flex gap-[1.6vw] overflow-hidden border-b-[0.004vh] border-purple-500 pb-[1vh] text-[5.2vw] sm:text-[5vw]">
                 <div
                   className={`${darkMode ? "text-white" : "text-black"} overflow-hidden`}
                 >
@@ -197,12 +201,12 @@ const Home: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 </div>
               </div>
               <div
-                className={`desc mt-[1vh] ${darkMode ? "text-white" : "text-black"} overflow-hidden text-pretty pb-[2vh]`}
+                className={`desc mt-[1vh] ${darkMode ? "text-white" : "text-black"} overflow-hidden pb-[2vh] text-pretty`}
               >
                 {Bio.desc}
               </div>
               <div className="mt-[1.5vh] flex items-center gap-[2vw] overflow-hidden pl-[0.5vw]">
-                <div className="btn -ml-[0.3vw] mt-6 h-auto w-[130px] pb-7">
+                <div className="btn mt-6 -ml-[0.3vw] h-auto w-[130px] pb-7">
                   <a href={resume} target="_blank">
                     <button className="h-auto w-[120px] rounded-full border-[0.3vh] border-purple-700 py-[.32rem] text-[1.35rem] text-purple-600 shadow-md shadow-purple-400 duration-300 hover:translate-x-[0.2vw] hover:translate-y-[0.2vw] hover:text-[1.5rem] hover:text-purple-400 hover:shadow-lg hover:shadow-purple-500">
                       Résumé

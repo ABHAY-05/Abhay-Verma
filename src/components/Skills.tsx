@@ -341,7 +341,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex min-h-[924px] w-screen flex-col items-center overflow-hidden pb-[5vh] max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex w-screen flex-col items-center overflow-hidden px-3 pb-10 pt-2 max-sm:hidden md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
@@ -351,8 +351,8 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 Skills
               </div>
             </div>
-            <div className="mt-[4vh] flex w-screen flex-col items-center gap-[2vh]">
-              <div className="col1 flex gap-[7vw] p-[1vh]">
+            <div className="mt-4 flex w-full flex-col items-center gap-3">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[16vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
@@ -375,7 +375,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col2 flex gap-[7vw] p-[1vh]">
+              <div className="col2 flex gap-3 p-[1vh]">
                 <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-lime-500 p-[1vh] shadow-md shadow-lime-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
@@ -398,7 +398,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col1 flex gap-[7vw] p-[1vh]">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-blue-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[12vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
@@ -421,7 +421,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col2 flex gap-[7vw] p-[1vh]">
+              <div className="col2 flex gap-3 p-[1vh]">
                 <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-400 p-[1vh] shadow-md shadow-sky-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[14vh] w-[7vw] transform transition-transform duration-500 hover:scale-110"
@@ -444,7 +444,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col1 flex gap-[7vw] p-[1vh]">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-400 p-[1vh] shadow-md shadow-yellow-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[10vh] w-[9vw] transform rounded-full bg-yellow-300 transition-transform duration-500 hover:scale-110"
@@ -467,7 +467,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col1 flex gap-[7vw] p-[1vh]">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[13vh] w-[18vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-500 p-[1vh] shadow-md shadow-gray-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[10vh] w-[9vw] transform rounded-full bg-white transition-transform duration-500 hover:scale-110"
@@ -498,7 +498,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Small Devices Section */}
       <div
         ref={sRef}
-        className={`flex min-h-[833px] w-screen flex-col items-center overflow-hidden pb-[5vh] sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex w-screen flex-col items-center overflow-hidden px-3 pb-10 pt-2 sm:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inSView && (
           <>
@@ -508,8 +508,8 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 Skills
               </div>
             </div>
-            <div className="mt-[4vh] flex w-screen flex-col items-center gap-[1vh]">
-              <div className="col1 flex gap-[5vw] p-[1vh]">
+            <div className="mt-4 flex w-full flex-col items-center gap-3">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-700 p-[1vh] shadow-md shadow-yellow-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
@@ -532,7 +532,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col2 flex gap-[5vw] p-[1vh]">
+              <div className="col2 flex gap-3 p-[1vh]">
                 <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-lime-500 p-[1vh] shadow-md shadow-lime-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
@@ -555,7 +555,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col1 flex gap-[5vw] p-[1vh]">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-blue-500 p-[1vh] shadow-md shadow-blue-400 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[23vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
@@ -578,7 +578,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col2 flex gap-[5vw] p-[1vh]">
+              <div className="col2 flex gap-3 p-[1vh]">
                 <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-sky-400 p-[1vh] shadow-md shadow-sky-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[25vh] w-[13vw] transform transition-transform duration-500 hover:scale-110"
@@ -601,7 +601,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col1 flex gap-[5vw] p-[1vh]">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-yellow-400 p-[1vh] shadow-md shadow-yellow-300 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[8vh] w-[13vw] transform rounded-full bg-yellow-300 transition-transform duration-500 hover:scale-110"
@@ -624,7 +624,7 @@ const Skills: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   />
                 </div>
               </div>
-              <div className="col1 flex gap-[5vw] p-[1vh]">
+              <div className="col1 flex gap-3 p-[1vh]">
                 <div className="card flex h-[12vh] w-[22vw] items-center justify-center overflow-hidden rounded-[17%] border-[0.3vh] border-gray-500 p-[1vh] shadow-md shadow-gray-500 grayscale filter duration-300 hover:grayscale-0">
                   <img
                     className="h-[8vh] w-[13vw] transform rounded-full bg-white transition-transform duration-500 hover:scale-110"

@@ -37,10 +37,10 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
     if (user.current) {
       emailjs
         .sendForm(
-          import.meta.env.VITE_SERVICE_ID,
-          import.meta.env.VITE_TEMPLATE_ID,
+          process.env.NEXT_PUBLIC_SERVICE_ID as string,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
           user.current,
-          import.meta.env.VITE_PUBLIC_KEY,
+          process.env.NEXT_PUBLIC_KEY as string,
         )
         .then(
           (result) => {
@@ -304,7 +304,7 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       {/* Mobile Section */}
       <div
         ref={mobRef}
-        className={`flex min-h-[1061px] w-screen flex-col items-center pb-[10vh] pt-[5vh] md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
+        className={`flex w-screen flex-col items-center px-5 pb-10 pt-6 md:hidden ${darkMode ? "bg-black" : "bg-white"}`}
       >
         {inMobView && (
           <>
@@ -319,11 +319,11 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             <form
               ref={user}
               onSubmit={handleSubmit}
-              className="col2 ptitle mt-[4vh] flex w-screen flex-col items-center gap-[1vh] overflow-hidden"
+              className="col2 ptitle mt-4 flex w-full max-w-[560px] flex-col items-center gap-3 overflow-hidden"
             >
-              <div className="w-[75vw] p-[1vh]">
+              <div className="w-full p-[1vh]">
                 <input
-                  className={`inp w-[72vw] rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
+                  className={`inp w-full rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
                   type="text"
                   required
                   name="name"
@@ -332,9 +332,9 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   autoComplete="name"
                 />
               </div>
-              <div className="w-[75vw] p-[1vh]">
+              <div className="w-full p-[1vh]">
                 <input
-                  className={`inp w-[72vw] rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
+                  className={`inp w-full rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
                   type="email"
                   required
                   name="email"
@@ -343,9 +343,9 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   autoComplete="email"
                 />
               </div>
-              <div className="w-[75vw] p-[1vh]">
+              <div className="w-full p-[1vh]">
                 <input
-                  className={`inp h-[6vh] w-[72vw] rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
+                  className={`inp h-[6vh] w-full rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
                   type="text"
                   name="subject"
                   id="subject"
@@ -354,9 +354,9 @@ const Contact: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   autoComplete="subject"
                 />
               </div>
-              <div className="w-[75vw] p-[1vh]">
+              <div className="w-full p-[1vh]">
                 <textarea
-                  className={`inp h-[35vh] w-[72vw] rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
+                  className={`inp h-[35vh] w-full rounded-lg shadow-sm shadow-purple-500 ${darkMode ? "bg-black text-white" : "bg-white text-black"} border-[0.1vh] border-purple-500 bg-black p-[1vh] placeholder-purple-300`}
                   name="message"
                   id="message"
                   cols={20}

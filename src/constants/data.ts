@@ -1,3 +1,4 @@
+import apBuyer from "../assets/apBuyer.jpg";
 import IRIS from "../assets/IRIS.png";
 import linguistic from "../assets/Linguistic.png";
 import medScan from "../assets/medScan.png";
@@ -27,7 +28,7 @@ export const linkedin: string =
 export const email: string = "Abhayvermajune5@gmail.com";
 export const phone: string = "+91 8756782835";
 export const resume: string =
-  "https://drive.google.com/file/d/1fwzDc2b6rboE9n8Gze2z4dKm3GO2e4rJ/view?usp=sharing";
+  "https://drive.google.com/file/d/13RRrUn3MnFL3iNkPB_xr8vd6z2BF4KzV/view?usp=sharing";
 
 export const skills: { [key: string]: string } = {
   python:
@@ -69,7 +70,7 @@ export const codingLinks: { [key: string]: string } = {
   github: "https://github.com/ABHAY-05",
 };
 
-type Projects = { [key: string]: string | JSX.Element[] }[];
+type Projects = { [key: string]: string | any }[];
 
 export const projects: Projects = [
   {
@@ -85,7 +86,7 @@ export const projects: Projects = [
       tStack.tensorflow,
       tStack.flask,
     ],
-    img: linguistic as string,
+    img: linguistic,
     style:
       "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     lstyle:
@@ -110,7 +111,7 @@ export const projects: Projects = [
       tStack.mongoDB,
       tStack.nodeJS,
     ],
-    img: product as string,
+    img: product,
     style:
       "border-yellow-500 bg-gradient-to-br from-yellow-950 via-gray-950 to-black shadow-sm shadow-yellow-500 grayscale filter hover:shadow-md hover:shadow-yellow-500 hover:grayscale-0",
     lstyle:
@@ -135,7 +136,7 @@ export const projects: Projects = [
       tStack.speechRecognition,
       tStack.textToSpeech,
     ],
-    img: IRIS as string,
+    img: IRIS,
     style:
       "border-emerald-400 bg-gradient-to-br from-emerald-400 via-gray-950 to-black shadow-sm shadow-emerald-400 grayscale filter hover:shadow-md hover:shadow-emerald-400 hover:grayscale-0",
     lstyle:
@@ -161,7 +162,7 @@ export const projects: Projects = [
       tStack.ml,
       tStack.tensorflow,
     ],
-    img: medScan as string,
+    img: medScan,
     style:
       "border-blue-500 bg-gradient-to-br from-blue-950 via-gray-950 to-black shadow-sm shadow-blue-500 grayscale filter hover:shadow-md hover:shadow-blue-500 hover:grayscale-0",
     lstyle:
@@ -187,7 +188,7 @@ export const projects: Projects = [
       tStack.css,
       tStack.tailwind,
     ],
-    img: todo as string,
+    img: todo,
     style:
       "border-violet-500 bg-gradient-to-br from-violet-950 via-gray-950 to-black shadow-sm shadow-violet-500 grayscale filter hover:shadow-md hover:shadow-violet-500 hover:grayscale-0",
     lstyle:
@@ -200,5 +201,29 @@ export const projects: Projects = [
     c: "Ensured responsive design and efficient state management, delivering a consistent user experience across devices.",
     link: "https://github.com/ABHAY-05/todo-app.git",
     site: "https://todo-app-orcin-two.vercel.app/",
+  },
+  {
+    id: "6",
+    title: "A&P Buyers Agency",
+    date: "04/2025 - 07/2025",
+    techStack: [
+      tStack.nextJS,
+      tStack.typeScript,
+      tStack.tailwind,
+      tStack.framerMotion,
+      tStack.mongoDB,
+    ],
+    img: apBuyer,
+    style:
+      "border-rose-500 bg-gradient-to-br from-rose-950 via-gray-950 to-black shadow-sm shadow-rose-500 grayscale filter hover:shadow-md hover:shadow-rose-500 hover:grayscale-0",
+    lstyle:
+      "border-rose-500 bg-gradient-to-br from-rose-300 via-gray-100 to-white shadow-sm shadow-rose-500 grayscale filter hover:shadow-md hover:shadow-rose-500 hover:grayscale-0",
+    tstyle: "text-rose-500",
+    bstyle:
+      "text-rose-400 shadow-sm shadow-rose-500 hover:shadow-md hover:shadow-rose-500 duration-200 border-2 border-rose-500",
+    a: "Architected a responsive real estate consulting platform using Next.js 15, TypeScript, and Tailwind CSS.",
+    b: "Optimized web asset pipelines and video hero fallbacks utilizing next-seo to enhance cross-device loading efficiency and search rankings.",
+    c: "Built interactive client UI features including testimonial carousels, dark/light themes, and instant booking forms with Framer Motion and Embla Carousel.",
+    site: "https://www.apbuyersagency.com.au",
   },
 ];

@@ -1,9 +1,10 @@
 import { useInView } from "react-intersection-observer";
-import { Link } from "react-scroll";
+import { Link as ReactScrollLink } from "react-scroll";
+const Link = ReactScrollLink as any;
 
-import { Bio } from "../constants/data.ts";
+import { Bio } from "../constants/data";
 import "../styles/About.css";
-import Tilt from "./Tilt.tsx";
+import Tilt from "./Tilt";
 
 const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const [ref, inView] = useInView({
@@ -104,12 +105,12 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         {/* Mobile Section */}
         {inView && (
           <>
-            <div className="relative -mt-[3vh] flex flex-col items-center justify-center gap-[5vh] md:hidden">
+            <div className="relative flex flex-col items-center justify-center gap-6 px-5 pb-10 pt-6 md:hidden">
               <div className="about-icon mt-[10vh] flex h-[150px] w-[250px] items-center justify-center border-[0.5vh] border-purple-300 text-[2.25rem] text-purple-300 shadow-lg shadow-purple-500">
                 About me
               </div>
               <div className="flex h-auto w-[80vw] flex-col gap-[1.5vh]">
-                <div className="aboutme flex gap-[1vw] border-b-[0.2vh] border-purple-500 pb-[1vh] text-[2.8rem]">
+                <div className="aboutme flex gap-[1vw] border-b-[0.2vh] border-purple-500 pb-[1vh] text-[clamp(1.6rem,7vw,2.2rem)]">
                   <div className={`${darkMode ? "text-white" : "text-black"}`}>
                     About
                   </div>
@@ -121,7 +122,7 @@ const About: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   <div>{Bio.description}</div>
                   <div>{Bio.description2}</div>
                 </div>
-                <div className="tag flex justify-center overflow-hidden text-[1.72rem] text-purple-500">{`"${Bio.tag}"`}</div>
+                <div className="tag flex justify-center overflow-hidden text-[clamp(1.05rem,4.5vw,1.5rem)] text-purple-500">{`"${Bio.tag}"`}</div>
                 <div className="-ml-4 -mt-[2vh] h-auto overflow-hidden p-5">
                   <Link
                     activeClass="active"

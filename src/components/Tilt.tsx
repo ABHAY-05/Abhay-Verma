@@ -8,10 +8,21 @@ const Tilt: React.FC<{
     max?: number;
     "max-glare"?: number;
     gyroscope?: boolean;
+    scale?: number;
+    reverse?: boolean;
+    glare?: boolean;
+    perspective?: number;
   };
 }> = ({ cls, options }) => {
   useEffect(() => {
-    VanillaTilt.init(document.querySelector(`.${cls}`) as HTMLElement, options);
+    const el = document.querySelector(`.${cls}`) as
+      (HTMLElement & { vanillaTilt?: { destroy: () => void } }) | null;
+    if (el) {
+      VanillaTilt.init(el, options);
+      return () => {
+        el.vanillaTilt?.destroy();
+      };
+    }
   }, [options, cls]);
   return null;
 };
