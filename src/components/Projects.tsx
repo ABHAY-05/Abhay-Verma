@@ -191,7 +191,7 @@ const Projects: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                   transition={{ ease: "linear", duration: 0.2 }}
                   key={idx}
                   onClick={() => setSelected(project)}
-                  className={`project-card ${idx % 2 ? "col1" : "col2"} mt-[1.5vh] mb-[1.5vh] h-auto w-[60vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
+                  className={`project-card ${idx % 2 ? "col1" : "col2"} mt-[1.5vh] mb-[1.5vh] h-auto w-[65vw] cursor-pointer overflow-hidden rounded-lg border-[0.2vh] ${darkMode ? project.style : project.lstyle} pb-[5vh]`}
                 >
                   <div className="flex flex-col items-center gap-[1vh] duration-500">
                     <img
@@ -292,17 +292,26 @@ const Modal: React.FC<{
       : selected.lstyle
     : "";
 
-  const cardBorderClass = activeStyle
-    ?.split(" ")
-    .find((c: string) => c.startsWith("border-") && c !== "border-[0.2vh]") || "border-violet-500";
+  const cardBorderClass =
+    activeStyle
+      ?.split(" ")
+      .find((c: string) => c.startsWith("border-") && c !== "border-[0.2vh]") ||
+    "border-violet-500";
 
-  const cardShadowClass = activeStyle
-    ?.split(" ")
-    .find(
-      (c: string) =>
-        c.startsWith("shadow-") &&
-        !["shadow-sm", "shadow-md", "shadow-lg", "shadow-xl", "shadow-2xl"].includes(c)
-    ) || "";
+  const cardShadowClass =
+    activeStyle
+      ?.split(" ")
+      .find(
+        (c: string) =>
+          c.startsWith("shadow-") &&
+          ![
+            "shadow-sm",
+            "shadow-md",
+            "shadow-lg",
+            "shadow-xl",
+            "shadow-2xl",
+          ].includes(c),
+      ) || "";
 
   return (
     <AnimatePresence>
@@ -312,9 +321,9 @@ const Modal: React.FC<{
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
           onClick={() => setSelected(null)}
-          className="fixed inset-0 z-40 flex h-screen w-screen cursor-pointer items-center justify-center overflow-hidden bg-black/45 backdrop-blur-md supports-[backdrop-filter]:backdrop-blur-md"
+          className="fixed inset-0 z-40 flex h-screen w-screen cursor-pointer items-center justify-center overflow-hidden bg-black/45 backdrop-blur-md"
         >
           <motion.div
             ref={contentRef}
@@ -322,19 +331,15 @@ const Modal: React.FC<{
             onClick={(e) => e.stopPropagation()}
             layoutId={`card-${selected.id}`}
             transition={{
-              type: "spring",
-              stiffness: 360,
-              damping: 22,
-              mass: 0.6,
+              type: "tween",
+              ease: [0.16, 1, 0.3, 1],
+              duration: 0.32,
             }}
-            initial={{ scale: 0.94, y: 10, opacity: 0 }}
-            animate={{ scale: 1, y: 0, opacity: 1 }}
-            exit={{ scale: 0.97, y: 6, opacity: 0 }}
             className={`relative h-auto max-h-[90vh] w-[40vw] scrollbar-none overflow-y-auto rounded-2xl border-[0.2vh] ${cardBorderClass} max-lg:w-[50vw] max-md:w-[65vw] max-sm:w-[75vw] ${
               darkMode
-                ? "bg-zinc-950/75 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]"
-                : "bg-white/80 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]"
-            } ${cardShadowClass} cursor-default pb-[5vh] shadow-2xl backdrop-blur-2xl supports-[backdrop-filter]:backdrop-blur-2xl`}
+                ? "bg-zinc-950/90 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]"
+                : "bg-white/95 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]"
+            } ${cardShadowClass} cursor-default pb-[5vh] shadow-md will-change-transform`}
           >
             <div className="flex flex-col items-center gap-[1vh]">
               <Image

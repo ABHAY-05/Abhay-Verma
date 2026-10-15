@@ -58,7 +58,7 @@ const Navbar: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
                 offset={-78}
                 className="nav-link"
               >
-                <li className="nav-item flex cursor-pointer items-center rounded-full px-3.5 py-2 text-[1.15rem] font-medium whitespace-nowrap text-purple-500/90 transition-colors duration-200 hover:bg-violet-600/10 hover:text-teal-500 lg:px-4 lg:text-[1.45rem]">
+                <li className="nav-item flex cursor-pointer items-center rounded-full px-3.5 py-2 text-[1.1rem] font-medium whitespace-nowrap text-purple-500/90 transition-colors duration-200 hover:bg-violet-600/10 hover:text-teal-500 lg:px-4 lg:text-[1.35rem]">
                   {item.label}
                 </li>
               </Link>
