@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-graphify-out
 
 # testing
 /coverage
@@ -16,6 +15,7 @@ graphify-out
 # production
 /build
 /dist
+/graphify-out
 
 # misc
 .DS_Store
